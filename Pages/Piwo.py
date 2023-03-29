@@ -11,26 +11,26 @@ st.set_page_config(page_title="Piwo", page_icon=Image.open("logo.png"))
 
 st.header("Opis piw")
 st.subheader("Bierhalle Pills (lager)",)
-st.text('''Pils to najbardziej rozpowszechniony gatunek piwa na świecie\n
+st.write('''Pils to najbardziej rozpowszechniony gatunek piwa na świecie\n
 (mocno powiązany z pilsnerem). Piwo jasne, dolnej fermentacji (przypis poniżej),\n
 istensywna chmielowa goryczka połączona ze smakiem słodu jęczmiennego.\n
 Alkohol: 5.0%''')
 
 st.subheader("Bierhalle Weizen (pszeniczne)")
-st.text('''Weizen jest piwem górnej fermentacji (przypis poniżej)\n
+st.write('''Weizen jest piwem górnej fermentacji (przypis poniżej)\n
 o wyczuwalnym zapachu: bananowo-goździkowym, cynamonu oraz aromatycznego chmielu.\n 
 Goryczka przeplata się ze smakiem pszenicznego słodu. Większa ilość "bąbelków" \n
 sprawia, że piwo pszeniczne nabiera lekko kwaskowatego smaku i doskonale gasi\n
 pragnienie. Słód pszeniczny stanowi ponad 50% całkowitego zasypu.\n
 Alkohol: 5.2%''')
 marcowe = st.subheader("Bierhalle Marcowe (podwójnie słodowany lager)")
-st.text('''Piwo marcowe, zwane również Oktoberfestbier, dawniej warzone było \n
+st.write('''Piwo marcowe, zwane również Oktoberfestbier, dawniej warzone było \n
 tylko sezonowo. Dzisiaj, dzięki nowoczesnym systemom chłodzenia można produkować\n
 je okrągły rok. Piwo jest pełne smaków pochodzących z mieszaniny słodów\n
 jęczmiennych i aromatycznego chmielu.\n
 Alkohol: 5.2%''')
 pilsner = st.subheader("Pilsner Urquell")
-st.text('''Prekursor piw typu lager. Tworzony metodą równoległego warzenia.\n
+st.write('''Prekursor piw typu lager. Tworzony metodą równoległego warzenia.\n
 Swoją wyjątkowość zawdzięcza wielu innowacjom w produkcji piwa, niezmiennym \n
 od ponad 175 lat sposobem produkcji, oraz stosowaniu rzadko już spotykanej \n
 techniki potrójnej dekokcji (przypis poniżej). \n \n
@@ -46,12 +46,12 @@ Alkohol: 4.4%
 slide1 = st.expander("Ciężkie słowa (pojęcia dla nerdów)")
 
 slide1.header("Drożdże dolnej fermentacji")
-slide1.text('''Podczas fermentacji, drożdże dolnej fermentacji zbierają się\n
+slide1.write('''Podczas fermentacji, drożdże dolnej fermentacji zbierają się\n
 na dnie (stąd nazwa). Optymalna temperatura fermentacji dla drożdży dolnej\n
 fermentacji wynosi w przybliżeniu 10°C. Wykorzystywane przy produkcji lagerów.\n''')
 
 slide1.header("Drożdże górnej fermentacji")
-slide1.text('''
+slide1.write('''
 Podczas fermentacji, drożdże górnej fermentacji "wspinają" się na powierzchnię\n
 młodego piwa i tworzą tam warstwę piany (stąd nazwa). Optymalna temperatura\n
 fermentacjidla drożdży górnej fermentacji wynosi w przybliżeniu 20°C.\n
@@ -59,7 +59,7 @@ Główną cechą odróżniającą piwa górnej fermentacji jest ich\n
 kwiatowy zapach i owocowy smak.\n''')
 
 slide1.header("Dekokcja (zacieranie dekokcyjne)")
-slide1.text('''
+slide1.write('''
 Typ zacierania w którym różne temperatury zacierania są osiągnięte przez \n
 odebranie części zacieru, zagotowanie go w osobnym zbiorniku, następnie użycie\n
 go jako woda infuzyjna aby ogrzać pozostały zacier. Jest to tradycyjna metoda\n
@@ -73,7 +73,7 @@ zacierania słodu stosowana jest obecnie rzadko. Najczęściej stosuje się ją\
 przy warzeniu koźlaków, piw pszenicznych lub pilznerów.\n''')
 
 slide1.header("Metoda równoległego warzenia (Pilsner)")
-slide1.text('''
+slide1.write('''
 [...]kiedy browar został zmodernizowany w 1992 roku i wprowadziliśmy nową \n
 technologię, zaczęliśmy fermentować i leżakować większość naszego piwa w \n
 zbiornikach ze stali nierdzewnej znajdujących się nad ziemią. Oznaczało to,\n 
@@ -99,7 +99,7 @@ st.header("Proces produkcji piwa")
 st.subheader("Do produkcji piwa wykorzystywane są cztery różne składniki")
 
 slod = st.expander("Słód")
-slod.text('''
+slod.write('''
 Słód jest produkowany z ziarna, głównie jęczmiennego. Pierwszą czynnością \n
 jest dokładne oczyszczenie ziarna. Oczyszczone ziarno jest moczone w \n
 wodzie aż do uzyskania wymaganej wilgotności wynoszącej 44 %. Następnie\n 
@@ -114,7 +114,7 @@ używa się do jego wyprodukowania, a nie od koloru: jasnego czy \n
 ciemnego piwa.\n''')
 
 woda =st.expander("Woda")
-woda.text('''
+woda.write('''
 Dla produkcji piwa duże znaczenie ma to, czy woda używana do produkcji \n
 jest czysta i wolna od zanieczyszczeń. W przeciwieństwie do przeszłości, \n
 zawartość minerałów w wodzie (twardość wody) nie ma decydującego znaczenia \n
@@ -123,7 +123,7 @@ sposób słodowania (wytwarzania słodu) i operacje technologiczne \n
 podczas produkcji piwa.\n''')
 
 chmiel = st.expander("Chmiel")
-chmiel.text('''
+chmiel.write('''
 Prócz dostarczenia odpowiedniego zapachu i goryczki, chmiel wykonuje \n
 podczas procesu produkcji piwa ważne zadanie: jest antyseptykiem. \n
 Ze względu na zawartość naturalnych olejków (podobne jak rumianek i eukaliptus)\n 
@@ -131,7 +131,7 @@ zabezpiecza piwo przed jego nieoczekiwanym zepsuciem. \n
 (W "Bierhalle" używane są chmiele goryczkowe i aromatyczne).\n''')
 
 drozdze = st.expander("Drożdże")
-drozdze.text('''
+drozdze.write('''
 Podczas procesu fermentacji, zadaniem drożdży jest zamiana cukrów \n
 rozpuszczonych w wodzie, a pochodzących ze słodu w alkohol i CO2. \n
 Są dwa ważne typy drożdży: drożdże górnej fermentacji i drożdże dolnej\n
@@ -144,7 +144,7 @@ dla drożdży dolnej fermentacji wynosi w przybliżeniu 10°C. Główną cechą\
 odróżniającą piwa górnej fermentacji jest ich kwiatowy zapach i owocowy smak.\n''')
 
 st.header("Prawo czystości piw Bierhalle")
-st.text('''
+st.write('''
 Piwo w Bierhalle produkowane jest zgodnie z edyktem Reinheitsgebot (Prawo Czystości)\n
 z 1516r., według którego do produkcji piwa używamy wyłącznie czterech surowców: \n
 wody, słodu, chmielu i drożdży. Piwa nie zawierają żadnych stabilizatorów ani konserwantów,\n
