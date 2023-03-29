@@ -293,3 +293,240 @@ French_Martini.write('''50 ml Ostoya\n
 French_Martini.write('''Metoda: Shake\n
 Szkło: Flute glass\n
 Garnish: Kwiaty hibiskusa\n''')
+
+Gimlet_classic = st.expander("Gimlet (Classic)")
+Gimlet_classic.write('''60ml :red[Tanqueray Ten]\n
+5ml sok z limonki\n
+5ml sok z cytryny\n
+10ml kordiał limonkowy\n''')
+#Gimlet_classic.image("")
+Gimlet_classic.write('''Metoda: Shake\n
+Szkło: Coupe glass\n
+Garnish: Aromatyzacja pustego szkła zestem z cytryny i limonki, wedge limonki na rant szkła''')
+
+Gimlet_dry = st.expander("Gimlet (Dry)")
+Gimlet_dry.write('''70ml :red[Tanqueray Ten]\n
+10ml kordiał limonkowy\n''')
+#Gimlet_dry.image("")
+Gimlet_dry.write('''Metoda: Shake\n
+Szkło: Coupe glass\n
+Garnish: Aromatyzacja pustego szkła zestem z cytryny i limonki, wedge limonki na rant szkła''')
+
+Gin_Basil_Smash = st.expander("Gin Basil Smash")
+Gin_Basil_Smash.write('''40ml Beefeater\n
+30ml soku z cytryny\n
+20ml syrop cukrowy\n
+Garść bazylia\n''')
+#Gin_Basil_Smash.image("")
+Gin_Basil_Smash.write('''Metoda: smash, shake\n
+Szkło: Old fashioned\n
+Garnish: Top bazylia''')
+
+Hanky_Panky_Martini = st.expander("Hanky Panky Martini")
+Hanky_Panky_Martini.write('''30ml :red[Tanqueray Ten]\n
+30ml Martini rubino\n
+5ml Fernet Branca\n''')
+#Hanky_Panky_Martini.image("")
+Hanky_Panky_Martini.write('''Metoda: Stir\n
+Szkło: Coupe glass\n
+Garnish: Zest z pomarańczy''')
+
+Hemingway_Daiquiri = st.expander("Hemingway Daiquiri")
+Hemingway_Daiquiri.write('''60 ml Havana 3yo\n
+40 ml soku z grejpfruta\n
+15 ml soku z limonki\n
+10 ml likieru maraschino\n''')
+#Hemingway_Daiquiri.image("")
+Hemingway_Daiquiri.write('''Metoda: Shake\n
+Szkło: Coupe glass\n
+Garnish: Wedge limonki''')
+
+Hugo = st.expander("Hugo")
+Hugo.write('''100 ml prosecco\n
+20 ml St. Germain\n
+20 ml soda water\n
+Garść liści mięty\n''')
+#Hugo.image("")
+Hugo.write('''Metoda: Build\n
+Szkło: Old fashioned\n
+Garnish: Liście mięty, wedge lime''')
+
+Irish_Coffee = st.expander("Irish Coffee")
+Irish_Coffee.write('''40ml Jameson\n
+1szt. Espresso dopio\n
+100ml śmietanka 36%\n
+20ml syrop cukrowy\n''')
+#Irish_Coffee.image("")
+Irish_Coffee.write('''Metoda: Shake, warstwy\n
+Kawę z whiskey przelewy do szklanki z uszkiem. Śmietankę mocno shakujemy z syropem i 2
+kostkami lodu (można dodać sprężynkę z straynera), by była prawie sztywna. Potem wlewamy po
+łyżce by utworzyła warstwę.\n
+Szkło: szklanka z uchem''')
+
+Jameson_Apple = st.expander("Jameson Apple")
+Jameson_Apple.write('''40 ml Jameson\n
+20 ml Syrop :red[Jabłko korzeń]/Jabłko\n
+1d Angostura\n
+Top up Woda gaz.\n''')
+#Jameson_Apple.image("")
+Jameson_Apple.write('''Metoda: Build\n
+Szkło: Highball\n
+Lód: Kości\n
+Garnish: Laska cynamonu, jabłko suszone''')
+
+Japanese_Cocktail = st.expander("Japanese Cocktail")
+Japanese_Cocktail.write('''40 ml Martel VS\n
+10ml orgeat\n
+3d angostury\n''')
+#Japanese_Cocktail.image("")
+Japanese_Cocktail.write('''Metoda: Shake\n
+Szkło: Coupe glass\n
+Garnish: Zest z cytryny''')
+
+Lillet_Spritz = st.expander("Lillet Spritz")
+Lillet_Spritz.write('''40 ml Lillet Blanc/ Lillet Rouge\n
+Tonik Fentimans\n''')
+#Lillet_Spritz.image("")
+Lillet_Spritz.write('''Metoda: Build\n
+Szkło: Lillet\n
+Lód: Kości\n
+Garnish: Ogórek, mięta / :red[mrożona truskawka]''')
+
+Long_Island = st.expander("Long Island Iced Tea")
+Long_Island.write('''20 ml Ostoya\n
+20 ml Beefeater\n
+20 ml Olmeca Blanco\n
+20 ml Havana Club 3yo\n
+20 ml Cointreau\n
+20 ml sok z cytryny\n
+10 ml syrop cukrowy\n
+1 szt. Pepsi (ok. 70 ml)\n''')
+#Long_Island.image("")
+Long_Island.write('''Metoda: Shake (pierwsze 7 pozycji), warstwowo (najpierw pepsi potem reszta).\n
+Szkło: Mały pokal\n
+Lód: Kości\n
+Garnish: Cząstka limonki''')
+
+Mai_Tai = st.expander("Mai-Tai")
+Mai_Tai.write('''30ml Havana especial\n
+30ml Havana 7YO\n
+10ml Falernum\n
+10ml Cointreau\n
+10ml Orgeat\n
+30ml sok z limonki\n
+2d absinthe\n''')
+#Mai_Tai.image("")
+Mai_Tai.write('''Metoda: Shake\n
+Szkło: Highball, kruszonka\n
+Garnish: Tiki deko (na bogato)''')
+
+Manhattan = st.expander("Manhattan")
+Manhattan.write('''40 ml Maker’s Mark\n
+20 ml Martini Rubino\n
+1 dash Angostura\n''')
+#Manhattan.image("")
+Manhattan.write('''Metoda: Stir, straight-up\n
+Szkło: Coupe glass\n
+Garnish: Maraska do kieliszka, a pomarańczowy zest tylko do aromatu''')
+
+Margarita = st.expander("Margarita")
+Margarita.write('''40 ml Olmeca Altos Blanco\n
+20 ml Cointreau\n
+20 ml sok z limonki\n
+5 ml syrop cukrowy\n''')
+#Margarita.image("")
+Margarita.write('''Metoda: Shake + fine strain\n
+Szkło: Coupe glass\n
+Garnish: Crusta z soli na połowie kieliszka''')
+
+Martini_Negroni = st.expander("Martini Negroni")
+Martini_Negroni.write('''20 ml Beefeater\n
+20 ml Martini Bitteri\n
+20 ml Martini Riserva Rubino\n''')
+#Martini_Negroni.image("")
+Martini_Negroni.write('''Metoda: Stir lub Throwing lub Bulid
+Szkło: Old fashioned
+Lód: Kości
+Garnish: Zest z cytryny + cząstka pomarańczy/zest z pomarańczy''')
+
+Mary_Pickford = st.expander("Mary Pickford")
+Mary_Pickford.write('''60 ml Havana 3\n
+45 ml :red[sok ananasowy]\n
+5 ml :red[grenadyna]\n
+5 ml likier maraschino\n''')
+#Mary_Pickford.image("")
+Mary_Pickford.write('''Metoda: Shake\n
+Szkło: Coupe glass\n
+Garnish: :red[chips z ananasa]''')
+
+Milano_Torino = st.expander("Milano Torino(Mi-To)")
+Milano_Torino.write('''40 ml Campari\n
+40 ml Martini Rubino\n''')
+#Milano_Torino.image("")
+Milano_Torino.write('''Metoda: Stir\n
+Szkło: Old fashioned\n
+Garnish: Pół plasterka pomarańczy''')
+
+Mint_Julep = st.expander("Mint Julep")
+Mint_Julep.write('''40ml Maker’s Mark\n
+5ml syrop cukrowy\n
+Garść liści mięty\n''')
+#Mint_Julep.image("")
+Mint_Julep.write('''Metoda: Julep, kruszony lód\n
+Szkło: Highball\n
+Garnish: Szczyt mięty, cukier puder''')
+
+Mojito = st.expander("Mojito")
+Mojito.write('''40 ml Havana Club 3yo\n
+25 ml sok z limonki\n
+15 ml syrop cukrowy\n
+Garść mięty\n
+Top woda gazowana\n''')
+#Mojito.image("")
+Mojito.write('''Metoda: Build\n
+Szkło: Highball Havana\n
+Lód: Kości\n
+Garnish: Top mięty''')
+
+Morning_Glory_Fizz = st.expander("Morning Glory Fizz")
+Morning_Glory_Fizz.write('''40ml Monkey shoulder\n
+5ml Absinth\n
+15ml sok z limonki\n
+15ml sok z cytryny\n
+20ml syrop cukrowy\n
+20ml białko\n
+Top woda gazowana\n''')
+#Morning_Glory_Fizz.image("")
+Morning_Glory_Fizz.write('''Metoda: Reverse shake\n
+Szkło: Highball\n
+Garnish: Plaster limonki''')
+
+Moscow_Mule = st.expander("Moscow Mule")
+Moscow_Mule.write('''40 ml Ostoya\n
+1 szt. Ginger Beer\n
+2 cząstki limonki(wciśnięte)\n
+Splash syropu cukrowego\n''')
+#Moscow_Mule.image("")
+Moscow_Mule.write('''Metoda: Build\n
+Szkło: Old fashined\n
+Lód: Kosci\n
+Garnish: Top mięty''')
+
+Negroni_Sbagliato = st.expander("Negroni Sbagliato")
+Negroni_Sbagliato.write('''20ml Martini Bitter\n
+20ml Martini Rubino\n
+Top Prosecco\n''')
+#Negroni_Sbagliato.image("")
+Negroni_Sbagliato.write('''Metoda: build, bardzo delikatnie by nie stracić bąbla\n
+Szkło: Old fashioned\n
+Garnish: Pół plasterka pomarańczy''')
+
+Negroni_Spumante = st.expander("Negroni Spumante")
+Negroni_Spumante.write('''20ml Beefeater\n
+20ml Martini Bitter\n
+20ml Martini Rubino\n
+Top Prosecco\n''')
+#Negroni_Spumante.image("")
+Negroni_Spumante.write('''Metoda: Stir, Top Prosecco i delikatny stir\n
+Szkło: Old fashioned\n
+Garnish: Pół plasterka pomarańczy''')
