@@ -8,9 +8,9 @@ def main():
     st.title("Bar koszyki - manual")
 
 
-    submenu = st.sidebar.selectbox("Menu", ["Manual Koktajli", "Piwo", "Wino"])
+    submenu = st.sidebar.selectbox("Menu", ["Manual Koktajli", "Manual Alkoholi", "Piwo", "Wino"])
     if submenu == "Manual Koktajli":
-        st.title("Manual Koktajli")
+        st.header("Manual Koktajli")
 
         amaretto_sour = st.expander("Amaretto sour")
         amaretto_sour.write("""40ml Amaretto</br>
@@ -350,6 +350,17 @@ def main():
         Hemingway_Daiquiri.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Wedge limonki''', unsafe_allow_html=True)
+
+        Horses_Neck = st.expander("Horse's Neck")
+        Horses_Neck.write('''40 ml Jameson<br>
+        1 Puszka Ginger beer<br>
+        2 Cząstka limonki<br>
+        2 Dash Angostura<br>''', unsafe_allow_html=True)
+        #Horses_Neck.image("")
+        Horses_Neck.write('''Metoda: Limonka i Ginger beer na początek, Jameson i Angostura tak, by powstały warstwy<br>
+        :green[Szkło]: Highball<br>
+        :blue[Lód]: Kości<br>
+        :violet[Garnish]: Wciśnięta cząstka limonki''', unsafe_allow_html=True)
 
         Hugo = st.expander("Hugo")
         Hugo.write('''100 ml prosecco<br>
@@ -879,6 +890,108 @@ def main():
         zombie.write('''Metoda: Shake<br>
         :green[Szkło]: Copa<br>
         :violet[Garnish]: Tiki (na bogato)''', unsafe_allow_html=True)
+
+        st.caption(":grey[Materiały: Adrian Kot, Edycja: Aleksander Dziedzic]")
+    elif submenu == "Manual Alkoholi":
+        st.header("Manual Alkoholi")
+
+        aberlour = st.expander("Aberlour")
+        aberlour.caption('''Nazwa „Aberlour” wywodzi się z języka gaelickiego i oznacza „ujście szczebiocącego strumienia”.
+        W Szkocji jest to miejsce gdzie górski potok Lour spotyka się z rzeką Spey. To właśnie tej
+        wyjątkowo miękkiej wodzie Aberlour zawdzięcza swój niepowtarzalny styl. Pewnego mistycyzmu
+        dodaje fakt, iż destylarnia została wybudowana nieopodal studni Św. Drostana – nieocenionego
+        źródła krystalicznie czystej wody. Historia tejże studni sięga tysiąca lat wstecz, kiedy to stanowiła
+        święte miejsce dla Druidów czczących duchy wody i dębu. W późniejszych czasach wodą z tej
+        właśnie studni Święty Drostan chrzcił pierwszych na tych ziemiach Chrześcijan.''')
+
+        aberlour.subheader("Aberlour 12")
+        aberlour.write('''Dojrzewa 12 lat w beczkach po burbonie i po sherry oloroso. Następnie whisky jest ze sobą
+        mieszana w proporcjach 1 do 1.''')
+
+        aberlour.image("AlcoholImages/aberlour/aberlour12.jpg")
+
+        aberlour.write('''**Aromat**: bogaty i zbalansowany, gruszki, jabłka, suszone śliwki, orzechy włoskie, wióry dębowe i
+        oddech ziemi po deszczu.<br>
+        **Smak**: gorzka czekolada, cynamon, imbir, nuty sherry.<br>
+        **Finisz**: rozgrzewający, początkowo słodki, po chwili pikantny z nutami mięt.<br>''', unsafe_allow_html=True)
+
+        aberlour.subheader("Aberlour 16")
+        aberlour.write('''Aberlour 16yo to szkocka whisky single malt pochodząca z regionu Speyside. Double cask
+        matured oznacza, że dojrzewa w dwóch rodzajach beczek: po bourbonie oraz po sherry Oloroso.
+        Beczka po bourbonie nadaje whisky słodki, waniliowy smak, zaś Oloroso nuty korzenne i
+        owocowe. Kiedy destylaty z obydwu beczek osiągną pożądany wiek, zostają ze sobą
+        wymieszane, dzięki czemu uzyskiwana whisky zyskuje bogatszy smak i aromat.''')
+
+        aberlour.image("AlcoholImages/aberlour/aberlour16.jpg")
+
+        aberlour.write('''**Oko**: bursztynowa<br>
+        **Nos**: 21 – przyjemna, lotna, ale nie ostra, potężne suszone owoce, śliwki, morele, czekolada.<br>
+        **Usta**: 21 – średnio oleista i delikatna<br>
+        **Finisz**: 20 – słodka, czekolada mleczna, orzechy, lekko pieprzna, trwająca.<br>
+        **ABV**: 40%''', unsafe_allow_html=True)
+
+        aberlour.subheader("Aberlour 18")
+        aberlour.write('''To szkocka whisky single malt pochodząca z regionu Speyside. Double cask matured oznacza, że
+        dojrzewa w dwóch rodzajach beczek: po bourbonie 70% oraz po sherry Oloroso 30%. Beczka po
+        bourbonie nadaje whisky słodki, waniliowy smak, zaś Oloroso nuty korzenne i owocowe. Kiedy
+        destylaty z obydwu beczek osiągną pożądany wiek, zostają ze sobą wymieszane, dzięki czemu
+        uzyskiwana whisky zyskuje bogatszy smak i aromat. Podstawowym założeniem destylarni jest to
+        aby w ich whisky dominowała nuta jabłka i czarnej porzeczki, zaś smak zboża powinien zostać
+        zneutralizowany.
+        18 lat w beczkach po bourbonie i po sherry Oloroso nada zdecydowanie innej słodyczy niż
+        uraczyć możemy w młodszych edycjach. Aberlour 18 YO jest jedwabisty i maślany w smaku, ale i
+        dębinowy. Podniebienia koneserów na pewno pozytywnie przyjmą tą whisky.''')
+
+        aberlour.image("AlcoholImages/aberlour/aberlour18.jpg")
+
+        aberlour.write('''**Aromat**: bogaty i pełny, mleczna czekolada, toffi, brzoskwinie, gorzkie pomarańcze, nuty sherry i
+        dębu.<br>
+        **Smak**: bogaty i zrównoważany, soczyste morele, cynamon, gałka muszkatołowa, ślady dębu i
+        wytrawionej skóry.<br>
+        **Finisz**: niezwykle długi, crème brulèe i w końcówce dębowa goryczka.''', unsafe_allow_html=True)
+
+        aberlour.subheader("Aberlour A’bunadh")
+        aberlour.write('''A'Bunadh (z gaelickiego “pochodzenie”) to whisky z destylarnia Aberlour, próbująca oddać
+        charakter whisky z końca XIX wieku. Wiąże się z nią ciekawa historia. Ponoć podczas remontu
+        destylarnii w 1975 roku, znaleziono kapsułę czasu zamurowaną za tabliczką z nazwą destylarni.
+        Składała się ona z butelki whisky z 1898 roku, zawiniętą w gazetę z tegoż samego roku z
+        artykułem o pożarze w destylarnii. Bytelka została w czterech piątych skonsumowana podczas
+        przerwy śniadaniowej przez robotników, reszta zaś została wysłana na badania w laboratorium.
+        A'Bunadh jest właśnie wzorowana na tym znalezisku. Cask Strength składający się z destylatów,
+        dojrzewających w beczkach po sherry oloroso, o wieku od pięciu do dwudziestu pięciu lat.''')
+
+        aberlour.image("AlcoholImages/aberlour/aberlour_abunadh.jpg")
+
+        aberlour.write('''**Oko**: bursztynowa<br>
+        **Nos**: 21 – kremowa, słodka i czekoladowa, podszyta znamiennymi dla Aberlour suszonymi
+        owocami.<br>
+        **Usta**: 21 – oleista i delikatna<br>
+        **Finisz**: 22 – dobrze wyważona, odrobina melasa, wyraźny wpływ sherry, szybko zdobywa cały
+        język i trwa na nim długim czekoladowym finiszem i rodzynkową słodyczą. Mocno rozgrzewająca
+        co w mocy ponad 60% ABV nie jest żadnym zaskoczeniem.<br>
+        **ABV**: 60,2%''', unsafe_allow_html=True)
+
+        aberlour.subheader("Aberlour A’bunadh Alba")
+        aberlour.write('''W odróżnieniu od klasycznej wersji Aberlour A’Bunadh wprowadzonej w 2019 roku edycja Alba
+        leżakowała w zdecydowanej większości w wyselekcjonowanych beczkach po bourbonie 100% z
+        1-go napełnienia , a w niewielkim tylko stopniu w typowych dla marki beczkach po sherry oloroso.
+        Do słodowania wykorzystano lokalny jęczmień ze Speyside. Butelkowana z mocą beczek, każdy
+        batch z inna mocą. Niefiltrowana na zimno dzięki czemu zachowuje całe aromatyczne bogactwo i
+        pełniejszy smak o charakterystycznej, lekko kremowej teksturze.''')
+
+        aberlour.image("AlcoholImages/aberlour/aberlour_abunadh_alba.jpg")
+
+        aberlour.write('''**Aromat**: słodkie owoce sadu – świeże, zielone jabłka i soczyste gruszki, uzupełnione delikatnymi
+        akordami lawendowego miodu, gładkiego kremu waniliowego i orzeźwiającego sorbetu
+        cytrynowego.<br>
+        **Smak**: pikantnie cytrusowy początek, przechodzący w bogaty akcent maślanych ciasteczek i
+        pieczonych
+        jabłek, który ustępuje słodkim migdałom w cukrze.<br>
+        **Finish**: gładki i słodki, z nutą prażonych migdałów.''', unsafe_allow_html=True)
+
+
+
+        st.caption(":grey[Materiały: Adrian Kot, Edycja: Aleksander Dziedzic]")
     elif submenu == "Piwo":
         st.header("Opis piw")
         st.subheader("Bierhalle Pills (lager)")
