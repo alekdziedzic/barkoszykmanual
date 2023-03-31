@@ -455,9 +455,9 @@ def main():
         20 ml Martini Bitteri<br>
         20 ml Martini Riserva Rubino<br>''', unsafe_allow_html=True)
         # Martini_Negroni.image("")
-        Martini_Negroni.write('''Metoda: Stir lub Throwing lub Bulid
-        :green[Szkło]: Old fashioned
-        :blue[Lód]: Kości
+        Martini_Negroni.write('''Metoda: Stir lub Throwing lub Bulid<br>
+        :green[Szkło]: Old fashioned<br>
+        :blue[Lód]: Kości<br>
         :violet[Garnish]: Zest z cytryny + cząstka pomarańczy/zest z pomarańczy''', unsafe_allow_html=True)
 
         Mary_Pickford = st.expander("Mary Pickford")
@@ -542,6 +542,343 @@ def main():
         Negroni_Spumante.write('''Metoda: Stir, Top Prosecco i delikatny stir<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Pół plasterka pomarańczy''', unsafe_allow_html=True)
+        newyorksour = st.expander("New York Sour")
+        newyorksour.write('''40 ml Maker’s Mark<br>
+        20 ml sok z cytryny<br>
+        10 ml syrop cukrowy<br>
+        20 ml białko cukiernicze<br>
+        1 dash Angostura<br>
+        20 ml Porto (float)<br>''', unsafe_allow_html=True)
+        # newyorksour.image("")
+        newyorksour.write('''Metoda: Shake (dry shake) 6 pierwszych składników, fine strain, float z Porto<br>
+        :green[Szkło]: Old fashioned<br>
+        :blue[Lód]: Kości<br>
+        :violet[Garnish]: Zest z pomarańczy''', unsafe_allow_html=True)
+
+        oldcuban = st.expander("Old Cuban")
+        oldcuban.write('''40 ml Havana 7yo<br>
+        20 ml sok z limonki<br>
+        10 ml syrop demerara<br>
+        1 dash Angostura<br>
+        Garść mięty<br>
+        Top up Prosecco<br>''', unsafe_allow_html=True)
+        # oldcuban.image("")
+        oldcuban.write('''Metoda: Shake + fine strain<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: Szczyt mięty w suszce limonki''', unsafe_allow_html=True)
+
+        oldfashioned = st.expander("Old Fashioned")
+        oldfashioned.write('''40 ml Maker’s Mark<br>
+        5 ml Demerara<br>
+        2 dash Angostura<br>
+        2 dash Orange bitter<br>''', unsafe_allow_html=True)
+        # oldfashioned.image("")
+        oldfashioned.write('''Metoda: Stir, strain on the rocks<br>
+        :green[Szkło]: Old fashioned<br>
+        :blue[Lód]: Kości<br>
+        :violet[Garnish]: Zest z pomarańczy''', unsafe_allow_html=True)
+
+        orangeclub = st.expander("Orange Club")
+        orangeclub.write('''40 ml Beefeater blood orange<br>
+        10 ml Lillet Blanc<br>
+        15 ml syrop malina<br>
+        20 ml limonka<br>
+        10 ml białko<br>''', unsafe_allow_html=True)
+        # orangeclub.image("")
+        orangeclub.write('''Metoda: Shake + fine strain<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: Puder''', unsafe_allow_html=True)
+
+        paloma = st.expander("Paloma")
+        paloma.write('''40 ml Olmeca Altos Bianco<br>
+        20ml kordiał grejpfrutowy<br>
+        2 cząstki limonki (wciśnięte)<br>
+        1 dash tynktury hibiskusowej<br>
+        Top woda gazowana<br>''', unsafe_allow_html=True)
+        # paloma.image("")
+        paloma.write('''Metoda: Build + Stir<br>
+        :green[Szkło]: Mały pokal<br>
+        :violet[Garnish]: Cząstka grejpfruta''', unsafe_allow_html=True)
+
+        paperplane = st.expander("Paper Plane")
+        paperplane.write('''20ml Burbon<br>
+        20ml Amaro<br>
+        20ml Aperitivo<br>
+        20ml Sour<br>''', unsafe_allow_html=True)
+        # paperplane.image("")
+        paperplane.write('''Metoda: Shake<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
+
+        penicillin = st.expander("Penicillin")
+        penicillin.write('''40ml Ballantines<br>
+        20ml sok z cytryny<br>
+        20ml :red[syrop miodowo-imbirowy]<br>
+        Top 10ml Ardbeg 10<br>''', unsafe_allow_html=True)
+        # penicillin.image("")
+        penicillin.write('''Metoda: Shake, top Ardbeg 10<br>
+        :green[Szkło]: Old fashioned<br>
+        :violet[Garnish]: Plaster imbiru''', unsafe_allow_html=True)
+
+        pinklady = st.expander("Pink Lady")
+        pinklady.write('''40ml Beefeater Pink<br>
+        20ml Cointreau<br>
+        20ml Limonka<br>
+        15ml Białko<br>
+        10ml Syrop truskawka<br>''', unsafe_allow_html=True)
+        # pinklady.image("")
+        pinklady.write('''Metoda: Dry shake + shake , Fine strain<br>
+        :green[Szkło]: martini glass<br>
+        :violet[Garnish]: Puder hibiskus''', unsafe_allow_html=True)
+
+        piscosour = st.expander("Pisco Sour")
+        piscosour.write('''40 ml Pisco<br>
+        25ml sok z limonki<br>
+        10 ml Syrop cukrowy<br>
+        3 dash angostura<br>
+        20ml białko<br>''', unsafe_allow_html=True)
+        # piscosour.image("")
+        piscosour.write('''Metoda: Dry shake + shake , Fine strain<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: 3 Krople Angostury''', unsafe_allow_html=True)
+
+        pornstar = st.expander("Pornstar Martini")
+        pornstar.write('''40 ml Ostoya<br>
+        20 ml Sok z limonki<br>
+        20 ml Marakuja<br>
+        20 ml Syrop waniliowy<br>
+        40 ml Prosecco<br>''', unsafe_allow_html=True)
+        # pornstar.image("")
+        pornstar.write('''Metoda: Wszystkie składniki oprócz prosecco 
+        shakeujemy i przelewamy do szkła, w kieliszku
+        obok wlewamy prosecco<br>
+        :green[Szkło]: Coupe glass, kieliszek do wódki<br>
+        :violet[Garnish]: Suszka z limonki''', unsafe_allow_html=True)
+
+        ramos = st.expander("Ramos Gin Fizz")
+        ramos.write('''60ml Beefeater<br>
+        15ml Sok z limonki<br>
+        15ml Sok z cytryny<br>
+        20ml Syrop cukrowy<br>
+        3d Pomarańczowa woda kwiatowa<br>
+        20ml Białko<br>
+        20ml Half&half<br>
+        Top woda gazowana<br>''', unsafe_allow_html=True)
+        # ramos.image("")
+        ramos.write('''Metoda: Shake (b. długi)<br>
+        :green[Szkło]: Highball<br>
+        :violet[Garnish]: Pianka wystająca ponad rant''', unsafe_allow_html=True)
+
+        rev_vesper = st.expander("Reverse Vesper Martini")
+        rev_vesper.write('''30ml Lillet Blanc<br>
+        10ml Beefeater<br>
+        20ml Ostoya<br>''', unsafe_allow_html=True)
+        # rev_vesper.image("")
+        rev_vesper.write('''Metoda: Shake<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
+
+        righthand = st.expander("(The) Right Hand")
+        righthand.write('''20ml Havana Especial<br>
+        20ml Martini Bitter<br>
+        20ml Martini rubino<br>
+        2d Chocolate bitters<br>''', unsafe_allow_html=True)
+        # righthand.image("")
+        righthand.write('''Metoda: Stir<br>
+        :green[Szkło]: Old fashioned<br>
+        :violet[Garnish]: Zest z pomarańczy''', unsafe_allow_html=True)
+
+        rosita = st.expander("Rosita")
+        rosita.write('''50 ml Tequila Reposado<br>
+        15 ml Martini Bitter<br>
+        15 ml Martini Rubino<br>
+        15 ml :red[Dolin Dry]<br>
+        2d Angostura<br>''', unsafe_allow_html=True)
+        # rosita.image("")
+        rosita.write('''Metoda: Stir<br>
+        :green[Szkło]: Old fashioned<br>
+        :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
+
+        russianpunch = st.expander("Russian Spring Punch")
+        russianpunch.write('''45 ml Ostoya<br>
+        25 ml Soku z cytryny<br>
+        10 ml likieru Creme de cassis<br>
+        10 ml Syropu truskawkowego<br>
+        Top Prosecco<br>''', unsafe_allow_html=True)
+        # russianpunch.image("")
+        russianpunch.write('''Metoda: Shake, top Prossceco<br>
+        :green[Szkło]: Copa/highball<br>
+        :violet[Garnish]: Top mięty, zest z pomarańczy''', unsafe_allow_html=True)
+
+        sazerac = st.expander("Sazerac")
+        sazerac.write('''25ml Jim Beam Rye<br>
+        25ml Martel VS<br>
+        5ml Syrop cukrowy<br>
+        3d Peychoud’s bitters<br>
+        1d Absynt<br>''', unsafe_allow_html=True)
+        # sazerac.image("")
+        sazerac.write('''Metoda: Stir + aromatyzacja szkła absyntem<br>
+        :green[Szkło]: Old fashioned<br>
+        :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
+
+        sidecard = st.expander("Sidecard")
+        sidecard.write('''40ml Martel VS<br>
+        20ml Cointreau<br>
+        10ml sok z cytryny<br>''', unsafe_allow_html=True)
+        # sidecard.image("")
+        sidecard.write('''Metoda: Shake<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: Crusta z cukru pudru, zest z cytryny''', unsafe_allow_html=True)
+
+        silverfizz = st.expander("Silver Gin Fizz")
+        silverfizz.write('''45ml Beefeater<br>
+        15ml Sok z cytryny<br>
+        15ml Sok z limonki<br>
+        20ml Syrop cukrowy<br>
+        20ml Białko<br>
+        Top Woda gazowana<br>''', unsafe_allow_html=True)
+        # silverfizz.image("")
+        silverfizz.write('''Metoda: Reverse shake<br>
+        :green[Szkło]: Highball<br>
+        :violet[Garnish]: Top mięta''', unsafe_allow_html=True)
+
+        tomcollins = st.expander("Tom Collins")
+        tomcollins.write('''40ml Beefeater<br>
+        20 ml Sok z cytryny<br>
+        10ml Syrop cukrowy<br>
+        Top Woda gazowana<br>''', unsafe_allow_html=True)
+        # tomcollins.image("")
+        tomcollins.write('''Metoda: Shake<br>
+        :green[Szkło]: Mały pokal<br>
+        :violet[Garnish]: Plaster pomarańczy i wisienka maraschino''', unsafe_allow_html=True)
+
+        tommymargarita = st.expander("Tommy's Margarita")
+        tommymargarita.write('''40ml Olmeca Altos Reposado<br>
+        20ml Sok z limonki<br>
+        10ml Syrop z agawy<br>''', unsafe_allow_html=True)
+        # tommymargarita.image("")
+        tommymargarita.write('''Metoda: Shake<br>
+        :green[Szkło]: Old fashioned<br>
+        :violet[Garnish]: Suszka z limonki<br>''', unsafe_allow_html=True)
+
+        torinorickey = st.expander("Torino Rickey")
+        torinorickey.write('''60ml Martini rubino<br>
+        Pół limonki<br>
+        Top soda<br>''', unsafe_allow_html=True)
+        # torinorickey.image("")
+        torinorickey.write('''Metoda: Build<br>
+        :green[Szkło]: Highball<br>
+        :violet[Garnish]: Wciśnięta limonka''', unsafe_allow_html=True)
+
+        vesper = st.expander("Vesper Dry Martini")
+        vesper.write('''60ml Beefeater<br>
+        20ml Ostoya<br>
+        10ml Lillet Blanc<br>''', unsafe_allow_html=True)
+        # vesper.image("")
+        vesper.write('''Metoda: Shake<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
+
+        vieux = st.expander("Vieux Carre")
+        vieux.write('''25ml Jim Beam Rye<br>
+        25ml Martel VS<br>
+        25ml Martini rubino<br>
+        5ml :red[Benedictine]<br>
+        2d Peychoud’s<br>
+        2d Angostura<br>''', unsafe_allow_html=True)
+        # vieux.image("")
+        vieux.write('''Metoda: Stir<br>
+        :green[Szkło]: Old fashioned<br>
+        :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
+
+        vodkamartini = st.expander("Vodka Martini")
+        vodkamartini.write('''60 ml Wyborowa Exquisite<br>
+        15 ml Martini Extra Dry<br>''', unsafe_allow_html=True)
+        # vodkamartini.image("")
+        vodkamartini.write('''Metoda: Stir<br>
+        :green[Szkło] : Coupe glass<br>
+        :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
+
+        vodkasour = st.expander("Vodka Sour")
+        vodkasour.write('''40 ml Ostoya<br>
+        20 ml Sok z cytryny<br>
+        20 ml Białko<br>
+        10 ml Syrop cukrowy<br>
+        2 dash Angostura<br>''', unsafe_allow_html=True)
+        # vodkasour.image("")
+        vodkasour.write('''Metoda: Dry Shake + shake<br>
+        :green[Szkło]: Old fashioned<br>
+        :blue[Lód]: Kości<br>
+        :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
+
+        whiskysmash = st.expander("Whisky Smash")
+        whiskysmash.write('''40ml Jim Beam<br>
+        Pół Cytryny<br>
+        20ml Syrop cukrowy<br>
+        Garść mięty<br>''', unsafe_allow_html=True)
+        # whiskysmash.image("")
+        whiskysmash.write('''Metoda: Smash, shake<br>
+        :green[Szkło]: Old fashioned<br>
+        :violet[Garnish]: Szczyt mięty, plaster cytryny''', unsafe_allow_html=True)
+
+        whiskysour = st.expander("Whisky Sour")
+        whiskysour.write('''40 ml Ballantines<br>
+        30 ml Sok z cytryny<br>
+        15 ml Syrop cukrowy<br>
+        15 ml Białko<br>
+        2 dash Angostura<br>''', unsafe_allow_html=True)
+        # whiskysour.image("")
+        whiskysour.write('''Metoda: Dry Shake + shake<br>
+        :green[Szkło]: Old fashioned<br>
+        :blue[Lód]: Kości<br>
+        :violet[Garnish]: Zest z pomarańczy''', unsafe_allow_html=True)
+
+        whitelady = st.expander("White Lady")
+        whitelady.write('''40ml Beefeater<br>
+        20ml Cointreau<br>
+        20ml Sok z cytryny<br>
+        10ml Syrop cukrowy<br>
+        15ml Białko<br>''', unsafe_allow_html=True)
+        # whitelady.image("")
+        whitelady.write('''Metoda: Shake<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
+
+        whiterussian = st.expander("White Russian")
+        whiterussian.write('''40ml Ostoya<br>
+        20ml :red[Kahlua]/Bols Coffee<br>
+        Top 20ml half&half<br>''', unsafe_allow_html=True)
+        # whiterussian.image("")
+        whiterussian.write('''Metoda: Build; na top delikatnie half&half, by 
+        ładnie spływało po kościach<br>
+        :green[Szkło]: Old fashioned<br>
+        :blue[Lód]: Kości<br>
+        :violet[Garnish]: Brak''', unsafe_allow_html=True)
+
+        xxcentury = st.expander("XX Century Cocktail")
+        xxcentury.write('''40ml :red[Magellan Gin]<br>
+        20ml Lillet Blanc<br>
+        15ml Creme de Cacao<br>
+        20ml Sok z cytryny<br>''', unsafe_allow_html=True)
+        # xxcentury.image("")
+        xxcentury.write('''Metoda: Shake<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: Zest z pomarańczy''', unsafe_allow_html=True)
+
+        zombie = st.expander("Zombie")
+        zombie.write('''40 ml Havana Especial<br>
+        40 ml Havana 7YO<br>
+        20ml :red[Rum overproof]/ Havana 3<br>
+        25 ml Soku z limonki<br>
+        15 ml Falernum<br>
+        5-7 ml :red[Grenadyna]<br>
+        15 ml :red[Don's Mix (sok grejpfrutowy i syrop cynamonowy w stosunku 1:2)]<br>
+        5-7 ml :red[Likier anyżowy]/Absynt<br>
+        2 dash Angostura<br>''', unsafe_allow_html=True)
+        # zombie.image("")
+        zombie.write('''Metoda: Shake<br>
+        :green[Szkło]: Copa<br>
+        :violet[Garnish]: Tiki (na bogato)''', unsafe_allow_html=True)
     elif submenu == "Piwo":
         st.header("Opis piw")
         st.subheader("Bierhalle Pills (lager)")
@@ -588,7 +925,7 @@ def main():
         slide1.write('''
                   Podczas fermentacji, drożdże górnej fermentacji "wspinają" się na powierzchnię 
                   młodego piwa i tworzą tam warstwę piany (stąd nazwa). Optymalna temperatura 
-                  fermentacjidla drożdży górnej fermentacji wynosi w przybliżeniu 20°C.
+                  fermentacji dla drożdży górnej fermentacji wynosi w przybliżeniu 20°C.
                   Główną cechą odróżniającą piwa górnej fermentacji jest ich
                   kwiatowy zapach i owocowy smak.''')
 
@@ -604,7 +941,7 @@ def main():
                   trójwarowy. Oznacza to, że dekokcja została przeprowadzona jednokrotnie, 
                   dwukrotnie lub trzykrotnie. Ze względów ekonomicznych metoda dekokcyjna 
                   zacierania słodu stosowana jest obecnie rzadko. Najczęściej stosuje się ją 
-                  przy warzeniu koźlaków, piw pszenicznych lub pilznerów.''')
+                  przy warzeniu koźlaków, piw pszenicznych lub pilznerów.''', unsafe_allow_html=True)
 
         slide1.header("Metoda równoległego warzenia (Pilsner)")
         slide1.write('''
