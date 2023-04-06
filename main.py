@@ -176,7 +176,7 @@ def main():
         :violet[Garnish]: Zest z pomarańczy<br>''', unsafe_allow_html=True)
 
         Corpse_Reviver_2 = st.expander("Corpse Reviver no.2")
-        Corpse_Reviver_2.write('''20ml Beefeater]<br>
+        Corpse_Reviver_2.write('''20ml Beefeater<br>
         20ml Cointreau<br>
         20ml Lillet Blanc<br>
         20ml sok z cytryny<br>
@@ -277,7 +277,7 @@ def main():
         :violet[Garnish]: Wedge limonka<br>''', unsafe_allow_html=True)
 
         Fiero_Spritz = st.expander("Fiero Spritz")
-        Fiero_Spritz.write('''60ml Martini Fiero<br>
+        Fiero_Spritz.write('''80ml Martini Fiero<br>
         160ml Prosecco<br>
         Top up Woda Gazowana<br>''', unsafe_allow_html=True)
         # Fiero_Spritz.image("")
