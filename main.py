@@ -176,7 +176,7 @@ def main():
         :violet[Garnish]: Zest z pomarańczy<br>''', unsafe_allow_html=True)
 
         Corpse_Reviver_2 = st.expander("Corpse Reviver no.2")
-        Corpse_Reviver_2.write('''20ml :red[Tanqueray Ten]<br>
+        Corpse_Reviver_2.write('''20ml Beefeater]<br>
         20ml Cointreau<br>
         20ml Lillet Blanc<br>
         20ml sok z cytryny<br>
