@@ -161,16 +161,16 @@ def main():
         40ml sok jabłkowy<br>
         15ml Creme de violette<br>
         15ml sok z limonki<br>''', unsafe_allow_html=True)
-        # Cointreau_Teese.image("")
-        Cointreau_Teese.write('''Metoda: Shake
-        :green[Szkło]: Coupe glass
+        Cointreau_Teese.image('CocktailImages/CIONTREAUTEESE.jpg')
+        Cointreau_Teese.write('''Metoda: Shake<br>
+        :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: :red[Fiołek]/Zest z pomarańczy''', unsafe_allow_html=True)
 
         Corpse_reviver_1 = st.expander("Corpse Reviver no.1")
         Corpse_reviver_1.write('''40ml Cognac<br>
         20 ml :red[Calvados]<br>
         20 ml Martini Rubino<br>''', unsafe_allow_html=True)
-        # Corpse_reviver_1.image("")
+        Corpse_reviver_1.image("CocktailImages/CORPSEREVIVER1.jpg")
         Corpse_reviver_1.write('''Metoda: Stir<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z pomarańczy<br>''', unsafe_allow_html=True)
@@ -181,7 +181,7 @@ def main():
         20ml Lillet Blanc<br>
         20ml sok z cytryny<br>
         1d Absinth<br>''', unsafe_allow_html=True)
-        # Corpse_Reviver_2.image("")
+        Corpse_Reviver_2.image("CocktailImages/CORPSEREVIVER2.jpg")
         Corpse_Reviver_2.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z cytryny, aromatyzacja absyntem<br>''', unsafe_allow_html=True)
@@ -191,7 +191,7 @@ def main():
         20 ml Cointreau<br>
         20 ml sok z limonki<br>
         20 ml syrop żurawina<br>''', unsafe_allow_html=True)
-        # Cosmopolitan.image("")
+        Cosmopolitan.image("CocktailImages/COSMOPOLITAN.jpg")
         Cosmopolitan.write('''Metoda: Shake, fine strain<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z pomarańczy<br>''', unsafe_allow_html=True)
@@ -233,7 +233,7 @@ def main():
         1x Puszka Ginger Beer<br>
         2x Wedge limonka<br>
         2d Angostura bitters<br>''', unsafe_allow_html=True)
-        # Dark_N_Stormy.image("")
+        Dark_N_Stormy.image("CocktailImages/DARKNSTORMY.jpg")
         Dark_N_Stormy.write('''Metoda: build (rum i angostura na wierzchu)<br>
         :green[Szkło]: Highball<br>
         :violet[Garnish]: Wciśnięte wedge, rum ma tworzyć warstwę z angosturą<br>''', unsafe_allow_html=True)
@@ -242,7 +242,7 @@ def main():
         Dirty_Martini.write('''60 ml Beefeater<br>
         10 ml Martini extra dry<br>
         10 ml (2 łyżeczki) Zalewa z oliwek<br>''', unsafe_allow_html=True)
-        # Dirty_Martini.image("")
+        Dirty_Martini.image("CocktailImages/DIRTYMARTINI.jpg")
         Dirty_Martini.write('''Metoda: Stir<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: 2 Oliwki na szpadce<br>''', unsafe_allow_html=True)
@@ -251,7 +251,7 @@ def main():
         Elderflower_Spritz.write('''100 ml Sauvignon Blanc<br>
         40 ml St. Germain<br>
         100 ml woda gaz<br>''', unsafe_allow_html=True)
-        # Elderflower_Spritz.image("")
+        Elderflower_Spritz.image("CocktailImages/ELDERFLOWERSPRITZ.webp")
         Elderflower_Spritz.write('''Metoda: Build + zamieszać<br>
         :green[Szkło]: Wine glass<br>
         :violet[Garnish]: Lime slice<br>''', unsafe_allow_html=True)
@@ -261,7 +261,7 @@ def main():
         20 ml :red[Kahlua]/Bols Coffee<br>
         1 espresso<br>
         5ml syrop waniliowy<br>''', unsafe_allow_html=True)
-        # Espresso_Martini.image("")
+        Espresso_Martini.image("CocktailImages/ESPRESSOMARTINI.jpg")
         Espresso_Martini.write('''Metoda: Shake, fine strain<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: 3 Ziarenka kawy ułożone w koniczynkę<br>''', unsafe_allow_html=True)
@@ -280,7 +280,7 @@ def main():
         Fiero_Spritz.write('''60ml Martini Fiero<br>
         160ml Prosecco<br>
         Top up Woda Gazowana<br>''', unsafe_allow_html=True)
-        # Fiero_Spritz.image("")
+        Fiero_Spritz.image("CocktailImages/FIEROSPRITZ.jpg")
         Fiero_Spritz.write('''Metoda: Najpierw wlać prosseco + woda gazowana, następnie Fiero<br>
         :green[Szkło]: Copa Martini<br>
         :violet[Garnish]: Plaster pomarańczy<br>''', unsafe_allow_html=True)
@@ -289,7 +289,7 @@ def main():
         French_75.write('''25 ml Beefeater<br>
         20 ml sok z cytryny<br>
         10 ml syrop cukrowy<br>''', unsafe_allow_html=True)
-        # French_75.image("")
+        French_75.image("CocktailImages/FRENCH75.jpg")
         French_75.write('''Top up (ok 50 ml) Champagne (Mumm Brut)<br>
         Metoda: Shake + fine strain & top up<br>
         :green[Szkło]: Flute glass<br>
@@ -309,7 +309,7 @@ def main():
         5ml sok z limonki<br>
         5ml sok z cytryny<br>
         10ml kordiał limonkowy<br>''', unsafe_allow_html=True)
-        # Gimlet_classic.image("")
+        Gimlet_classic.image("CocktailImages/GIMLETCLASSIC.jpg")
         Gimlet_classic.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Aromatyzacja pustego szkła zestem z cytryny i limonki, wedge limonki na rant szkła''', unsafe_allow_html=True)
@@ -317,7 +317,7 @@ def main():
         Gimlet_dry = st.expander("Gimlet (Dry)")
         Gimlet_dry.write('''70ml :red[Tanqueray Ten]<br>
         10ml kordiał limonkowy<br>''', unsafe_allow_html=True)
-        # Gimlet_dry.image("")
+        Gimlet_dry.image("CocktailImages/GIMLETDRY.jpg")
         Gimlet_dry.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Aromatyzacja pustego szkła zestem z cytryny i limonki, wedge limonki na rant szkła''', unsafe_allow_html=True)
@@ -327,7 +327,7 @@ def main():
         30ml soku z cytryny<br>
         20ml syrop cukrowy<br>
         Garść bazylia<br>''', unsafe_allow_html=True)
-        # Gin_Basil_Smash.image("")
+        Gin_Basil_Smash.image("CocktailImages/GINBASILSMASH.jpg")
         Gin_Basil_Smash.write('''Metoda: smash, shake<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Top bazylia''', unsafe_allow_html=True)
@@ -336,7 +336,7 @@ def main():
         Hanky_Panky_Martini.write('''30ml :red[Tanqueray Ten]<br>
         30ml Martini rubino<br>
         5ml Fernet Branca<br>''', unsafe_allow_html=True)
-        # Hanky_Panky_Martini.image("")
+        Hanky_Panky_Martini.image("CocktailImages/HANKYPANKYMARTINI.jpg")
         Hanky_Panky_Martini.write('''Metoda: Stir<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z pomarańczy''', unsafe_allow_html=True)
@@ -346,7 +346,7 @@ def main():
         40 ml soku z grejpfruta<br>
         15 ml soku z limonki<br>
         10 ml likieru maraschino<br>''', unsafe_allow_html=True)
-        # Hemingway_Daiquiri.image("")
+        Hemingway_Daiquiri.image("CocktailImages/HEMINGWAYDAIQUIRI.jpg")
         Hemingway_Daiquiri.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Wedge limonki''', unsafe_allow_html=True)
@@ -367,7 +367,7 @@ def main():
         20 ml St. Germain<br>
         20 ml soda water<br>
         Garść liści mięty<br>''', unsafe_allow_html=True)
-        # Hugo.image("")
+        Hugo.image("CocktailImages/HUGO.jpg")
         Hugo.write('''Metoda: Build<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Liście mięty, wedge lime''', unsafe_allow_html=True)
@@ -377,7 +377,7 @@ def main():
         1szt. Espresso dopio<br>
         100ml śmietanka 36%<br>
         20ml syrop cukrowy<br>''', unsafe_allow_html=True)
-        # Irish_Coffee.image("")
+        Irish_Coffee.image("CocktailImages/IRISHCOFFEE.jpg")
         Irish_Coffee.write('''Metoda: Shake, warstwy<br>
         Kawę z whiskey przelewy do szklanki z uszkiem. Śmietankę mocno shakujemy z syropem i 2
         kostkami lodu (można dodać sprężynkę z straynera), by była prawie sztywna. Potem wlewamy po
@@ -399,7 +399,7 @@ def main():
         Japanese_Cocktail.write('''40 ml Martel VS<br>
         10ml orgeat<br>
         3d angostury<br>''', unsafe_allow_html=True)
-        # Japanese_Cocktail.image("")
+        Japanese_Cocktail.image("CocktailImages/JAPANESECOCKTAIL.jpg")
         Japanese_Cocktail.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
@@ -407,7 +407,7 @@ def main():
         Lillet_Spritz = st.expander("Lillet Spritz")
         Lillet_Spritz.write('''40 ml Lillet Blanc/ Lillet Rouge<br>
         Tonik Fentimans<br>''', unsafe_allow_html=True)
-        # Lillet_Spritz.image("")
+        Lillet_Spritz.image("CocktailImages/LILLETSPRITZ.webp")
         Lillet_Spritz.write('''Metoda: Build<br>
         :green[Szkło]: Lillet<br>
         :blue[Lód]: Kości<br>
@@ -436,7 +436,7 @@ def main():
         10ml Orgeat<br>
         30ml sok z limonki<br>
         2d absinthe<br>''', unsafe_allow_html=True)
-        # Mai_Tai.image("")
+        Mai_Tai.image("CocktailImages/MAI-TAI.jpg")
         Mai_Tai.write('''Metoda: Shake<br>
         :green[Szkło]: Highball<br>
         :blue[Lód]: Kruszonka<br>
@@ -446,7 +446,7 @@ def main():
         Manhattan.write('''40 ml Maker’s Mark<br>
         20 ml Martini Rubino<br>
         1 dash Angostura<br>''', unsafe_allow_html=True)
-        # Manhattan.image("")
+        Manhattan.image("CocktailImages/MANHATTAN.jpg")
         Manhattan.write('''Metoda: Stir, straight-up<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Maraska do kieliszka, a pomarańczowy zest tylko do aromatu''', unsafe_allow_html=True)
@@ -465,7 +465,7 @@ def main():
         Martini_Negroni.write('''20 ml Beefeater<br>
         20 ml Martini Bitteri<br>
         20 ml Martini Riserva Rubino<br>''', unsafe_allow_html=True)
-        # Martini_Negroni.image("")
+        Martini_Negroni.image("CocktailImages/MARTININEGRONI.jpg")
         Martini_Negroni.write('''Metoda: Stir lub Throwing lub Bulid<br>
         :green[Szkło]: Old fashioned<br>
         :blue[Lód]: Kości<br>
@@ -484,7 +484,7 @@ def main():
         Milano_Torino = st.expander("Milano Torino(Mi-To)")
         Milano_Torino.write('''40 ml Campari<br>
         40 ml Martini Rubino<br>''', unsafe_allow_html=True)
-        # Milano_Torino.image("")
+        Milano_Torino.image("CocktailImages/MILANOTORINO.jpg")
         Milano_Torino.write('''Metoda: Stir<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Pół plasterka pomarańczy''', unsafe_allow_html=True)
@@ -493,7 +493,7 @@ def main():
         Mint_Julep.write('''40ml Maker’s Mark<br>
         5ml syrop cukrowy<br>
         Garść liści mięty<br>''', unsafe_allow_html=True)
-        # Mint_Julep.image("")
+        Mint_Julep.image("CocktailImages/MINTJULEP.jpg")
         Mint_Julep.write('''Metoda: Julep<br>
         :green[Szkło]: Highball<br>
         :blue[Lód]: Kruszonka<br>
@@ -505,7 +505,7 @@ def main():
         15 ml syrop cukrowy<br>
         Garść mięty<br>
         Top woda gazowana<br>''', unsafe_allow_html=True)
-        # Mojito.image("")
+        Mojito.image("CocktailImages/MOJITO.jpg")
         Mojito.write('''Metoda: Build<br>
         :green[Szkło]: Highball Havana<br>
         :blue[Lód]: Kości<br>
@@ -519,7 +519,7 @@ def main():
         20ml syrop cukrowy<br>
         20ml białko<br>
         Top woda gazowana<br>''', unsafe_allow_html=True)
-        # Morning_Glory_Fizz.image("")
+        Morning_Glory_Fizz.image("CocktailImages/MORNINGGLORYFIZZ.jpg")
         Morning_Glory_Fizz.write('''Metoda: Reverse shake<br>
         :green[Szkło]: Highball<br>
         :violet[Garnish]: Plaster limonki''', unsafe_allow_html=True)
@@ -539,7 +539,7 @@ def main():
         Negroni_Sbagliato.write('''20ml Martini Bitter<br>
         20ml Martini Rubino<br>
         Top Prosecco<br>''', unsafe_allow_html=True)
-        # Negroni_Sbagliato.image("")
+        Negroni_Sbagliato.image("CocktailImages/NEGRONISBAGLIATO.jpg")
         Negroni_Sbagliato.write('''Metoda: build, bardzo delikatnie by nie stracić bąbla<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Pół plasterka pomarańczy''', unsafe_allow_html=True)
@@ -560,7 +560,7 @@ def main():
         20 ml białko cukiernicze<br>
         1 dash Angostura<br>
         20 ml Porto (float)<br>''', unsafe_allow_html=True)
-        # newyorksour.image("")
+        newyorksour.image("CocktailImages/NEWYORKSOUR.jpg")
         newyorksour.write('''Metoda: Shake (dry shake) 6 pierwszych składników, fine strain, float z Porto<br>
         :green[Szkło]: Old fashioned<br>
         :blue[Lód]: Kości<br>
@@ -583,7 +583,7 @@ def main():
         5 ml Demerara<br>
         2 dash Angostura<br>
         2 dash Orange bitter<br>''', unsafe_allow_html=True)
-        # oldfashioned.image("")
+        oldfashioned.image("CocktailImages/OLDFASHIONED.jpg")
         oldfashioned.write('''Metoda: Stir, strain on the rocks<br>
         :green[Szkło]: Old fashioned<br>
         :blue[Lód]: Kości<br>
@@ -595,7 +595,7 @@ def main():
         15 ml syrop malina<br>
         20 ml limonka<br>
         10 ml białko<br>''', unsafe_allow_html=True)
-        # orangeclub.image("")
+        orangeclub.image("CocktailImages/ORANGECLUB.jpg")
         orangeclub.write('''Metoda: Shake + fine strain<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Puder''', unsafe_allow_html=True)
@@ -616,7 +616,7 @@ def main():
         20ml Amaro<br>
         20ml Aperitivo<br>
         20ml Sour<br>''', unsafe_allow_html=True)
-        # paperplane.image("")
+        paperplane.image("CocktailImages/PAPERPLANE.jpg")
         paperplane.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
@@ -626,7 +626,7 @@ def main():
         20ml sok z cytryny<br>
         20ml :red[syrop miodowo-imbirowy]<br>
         Top 10ml Ardbeg 10<br>''', unsafe_allow_html=True)
-        # penicillin.image("")
+        penicillin.image("CocktailImages/PENICILLIN.jpg")
         penicillin.write('''Metoda: Shake, top Ardbeg 10<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Plaster imbiru''', unsafe_allow_html=True)
@@ -648,7 +648,7 @@ def main():
         10 ml Syrop cukrowy<br>
         3 dash angostura<br>
         20ml białko<br>''', unsafe_allow_html=True)
-        # piscosour.image("")
+        piscosour.image("CocktailImages/PISCOSOUR.jpg")
         piscosour.write('''Metoda: Dry shake + shake , Fine strain<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: 3 Krople Angostury''', unsafe_allow_html=True)
@@ -659,7 +659,7 @@ def main():
         20 ml Marakuja<br>
         20 ml Syrop waniliowy<br>
         40 ml Prosecco<br>''', unsafe_allow_html=True)
-        # pornstar.image("")
+        pornstar.image("CocktailImages/PORNSTARMARTINI.jpg")
         pornstar.write('''Metoda: Wszystkie składniki oprócz prosecco 
         shakeujemy i przelewamy do szkła, w kieliszku
         obok wlewamy prosecco<br>
@@ -675,7 +675,7 @@ def main():
         20ml Białko<br>
         20ml Half&half<br>
         Top woda gazowana<br>''', unsafe_allow_html=True)
-        # ramos.image("")
+        ramos.image("CocktailImages/RAMOSGINFIZZ.jpg")
         ramos.write('''Metoda: Shake (b. długi)<br>
         :green[Szkło]: Highball<br>
         :violet[Garnish]: Pianka wystająca ponad rant''', unsafe_allow_html=True)
@@ -684,7 +684,7 @@ def main():
         rev_vesper.write('''30ml Lillet Blanc<br>
         10ml Beefeater<br>
         20ml Ostoya<br>''', unsafe_allow_html=True)
-        # rev_vesper.image("")
+        rev_vesper.image("CocktailImages/REVERSEVESPERMARTINI.jpg")
         rev_vesper.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
@@ -705,7 +705,7 @@ def main():
         15 ml Martini Rubino<br>
         15 ml :red[Dolin Dry]<br>
         2d Angostura<br>''', unsafe_allow_html=True)
-        # rosita.image("")
+        rosita.image("CocktailImages/ROSITA.jpg")
         rosita.write('''Metoda: Stir<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
@@ -727,7 +727,7 @@ def main():
         5ml Syrop cukrowy<br>
         3d Peychoud’s bitters<br>
         1d Absynt<br>''', unsafe_allow_html=True)
-        # sazerac.image("")
+        sazerac.image("CocktailImages/SAZERAC.jpg")
         sazerac.write('''Metoda: Stir + aromatyzacja szkła absyntem<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
@@ -736,7 +736,7 @@ def main():
         sidecard.write('''40ml Martel VS<br>
         20ml Cointreau<br>
         10ml sok z cytryny<br>''', unsafe_allow_html=True)
-        # sidecard.image("")
+        sidecard.image("CocktailImages/SIDECARD.jpg")
         sidecard.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Crusta z cukru pudru, zest z cytryny''', unsafe_allow_html=True)
@@ -748,7 +748,7 @@ def main():
         20ml Syrop cukrowy<br>
         20ml Białko<br>
         Top Woda gazowana<br>''', unsafe_allow_html=True)
-        # silverfizz.image("")
+        silverfizz.image("CocktailImages/SILVERGINFIZZ.jpg")
         silverfizz.write('''Metoda: Reverse shake<br>
         :green[Szkło]: Highball<br>
         :violet[Garnish]: Top mięta''', unsafe_allow_html=True)
@@ -758,7 +758,7 @@ def main():
         20 ml Sok z cytryny<br>
         10ml Syrop cukrowy<br>
         Top Woda gazowana<br>''', unsafe_allow_html=True)
-        # tomcollins.image("")
+        tomcollins.image("CocktailImages/TOMCOLLINS.jpg")
         tomcollins.write('''Metoda: Shake<br>
         :green[Szkło]: Mały pokal<br>
         :violet[Garnish]: Plaster pomarańczy i wisienka maraschino''', unsafe_allow_html=True)
@@ -767,7 +767,7 @@ def main():
         tommymargarita.write('''40ml Olmeca Altos Reposado<br>
         20ml Sok z limonki<br>
         10ml Syrop z agawy<br>''', unsafe_allow_html=True)
-        # tommymargarita.image("")
+        tommymargarita.image("CocktailImages/TOMMYSMARGARITA.jpg")
         tommymargarita.write('''Metoda: Shake<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Suszka z limonki<br>''', unsafe_allow_html=True)
@@ -776,7 +776,7 @@ def main():
         torinorickey.write('''60ml Martini rubino<br>
         Pół limonki<br>
         Top soda<br>''', unsafe_allow_html=True)
-        # torinorickey.image("")
+        torinorickey.image("CocktailImages/TORINORICKEY.png")
         torinorickey.write('''Metoda: Build<br>
         :green[Szkło]: Highball<br>
         :violet[Garnish]: Wciśnięta limonka''', unsafe_allow_html=True)
@@ -785,7 +785,7 @@ def main():
         vesper.write('''60ml Beefeater<br>
         20ml Ostoya<br>
         10ml Lillet Blanc<br>''', unsafe_allow_html=True)
-        # vesper.image("")
+        vesper.image("CocktailImages/VESPERDRYMARTINI.jpg")
         vesper.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
@@ -797,7 +797,7 @@ def main():
         5ml :red[Benedictine]<br>
         2d Peychoud’s<br>
         2d Angostura<br>''', unsafe_allow_html=True)
-        # vieux.image("")
+        vieux.image("CocktailImages/VIEUXCARRE.jpg")
         vieux.write('''Metoda: Stir<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
@@ -805,7 +805,7 @@ def main():
         vodkamartini = st.expander("Vodka Martini")
         vodkamartini.write('''60 ml Wyborowa Exquisite<br>
         15 ml Martini Extra Dry<br>''', unsafe_allow_html=True)
-        # vodkamartini.image("")
+        vodkamartini.image("CocktailImages/VODKAMARTINI.jpg")
         vodkamartini.write('''Metoda: Stir<br>
         :green[Szkło] : Coupe glass<br>
         :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
@@ -816,7 +816,7 @@ def main():
         20 ml Białko<br>
         10 ml Syrop cukrowy<br>
         2 dash Angostura<br>''', unsafe_allow_html=True)
-        # vodkasour.image("")
+        vodkasour.image("CocktailImages/WHISKY SOUR1.jpg")
         vodkasour.write('''Metoda: Dry Shake + shake<br>
         :green[Szkło]: Old fashioned<br>
         :blue[Lód]: Kości<br>
@@ -827,7 +827,7 @@ def main():
         Pół Cytryny<br>
         20ml Syrop cukrowy<br>
         Garść mięty<br>''', unsafe_allow_html=True)
-        # whiskysmash.image("")
+        whiskysmash.image("CocktailImages/WHISKYSMASH.png")
         whiskysmash.write('''Metoda: Smash, shake<br>
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Szczyt mięty, plaster cytryny''', unsafe_allow_html=True)
@@ -838,7 +838,7 @@ def main():
         15 ml Syrop cukrowy<br>
         15 ml Białko<br>
         2 dash Angostura<br>''', unsafe_allow_html=True)
-        # whiskysour.image("")
+        whiskysour.image("CocktailImages/WHISKYSOUR2.jpg")
         whiskysour.write('''Metoda: Dry Shake + shake<br>
         :green[Szkło]: Old fashioned<br>
         :blue[Lód]: Kości<br>
@@ -850,7 +850,7 @@ def main():
         20ml Sok z cytryny<br>
         10ml Syrop cukrowy<br>
         15ml Białko<br>''', unsafe_allow_html=True)
-        # whitelady.image("")
+        whitelady.image("CocktailImages/WHITELADY.jpg")
         whitelady.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z cytryny''', unsafe_allow_html=True)
@@ -859,7 +859,7 @@ def main():
         whiterussian.write('''40ml Ostoya<br>
         20ml :red[Kahlua]/Bols Coffee<br>
         Top 20ml half&half<br>''', unsafe_allow_html=True)
-        # whiterussian.image("")
+        whiterussian.image("CocktailImages/WHITERUSSIAN.jpg")
         whiterussian.write('''Metoda: Build; na top delikatnie half&half, by 
         ładnie spływało po kościach<br>
         :green[Szkło]: Old fashioned<br>
@@ -871,7 +871,7 @@ def main():
         20ml Lillet Blanc<br>
         15ml Creme de Cacao<br>
         20ml Sok z cytryny<br>''', unsafe_allow_html=True)
-        # xxcentury.image("")
+        xxcentury.image("CocktailImages/XXCENTURYCOCKTAIL.jpg")
         xxcentury.write('''Metoda: Shake<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z pomarańczy''', unsafe_allow_html=True)
@@ -886,7 +886,7 @@ def main():
         15 ml :red[Don's Mix (sok grejpfrutowy i syrop cynamonowy w stosunku 1:2)]<br>
         5-7 ml :red[Likier anyżowy]/Absynt<br>
         2 dash Angostura<br>''', unsafe_allow_html=True)
-        # zombie.image("")
+        zombie.image("CocktailImages/ZOMBIE.png")
         zombie.write('''Metoda: Shake<br>
         :green[Szkło]: Copa<br>
         :violet[Garnish]: Tiki (na bogato)''', unsafe_allow_html=True)
@@ -1197,6 +1197,35 @@ def main():
         ''', unsafe_allow_html=True)
 
         st.header("Białe wina")
+        df2 = pd.read_csv("biale_wina.csv")
+        st.table(df2)
+
+        chardonnay = st.expander('Aresti Chardonnay')
+        chardonnay.write('''Wytrawne wino o żółtawej barwie z zielonymi refleksami. W nosie ekspresyjny
+         aromat dojrzałych owoców ananasa, gruszek, cytrusów i bananów. W ustach wino bogate, cieliste, 
+         miękkie i aksamitne z posmakiem wanilii i nutą kawy. 90 punktów w Wine Advocate Roberta Parkera. <br> <br>
+        :blue[Sugestie kulinarne]: Drób, zwłaszcza kurczak i indyk''', unsafe_allow_html=True)
+
+        sauvignon = st.expander('Moulin de Gassac Sauvignon')
+        sauvignon.write('''Wino białe, bardzo owocowe i rześkie z czystym aromatem agrestu i towarzyszącą mu nutą 
+        cytrusów i brzoskwiń. W ustach świeże, owocowe, eleganckie.<br> <br>
+        :blue[Sugestie kulinarne]: Sałatki, ryby i desery
+        ''', unsafe_allow_html=True)
+
+        trebbiano = st.expander("Gran Sasso Trebbiano d'Abruzzo")
+        trebbiano.write('''Lekkie, orzeźwiające wino o aromatach żółtych owoców (brzoskwinia i nieszpułka, głóg), z 
+        nutami kwiatu pomarańczy. Delikatnie wytrawne, o średnim ekstrakcie. W ustach rześkie, owocowe, świeże, z 
+        mocnym smakiem cytrusów i jabłek. Łagodne, dobrze zrównoważone. Szczególnie dobrze komponuje się z 
+        lekkimi potrawami.<br> <br>
+        :blue[Sugestie kulinarne]: Aperitif, lekkie dania z ryb, sałatki, owoce morza.
+        ''', unsafe_allow_html=True)
+
+        riesling = st.expander('Klaus Meyer Riesling')
+        riesling.write('''Żywy, wytrawny Riesling. Cytrusy, ananas i jabłka, podkreślone delikatną nutą siana i akcentem
+         krzemienia. W ustach napięte, delikatnie słonawe z wyrazista owocowością i orzeźwiając kwasowością.<br> <br>
+         :blue[Sugestie kulinarne]: Idealne wino do pełnych, obfitych dań.
+         ''', unsafe_allow_html=True)
+
         
 if __name__ == '__main__':
     main()
