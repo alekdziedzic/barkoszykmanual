@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-import os
 import pandas as pd
 st.set_page_config(page_title="Bar Koszyki", page_icon=Image.open("logo.png"))
 
@@ -895,7 +894,7 @@ def main():
     elif submenu == "Manual Alkoholi":
         st.header("Manual Alkoholi")
 
-        aberlour = st.expander("Aberlour")
+        aberlour = st.expander("**Aberlour** _(Whisky, Szkocja, Single malt, Speyside)_")
         aberlour.caption('''Nazwa „Aberlour” wywodzi się z języka gaelickiego i oznacza „ujście szczebiocącego strumienia”.
         W Szkocji jest to miejsce gdzie górski potok Lour spotyka się z rzeką Spey. To właśnie tej
         wyjątkowo miękkiej wodzie Aberlour zawdzięcza swój niepowtarzalny styl. Pewnego mistycyzmu
@@ -988,6 +987,512 @@ def main():
         pieczonych
         jabłek, który ustępuje słodkim migdałom w cukrze.<br>
         **Finish**: gładki i słodki, z nutą prażonych migdałów.''', unsafe_allow_html=True)
+
+        absolut = st.expander("**Absolut** _(Wódka, Szwecja, Zboże Ozime)_")
+        absolut.caption('''Główne składniki Absolut Vodka to woda i zboże ozime. Woda jest czerpana ze studni głębinowej
+        w Åhus, szczelnie chronionej przed wszelkimi zanieczyszczeniami. Pszenicę ozimą wyróżnia od
+        innych upraw to, że jest siana jesienią o tej samej porze, ale zbierana dopiero w następnym roku. Zboże rośnie pod
+        szwedzkim śniegiem, rozwijając twarde ziarna, a zastosowanie nawozów jest zminimalizowane.''')
+        absolut.subheader('Absolut')
+        absolut.image('AlcoholImages/absolut/absolut.jpg')
+        absolut.write('''**:blue[Smak]**: wyrazisty, pełny i wielowymiarowy, a jednocześnie gładki i aksamitny, z wyrazistą nutą
+        ziarna i wyczuwalnym na zakończenie akcentem suszonych owoców.''')
+
+        absolut.subheader('Absolut Pears')
+        absolut.write('''Produkowana wyłącznie na bazie naturalnych składników i w odróżnieniu od
+        innych wódek smakowych w ogóle nie zawiera cukru. Absolut Pears smakuje jak świeże,
+        delikatne, dojrzałe gruszki z długim owocowym posmakiem na zakończenie.''')
+        absolut.image('AlcoholImages/absolut/absolut_pears.jpg')
+
+        absolut.subheader('Absolut Elyx')
+        absolut.write('''Jest ręcznie destylowana w miedzianej kadzi z 1921 roku, obsługiwanej przez
+        wyselekcjonowaną grupę rzemieślników, spadkobierców wiedzy i ekspertyzy przekazanej przez
+        całe pokolenia wytwórców szwedzkiej wódki. Dzięki niezwykłym właściwościom miedzi, z której
+        wykonano naszą kadź, powstaje naturalnie oczyszczona wódka o wysoko cenionej jedwabistej
+        konsystencji i smaku.''')
+        absolut.image('AlcoholImages/absolut/absolut_elyx.jpg')
+        absolut.write('''**:blue[Nos]**: Czysty, bogaty i pełny zapach świeżego chleba z nutą białej czekolady i zboża z delikatnym
+        pikantnym akcentem.<br>
+        **:blue[Paleta]**: Pełna i jedwabista z posmakiem orzechów makadamii, zboża z nutą białej maślanej
+        czekolady i świeżo upieczonego chleba. Lekka nuta świeżych orzechów z odrobiną pikantnych
+        ziół i doskonale wyważony pełny smak.<br>
+        **:blue[Finisz]**: Delikatny pikantny smak ze świeżym orzechowym akcentem i świetnie wyważonym
+        gładkim finiszem.''' , unsafe_allow_html=True)
+
+        absolut.subheader("Absolut Extrakt")
+        absolut.write('''Wyrazisty i przepyszny, łączący w sobie jedyną w swoim rodzaju wódkę
+        Absolut z ciepłym, pikantnym smakiem zielonego kardamonu. Jest on ukoronowaniem
+        szwedzkiej historii, stanowiąc nowoczesne wydanie tradycyjnego szwedzkiego sznapsa.''')
+        absolut.image('AlcoholImages/absolut/absolut-extrakt.png')
+
+        amaretto = st.expander("**Amaretto** _(Likier, Migdały, Włochy)_")
+        amaretto.write('''Ciemnobrązowy włoski likier o gorzkim smaku i zapachu migdałów.
+        Kompozycja zawiera winogrona, migdały orzechy (lub nasion moreli), wanilia, przyprawy i zioła.
+        Tradycyjny obszar produkcji - miasto Saronno, położony w prowincji Lombardii. Nazwa
+        „Amaretto” pochodzi od włoskiego słowa „Amaro”, co tłumaczy się jako „lekko gorzki”.''')
+        amaretto.image('AlcoholImages/amaretto.jpg')
+
+        averna = st.expander("**Amaro Averna** _(Likier, Amaro, Włochy)_")
+        averna.caption('''Averna to włoski likier z rodziny bitterów (gorzkawy, ziołowy likier) pochodzący z Caltanissetty na
+        Sycylii. Nazwa trunku pochodzi od Salvatore Averna, który w 1868 roku zaczął wytwarzać likier o
+        właściwościach terapeutycznych i tonizujących. Jego receptura pochodzi od mnichów z Zakonu
+        Cystersów i została przekazana Salvatore w podziękowaniu za hojne darowizny na rzecz
+        opactwa.''')
+        averna.write('''Averna powstaje z olejków eterycznych cytryny i pomarańczy, granatu, które dodawane są do
+        alkoholu bazowego. Po długotrwałej maceracji dodawany jest karmel.
+        Głęboki rdzawy brąz. Nuty coli, skórki pomarańczowej, lukrecji i wanilii. Słodki z delikatną i
+        subtelną goryczką. Jest kwaśniejsza od Amaro Lucano.''')
+        averna.image('AlcoholImages/averna.jpg')
+
+        lucano = st.expander("**Amaro Lucano** _(Likier, Amaro, Włochy)_")
+        lucano.caption('''tworzony jest według starej tajnej receptury, przekazywanej z pokolenia
+        na pokolenie. Receptura likieru Amaro Lucano po dzisiejszy dzień pozostaje tajemnicą rodziny
+        Vena. Dzięki umiejętnemu mieszaniu ponad 30 rodzajów ziół między innymi aloesu ferox, korzenia
+        arcydzięgla, gorzkiej pomarańczy, bzu czarnego, goryczki, krwawnika piżma, szałwii, piołunu.
+        Likier tworzony jest z dokładnie wybieranych najlepszych ziół.''')
+        lucano.write('''Proces przygotowania dzieli się na siedem etapów: selekcję, infuzję, przetwarzanie, sekret,
+        kontrolę, mieszanie i butelkowanie. Zioła są naturalnie suszone i rozdrabnianie. W procesie
+        produkcji likieru uczestniczy woda, cukier, czysty alkohol i karmel. Kolor mahoniowy. <br>
+        **:blue[Smak]**: Średnia słodycz z ziołową goryczką i nutami cynamonu, lukrecji i karmelu.''', unsafe_allow_html=True)
+        lucano.image('AlcoholImages/lucano.jpg')
+
+        ardbeg = st.expander("**Ardbeg 10** _(Whisky, Szkocja, Single malt, Islay)_")
+        ardbeg.caption('''Ardbeg znajduje się na południowym wybrzeżu Islay. Destylarnia powstała w 1815 chociaż alkohol
+        w tym miejscu destylowano nielegalnie już od ponad 20 lat. Destylarnia często zmieniała
+        właścicieli i miała dużo przerw w produkcji. Z tego powodu była ona whisky bardzo cenioną, ale
+        nie popularną. Prawdziwy renesans nastał dopiero w roku 1997 roku kiedy destylarnię Ardbeg
+        wykupiła Glenmorangie. Rozpoczęto wtedy silną i przede wszystkim skuteczną promocję whisky,
+        która pozwoliła na przywrócienie jej dawnego statusu gwiazdy z Islay. Zatorfienie Ardbeg wynosi
+        około 50 ppm jest to zatem whisky bardzo torfowa. Jej torfowość jest jednak bardziej
+        kontrolowana niż np. w bezpardonowo torfowym Laphroaig. Sekretem destylarni Ardbeg jest
+        także „purifier” (jak okropnym słowem w języku polskim jest „oczyszczalnik!). Łabędzia szyja
+        alembika połączona jest z jego dolną częścią. Oznacza to, że najmniej lotne związki, które dostają
+        się do wyjścia z alembika są zawracane do ponownej destylacji. Nadaje to whisky nieco
+        delikatniejszy profil i tłumaczy bardziej poskromiony charakter torfu.''')
+        ardbeg.image('AlcoholImages/ardbeg.jpg')
+        ardbeg.write('''**:blue[Aromaty]**: W pierwszej chwili torf, który jednak szybko ustępuje miejsca delikatniejszym aromatom. Miód,
+        owoce i jodowe powietrze.<br>
+        **:blue[Smak]**: Mocne uderzenie dymu, który łączy się silnym i przyjemnym finiszem za pośrednictwem wyraźnie
+        wyczuwalnej pieprzności. W zrównoważony sposób przechodzi ona w przyjemny, silnie torfowy
+        finisz, który trawa długo.''', unsafe_allow_html=True)
+
+
+        bacardi = st.expander("**Bacardi** _(Rum, Kuba)_")
+        bacardi.subheader("Bacardi OCHO")
+        bacardi.write('''Dojrzewa przez 8 lat w beczkach dębowych. W jego wyrafinowanym bukiecie odnaleźć można
+        akcenty suszonych śliwek, moreli, gałki muszkatołowej i wanilii.''')
+        bacardi.image('AlcoholImages/bacardi/bacardi_ocho.jpg')
+        bacardi.write('''**:blue[Aromat]**: delikatny z akcentami gruszek, jabłek, Świerzej trawy, tytoniu i ziela angielskiego. <br>
+        **:blue[Smak]**: Słodki, z nutami starej skóry, suszonych śliwek, moreli, syropu klonowego, gaki
+        muszkatołowej, wanilii. <br>
+        **:blue[Finisz]**: długi, z nutami przypraw i dębiny.''', unsafe_allow_html=True)
+
+        bacardi.subheader("Bacardi 10")
+        bacardi.write('''Bacardi Gran Res Diez to rum na bazie melasy, dojrzewany przez 10 lat w mocno wypalanych
+        dębowych beczkach po amerykańskim burbonie. Przed butelkowaniem poddany jest filtracji przez
+        warstwę węgla drzewnego.''')
+        bacardi.image('AlcoholImages/bacardi/bacardi10.jpg')
+        bacardi.write('''**:blue[Aromat]**: wanilia, karmel, owoce, nuta dymu.<br>
+        **:blue[Smak]**: wanilia, dębina, banany, gruszki, karmel.<br>
+        **:blue[Finisz]**: długi z nutami dębiny.''', unsafe_allow_html=True)
+
+        ballantines = st.expander("**Ballantines** _(Whisky, Szkocja, Blended/Single malt)_")
+        ballantines.caption('''Ballantine’s to whisky typu blended, w której skład wchodzi ponad 40 rodzajów szkockich
+         whisky z czterech regionów Szkocji: Speyside, Highlands, Islay oraz Lowlands. Na jej charakter szczególnie 
+         wpływają whisky słodowe powstające w jednej z najstarszych destylarni w regionie Speyside, a mianowicie 
+         Glenburgie nadającej mieszance smak jabłek i gruszek. Miltonduff – kolejna destylarnia uzupełnia Ballantine’s 
+         o nuty kwiatowe, ziołowe oraz dodaje delikatną nutę wanilii. Z kolei malt whisky powstające w destylarni Scapa 
+         nadają jej kremową słodycz.''')
+        ballantines.subheader("Ballantine's Finest")
+        ballantines.write('''Powstaje z 40 różnych whisky. SM wykorzystane w w jego kupażowaniu to: Glenburgie,
+        Miltonduff i Scapa.''')
+        ballantines.image('AlcoholImages/ballantines/ballantines_finest.jpg')
+        ballantines.write('''**:blue[Nos]** – przyjemny, słodki, gruszkowy, zbożowy<br>
+        **:blue[Smak]** – oleista, słodka, zbożowa, bez zbędnego alkoholu<br>
+        **:blue[Finisz]** – zbożowa, słodkawa, czekoladowa, z mniej alkoholowym, ale bardzo gorzkim finiszem,
+        który w dobrym humorze mógłbym nazwać czekoladowym.''', unsafe_allow_html=True)
+
+        ballantines.subheader("Ballantine’s 12")
+        ballantines.write('''Starszy przedstawiciel rodziny, którego kompozycja zawiera ponad czterdzieści składników, przy
+        czym każdy dojrzewa w beczkach z białego amerykańskiego dębu przez okres minimum 12 lat. ''')
+        ballantines.image('AlcoholImages/ballantines/ballantines12.jpg')
+        ballantines.write('''**:blue[Aromat]**: owocowo-floralny, miód, wanilia, płatki zbożowe, jabłka, winogrona, gruszki, mieszanka
+        orzechowa, ślady marcepanu i dębu.<br>
+        **:blue[Smak]**: łagodny, orzeszki prażone w miodzie, wanilia, toffi, mleczna czekolada, cappuccino,
+        agrest, jabłka, dąb i ulotna dymna nutka.<br>
+        **:blue[Finisz]**: średnio długi, delikatny, z nutami miodu, wanilii, skórki pomarańczowej, orzechów
+        włoskich, dębu i śladem torfu.''', unsafe_allow_html=True)
+
+        ballantines.subheader("Ballantine’s 17")
+        ballantines.write('''Szkocka whisky, złożona z destylatów słodowych i zbożowych o minimum 17-letniej maturacji''')
+        ballantines.image('AlcoholImages/ballantines/ballantines17.jpg')
+        ballantines.write(''' **:blue[Aromat]**: delikatnie dymny, miód, karmel, wanilia, grzanka z masłem, gruszki, rodzynki, dąb<br>
+         **:blue[Smak]**: wanilia, toffi, miód, mleczna czekolada, karmel, pieczone jabłka i gruszki, cynamon, dąbi
+        ulotna nutka dymu.<br>
+         **:blue[Finisz]**: dość długi, z nutami miodu, walilii, suszonych ziół, odrobiną siana i tytoniu, dębu w
+        mniejszym stopniu torfu.''', unsafe_allow_html=True)
+
+        ballantines.subheader("Ballantine’s Glenburgie")
+        ballantines.write('''Single malt starzony przez 15 lat w beczkach z białego dębu amerykańskiego.''')
+        ballantines.image('AlcoholImages/ballantines/ballantines15.jpg')
+        ballantines.write('''**:blue[Aromat]**: przyjemnie zbalansowany, jabłka, gruszki, śliwki, wanilia, miód, marcepan, landryny,
+        mleczne krówki i odrobina skórki pomarańczowej.<br>
+        **:blue[Smak]**: słodki, owocowy, pomarańcze, melon, jabłka, gruszka z masłem, miód, krem waniliowy,
+        biała czekolada.<br>
+        **:blue[Finisz]**: dość długi, słodki, wanilia, toffi, dżem pomarańczowy i jabłka.''', unsafe_allow_html=True)
+
+        ballantines.subheader("Ballantine's The Miltonduff")
+        ballantines.write('''Miltonduff jest sercem każdego ballantine’s. Single malt starzony przez 15 lat w beczkach z białego dębu amerykańskiego.''')
+        ballantines.image('AlcoholImages/ballantines/ballantines_milton.jpg')
+        ballantines.write('''**:blue[Aromat]**: jesienne liście, siano, bukiet suchych kwiatów, ślad lukrecji i cynamonu, szczypta pieprzu,
+        suszone jabłka i lekka nutka migdałowa.<br>
+        **:blue[Smak]**: łagodny, delikatne nuty floralne, trochę siana, szarlotka poprószona cynamonem, trawa
+        cytrynowa, goździki i ślad lukrecji.<br>
+        **:blue[Finisz]**: dość długi i pikantny, z nutą białego pieprzu, siana, trawy cytrynowej i suszonych jabłek.''', unsafe_allow_html=True)
+
+        balvenie = st.expander("**Balvenie 14YO Caribbean Cask** _(Whisky, Szkocja, Single malt, Speyside)_")
+        balvenie.caption('''Balvenie Distillery – destylarnia single malt whisky, znajdująca się w mieście Dufftown w Szkocji,
+        w rejonie Speyside. Na początku 1892 roku rozpoczęto pracę nad przerobieniem XVIII wiecznej
+        posiadłości (Balvenie New House) na destylarnię. Budynek ukończono w piętnaście miesięcy i 1
+        maja 1893 w gorzelni Balvenie odbyła się pierwsza destylacja. Założycielem i długoletnim
+        managerem był William Grant. Dziś destylarnia jest jednym z czołowych producentów szkockiej,
+        znanym na całym świecie.''')
+        balvenie.write('''Balvenie 14YO Caribbean Cask dojrzewa w tradycyjnych dębowych beczkach, następnie
+        przelewana jest do beczek po rumie z Karaibów, gdzie nabiera dodatkowych nut zapachowych i
+        smakowych.''')
+        balvenie.image('AlcoholImages/Balvenie-14yo-Caribbean.jpg')
+        balvenie.write('''**:blue[Zapach]**: Bogaty aromat owoców tropikalnych z dodatkiem kremowego toffi.<br>
+        **:blue[Smak]**: Wanilia, nuty jabłek, mango oraz pomarańczy w tle.<br>
+        **:blue[Finisz]**: Długi, kremowy i waniliowy.''', unsafe_allow_html=True)
+
+        banks = st.expander("**Bank’s 5 blend** _(Rum, Blended)_")
+        banks.write('''Rum Banks 5 to mieszanka 21 rumów, pochodzących z 6 różnych destylarni zlokalizowanych na 5
+        wyspach - Trynidad, Jamajka, Gujana, Barbados i Jawa. Dojrzewały one od 3 do 12 lat w
+        dębowych beczkach. W jego przyprawowo-owocowym bukiecie odnajdziemy także akcenty
+        melasy, ziołowe, trawiaste, pieprzu, dębiny, zielonej herbaty, cytrusów.''')
+        banks.image("AlcoholImages/banksblend.jpg")
+
+        beefeater = st.expander("**Beefeater** _(Gin, Anglia, London dry)_")
+        beefeater.subheader("Beefeater")
+        beefeater.write('''Wytwarzany jest ze spirytusu zbożowego z dodatkiem 9 ziół i roślin: skórki z pomarańczy Sewilla,
+        skórki z cytryny, jałowca, nasion kolendry, korzenia arcydzięgla, lukrecji, nasion arcydzięgla,
+        korzenia irysa i migdałów. Początkowo składniki macerowane są w spirytusie, w miedzianych
+        alembikach, następnie zawartość jest podgrzewana i następuje proces destylacji.''')
+        beefeater.image('AlcoholImages/beefeater/beefeater.jpg')
+        beefeater.write('''**:blue[Aromat]**: intensywny z nutami jałowca, cytrusów, lukrecji i arcydzięgla.<br>
+        **:blue[Smak]**: wyraźny i mocny z nutami jałowca, skórki cytrusowej, pomarańczy i arcydzięgla.<br>
+        **:blue[Finisz]**: średnio długi z wyraźnym akcentem jałowca''', unsafe_allow_html=True)
+
+        beefeater.subheader("Beefeater 24")
+        beefeater.write('''Wytwarzany jest ze spirytusu zbożowego z dodatkiem 12 ziół i roślin: japońskiej herbaty Sencha,
+        chińskiej zielonej herbaty, skórki grejpfrutów, skórki z pomarańczy Sewilla, skórki z cytryny,
+        jałowca, nasion kolendry, korzenia arcydzięgla, lukrecji, nasion arcydzięgla, korzenia irysa i
+        migdałów. Gin nosi nazwę „24”, ponieważ wszystkie składniki, przed destylacją, są macerowane
+        przez 24 godziny w spirytusie.''')
+        beefeater.image("AlcoholImages/beefeater/beefeater24.jpg")
+        beefeater.write(''' **:blue[Aromat]**: bogaty z nutami jałowca, kolendry, arcydzięgla, skórki cytrusowej, irysa, migdałów i
+        azjatyckich herbat.<br>
+         **:blue[Smak]**: intensywny z przewagą jałowca i nutami lukrecji, arcydzięgla, cytrusów, kolendry i
+        pikantnych przypraw.<br>
+         **:blue[Finisz]**: długi i wytrawny z posmakiem arcydzięgla, jałowca i cytrusów.''', unsafe_allow_html=True)
+
+        bumbu = st.expander("**Bumbu** _(Rum/Spirit drink, Barbados/Panama)_")
+        bumbu.subheader("Bumbu")
+        bumbu.caption('''Bumbu Rum to doskonały rum rzemieślniczy butelkowany na Barbadosie, w skład którego
+        wchodzą destylaty pochodzące z ośmiu różnych krajów : Barbadosu, Belize, Brazylii, Kostaryki,
+        Dominikany, Salwadoru, Gujany i Hondurasu.
+        Cała mieszanka dojrzewa przez okres 15 lat w beczkach używanych wcześniej do
+        maturacji Bourbonu z Kentucky.
+        Wyjątkowo czysta woda użyta do produkcji tego doskonałego trunku, oraz minerały zawarte w
+        trzcinie cukrowej znacznie zwiększają jakość rumu i wpływają znacząco na paletę aromatyczno –
+        smakową.''')
+        bumbu.write('''Użyta trzcina cukrowa z Barbadosu zapewnia miękką i słodką teksturę oraz nuty wanilii i
+        banana. Dzięki dodatkom naturalnych przypraw powstaje doskonały profil smakowy, który spełnia
+        wymagania największych koneserów owego trunku.
+        Mocno wyczuwalne są nuty banana, karmelu, cynamonu, orzechów, dębu i wanilii.''')
+        bumbu.image('AlcoholImages/bumbu/bumbu-rum-the-original.jpg')
+
+        bumbu.subheader('Bumbu XO')
+        bumbu.caption('''Rum Bumbu XO produkowany jest w działającej od 120 lat panamskiej destylarni. Lokalnie
+        zbierana trzcina cukrowa przetwarzana jest na melasę, która z kolei destylowana jest czystą wodą
+        źródlaną. Wyprodukowany trunek dojrzewa potem 18 lat w zrobionych z białego dębu beczkach
+        po bourbonie, a finiszowany jest przez krótki okres czasu w importowanych z Andaluzji beczkach
+        po sherry – również wykonanych z białego dębu.''')
+        bumbu.write('''Długi okres dojrzewania nadaje rumowi zapach, któremu trudno się oprzeć: charakterystyczne
+        aromaty wanilii, palonego dębu oraz toffee. Smak natomiast zaskakuje prawdziwie egzotycznymi
+        karaibskimi niuansami: wyczuwalne nuty kawy, przypraw i skórki pomarańczy.''')
+        bumbu.image("AlcoholImages/bumbu/bumbu_xo.png")
+
+        campari = st.expander("**Campari** _(Likier, Bitter, Włochy)_")
+        campari.write('''Niezmienna do dziś, tajna receptura stworzona przez Gaspara Campari w 1860 roku z 60 ziół i
+        innych botanikalsów.
+        Rubinowo-czerwony kolor. Jasna gorzka pomarańcza zaokrąglona lekkimi nutami kwiatowymi i
+        ziołową lesistością.''')
+        campari.image("AlcoholImages/campari.jpg")
+
+        capel = st.expander("**Capel Pisco** _(Pisco, Czile)_")
+        capel.write('''Pisco jest destylowane z winogron gatunku Alexandria Muscatel. produkowany w miedzianych
+        alembikach i butelkowany bez leżakowania jako owoc jednokrotnej destylacji. Pisco produkowane
+        jest w tej chwili w Chile i Peru. Oba kraje toczą zacięty spór o pochodzenie tego alkoholu.
+        Na nosie pisco jest świeże, lotne, winogronowe i cytrusowe, a na języku rozgrzewające, oleiste,
+        pieprzne no i oczywiście mocno rozgrzewające''')
+        capel.image('AlcoholImages/capel.jpg')
+
+        chambord = st.expander("**Chambord** _(Likier, Francja)_")
+        chambord.write('''Królewski likier na bazie koniaku z dodatkiem malin, jeżyn, miodu i wanilii, powstały ponoć w
+        Dolinie Loary pod koniec XVII wieku.
+        Dominują w nim słodko-kwaśne czerwone owoce (maliny, poziomki, porzeczki) oraz naturalnie
+        skoncentrowane owoce leśne (zwłaszcza jeżyny), delikatnie żywiczne. Wyraźnie wyczuwalny jest
+        miód, w tle nuty koniaku, wanilii i dębu.''')
+        chambord.image('AlcoholImages/chambord.jpg')
+
+        chat = st.expander("**Chartreuse** _(Likier, Francja)_")
+        chat.subheader("Chartreuse Verte")
+        chat.write('''Chartreuse to francuski likier 55% wytwarzany przez kartuskich mnichów od roku 1605. Składa
+        się z destylowanego alkoholu (na bazie wina) leżakującego w dębowych beczkach ze 130
+        ekstraktami ziołowymi a jego naturalnie zielony kolor pochodzi z chlorofilu.''')
+        chat.image('AlcoholImages/chartreuse/verte.jpg')
+        chat.subheader("Chartreuse Jaune")
+        chat.write('''Francuski likier 40% wytwarzany przez kartuskich mnichów od roku 1605. Składa się z
+        destylowanego alkoholu (na bazie wina) leżakującego w dębowych beczkach ze 130 ekstraktami
+        ziołowymi. Jaśniejszy, żółty kolor wynika z użycia większej ilości miodu i szafranu. Smak bardziej
+        miodowo-kwiatowy od verte.''')
+        chat.image('AlcoholImages/chartreuse/jaune.png')
+
+        chivas = st.expander("**Chivas** _(Whisky, Szkocja, Blended)_")
+        chivas.subheader("Chivas regal 12")
+        chivas.write('''Do jej wytworzenia wykorzystuje się 35 destylatów z różnych regionów Szkocji. Głównym
+        składnikiem są destylaty z gorzelni Strathisla z regionu Speyside.''')
+        chivas.image('AlcoholImages/chivas/chivas12.jpg')
+        chivas.write(''' **:blue[Aromat]**: kremowy i maślany z nutami wanilii, anyżu, cytryn, toffi, banana, wiór dębowych i czarnej
+        porzeczki.<br>
+         **:blue[Smak]**: bogaty i kremowy z nutami banana, słodu jęczmiennego, ziela angielskiego, orzech
+        włoskiego i karmelu.<br>
+         **:blue[Finisz]**: lekki z nutami przypraw i słodkiego zboża.''', unsafe_allow_html=True)
+
+        chivas.subheader("Chivas regal extra")
+        chivas.write('''Kolekcja mistrza Chivasa Colina Scotta, który tym razem oparł formułę na komponentach
+        starzonych w beczkach po sherry Oloroso przez 10 lat.''')
+        chivas.image('AlcoholImages/chivas/chivas13.jpg')
+        chivas.write(''' **:blue[Aromat]**: wyraźne nuty sherry, śliwki, pieczone jabłka, mleczna czekolada, karmel, nuty
+        cynamonowe i orzechowe.<br>
+         **:blue[Smak]**: miękki, karmel, marcepan, toffi,, cynamon, kandyzowany imbir i lekka goryczka dębu.<br>
+         **:blue[Finisz]**: średnio długi, łagodny, z nutami kakao, karmelu, suszonych śliwek i dębowych tanin.''', unsafe_allow_html=True)
+
+        chivas.subheader("Chivas Regal Mizunara")
+        chivas.write('''Podstawą jest Chivas 12 z którego część destylatów finiszowana jest w beczkach z dębu
+        japońskiego mizunara. Dąb mizunara jest porowaty, rośnie bardzo wolno, stąd też jest bardzo
+        drogi i rzadko wykorzystywany w świecie whisky. Beczki są dodatkowo nacinane by zwiększyć
+        oddziaływanie tanin beczki.''')
+        chivas.image('AlcoholImages/chivas/chivas_mizunara.jpg')
+        chivas.write('''**:blue[Aromat]**: słodki i owocowy, morele, mandarynki, kokos, miód, wanilia, orzechy włoskie, ślad ziół i
+        tytoniu i lekka woń kwiatów jabłoni.<br>
+        **:blue[Smak]**: owocowy z nutą pikantną, wanilia, orzeszki prażone w miodzie, morele, banany, wiórki
+        kokosowe, kandyzowany imbir, szczypta pieprzu, cynamonu i lukrecji.<br>
+        **:blue[Finisz]**: średnio długi, z nutami karmelu, toffi, wanilii, pieprzu i dębowych tanin.''', unsafe_allow_html=True)
+
+        chivas.subheader("Chivas regal XV")
+        chivas.write('''Starzona przez nie mniej niż 15 lat finiszowana w beczkach po koniaku pochodzących z dystryktu
+        Grande Champagne.''')
+        chivas.image('AlcoholImages/chivas/chivas15.jpg')
+        chivas.write('''**:blue[Aromat]**: bogaty i słodki, silne tony duszonych czerwonych jabłek, domowy dżem pomarańczowy,
+        miód, cynamon i soczyste sułtanki (rodzynki).<br>
+        **:blue[Smak]**: nieprawdopodobnie łagodny, owocowy, gotowane gruszki, mleczne krówki i karmelowe
+        toffi.<br>
+        **:blue[Finisz]**: harmonijnie zbalansowany z nutami wanilii.''', unsafe_allow_html=True)
+
+        chivas.subheader("Chivas regal 18")
+        chivas.write('''18 jest dziełem Colina Scotta mistrza kupażu Chivasa.''')
+        chivas.image('AlcoholImages/chivas/chivas18.jpg')
+        chivas.write('''**:blue[Aromat]**: bogaty, miód, toffi, mleczna czekolada, pomarańcze, banany, czereśnie, rodzynki,
+        prażone orzeszki, nuty cedru i dębu.<br>
+        **:blue[Smak]**: łagodny, owocowy, karmel, wanilia, miód, mleczne krówki, rodzynki, ananas, odrobina
+        kakao i odległa nutka dymna.<br>
+        **:blue[Finisz]**: dość długi i kojący, z nutami słodkich suszonych owoców, mlecznej czekolady, miodu i
+        odrobina dymu.''', unsafe_allow_html=True)
+
+        chivas.subheader("Chivas regal 25")
+        chivas.write('''Ekskluzywna kompozycja najbardziej wyszukanych szkockich whisky, z których najmłodsze
+        leżakowały co najmniej 25 lat. Chivas Regal 25yo została wprowadzona na rynek w 1909 r.''')
+        chivas.image('AlcoholImages/chivas/chivas25.jpg')
+        chivas.write(''' **:blue[Aromat]**: bogaty, owocowy, czereśnie, truskawki, brzoskwinie, rodzynki, toffi, krem waniliowy,
+        cynamon, trawa cytrynowa, ślad dębu.<br>
+         **:blue[Smak]**: miękki, grzanka z masłem, wanilia, toffi, dżem pomarańczowy, ananasy, kandyzowany
+        imbir, biały pieprz, odrobina anyżu i przyjemna goryczka dębu.<br>
+         **:blue[Finisz]**: dość długi, z nutami pomarańczy, bananów, mlecznej czekolady, wanilii, pieprzu,
+        mieszanki ziołowych przypraw i dębu''', unsafe_allow_html=True)
+
+        chivas.subheader("Chivas regal ULTIS")
+        chivas.write('''Formuła whisky wymienia pięć single maltów symbolizujących pięciu mistrzów kupażu Chivas
+        Regal. Charles Howard, Charles Julian, Allan Baile, Jimmy Lang i obecny kustosz Colin Scott.
+        Większość destylatów pochodzi z beczek po burbonie pierwszego napełnienia.''')
+        chivas.image('AlcoholImages/chivas/chivas_ultis.jpg')
+        chivas.write('''**:violet[Tormore]** wniósł bogate nuty pomarańczowe i cytrusowe<br>
+        **:violet[Longmorn]** dołożył wanilię i toffi oraz lekko kremową strukturę<br>
+        **:violet[Strathisla]**, serce Chivasa, to zniewalające tony slodowe i owocowe oraz subtelna słodycz<br>
+        **:violet[Allt A’Bhainne]** dostarczy delikatnej pikanternii i tonów słodowych, które nadają blędowi
+        subtelności i balansu<br>
+        **:violet[Braeval]** dodał whisky świeżości, nut floralnych, miodowych i skórzanych czyniąc jej paletę
+        niezwykle harmonijną i kompleksową''', unsafe_allow_html=True)
+
+        coin = st.expander("**Cointreau** _(Likier, Francja)_")
+        coin.subheader("Cointreau")
+        coin.write('''Przeźroczysty likier pomarańczowy, charakteryzuje się łagodnym i
+        wyrazistym smakiem słodko-gorzkich skórek pomarańczy i koniaku, unikatową cechą jest reakcja
+        na chłód - w temperaturze pokojowej jest krystalicznie przezroczysty, po oziębieniu zaś lub
+        dodaniu lodu pojawiają się w nim pięknie opalizujące chmurki.''')
+        coin.image('AlcoholImages/cointreau/cointreau.jpg')
+
+        coin.subheader("Cointreau NOIR")
+        coin.write('''Połączenie Cointreau oraz koniaku Remy Martin. Uwodzi on swoją
+        świeżością, aromatem pomarańczy z aksamitnie gładką nutą koniaku.
+        Master Distiller wzbogacił oryginalną recepturę dodając do maceracji odrobinę orzechów i
+        migdałów, co przynosi jeszcze bardziej wyrafinowane aromaty i smaki. Odrobina pikanterii,
+        zaokrąglona z nutami wanilii, miodu, orzechów i migdałów''')
+        coin.image('AlcoholImages/cointreau/cointreau-noir.jpg')
+
+        dewars = st.expander("**Dewar’s 15YO** _(Whisky, Szkocja, Blended, Highland)_")
+        dewars.write('''Kreacja mistrzyni kupażu Stephanie Mcleod, której formuła wymienia około 40 whisky starzonych
+        niemal wyłącznie w beczkach po burbonie i po sherry.''')
+        dewars.image('AlcoholImages/dewars15.jpg')
+        dewars.write('''**:blue[Aromat]**: łagodny z subtelną nutą sherry, miód, karmel, jabłka, śliwki, wiórki kokosowe,
+        kandyzowana skórka cytrynowa i odległy ślad dymu.<br>
+        **:blue[Smak]**: łagodny i słodki, miód, wanilia, mleczne krówki, pomarańcze, morele, szczypta białego
+        pieprzu i subtelna goryczka dębu.<br>
+        **:blue[Finisz]**: średnio długi, z nutami wanilii, dębu i cytrusów.''', unsafe_allow_html=True)
+
+        dictator = st.expander("**Dictator/Colombian** _(Rum/Gin, Kolumbia)_")
+        dictator.caption('''Markę stworzył Severo Arango y Ferro, który pojawił się w mieście Cartagena de Indias w obecnej
+        Kolumbii. Severo nie był osobą zbyt lubianą, bo jego zadaniem na ziemiach kolonialnych Hiszpanii
+        w Ameryce Południowej było ściąganie podatków dla Królestwa Hiszpańskiego. Bohater tego
+        krótkiego akapitu szybko otrzymał od miejscowej ludności przydomek Dictador – specjalnie
+        używamy nazwy marki, aby ten fragment wskazywał skąd jej pochodzenie.
+        W 1913 roku, niemal 180 lat po tym, jak narodził się mit Dictadora, powstała destylarnia
+        Colombiana. Za receptury odpowiadał Don Julio Arango y Parra, który spędził lata w
+        odkopywaniu szczątek informacji związanych z produkcją rumu. Obecnie za produkcję
+        odpowiada wnuk Don Julio, Master Blender Hernan Parra, który kontynuuje rodzinną tradycję.
+        Za produkcję butelek, do których rozlewany jest Dictador odpowiedzialni są Japończycy. Sam
+        Dictador dostępny jest w kilkunastu edycjach, m.in. popularnych 12 i 20-letnich. Marka
+        produkuje limitowane edycje rumów, w tym XO Perpetual, XO Insolent, czy serię 2 Masters, w
+        której znajduje się sześć różnych edycji rumu. Cały koncept to unikatowa kolekcja rumów
+        podkręcanych do granic możliwości przez dwóch master destilerów. Każdy z trunków
+        dojrzewał przez blisko 40 lat, ze specjalnie przygotowaną recepturą. Za mieszanie rumów
+        odpowiedzialni są artyści w swoim fachu, w tym specjaliści od win, sherry czy whisky, bourbonie,
+        a także nawet szampanie.''')
+
+        dictator.subheader("Dictador 12yo")
+        dictator.write('''Powstaje z fermentacji świeżego cukru trzcinowego i miodu, destylowanego częściowo w
+        miedzianym alembiku a częściowo w stalowej kolumnie, aby osiągnąć rum midium. Podlega
+        starzeniu w dębowych używanych beczkach z wykorzystaniem metody solera. 12yo to rum o
+        bursztynowym zabarwieniu. W smaku jest bardzo miękki i okrągły, z posmakiem karmelu, kakao,
+        miodu i delikatnej kawy. Aromat delikatny, miodowy, wanilii oraz palonej kawy.''')
+        dictator.image('AlcoholImages/dictator/dictator12.jpg')
+
+        dictator.subheader("Dictador 20yo")
+        dictator.write('''Rum Dictador 20 YO powstaje z fermentacji dziewiczego miodu z trzciny cukrowej. Destylacja
+        rumu odbywa się częściowo w miedzianych alembikach, a częściowo w stalowych kolumnach
+        destylacyjnych. 20yo to rum o intensywnym ciemnym kolorze bursztynu. W ustach jest bardzo
+        miękki i okrągły, z posmakiem karmelu, wanilii, kakao oraz miodu. Aromat delikatny, karmelowy,
+        wanilii, miodu, toffi oraz palonej kawy.''')
+        dictator.image('AlcoholImages/dictator/dictator20.jpg')
+
+        dictator.subheader("Dictador XO Perpetual")
+        dictator.write('''Dojrzewa w starannie wyselekcjonowanych dębowych beczkach po burbonie, przy zastosowaniu
+        tradycyjnej metody Solera. Skomponowany jest z wyjątkowych destylatów z poszczególnych
+        roczników. Rum posiada szlachetny, mahoniowy kolor. W smaku wyczuwalna jest słodycz kawy i
+        ciemnej czekolady. Aromat palonego miodu, kawy, toffi oraz ciemnej czekolady, dojrzały dąb.''')
+        dictator.image('AlcoholImages/dictator/dictatorxo.jpg')
+
+        dictator.subheader("Colombian Ortodoxy")
+        dictator.write('''Gin produkowany jest na bazie spirytusu trzciny cukrowej z dodatkiem jagód jałowca, ziół,
+        korzeni, przypraw, roślin i cytrusów.''')
+        dictator.image('AlcoholImages/dictator/colombian_ortodoxy.jpg')
+        dictator.write('''**:blue[Aromat]**: wyważony ze słodko-kwaśnymi tonami i nutami świeżych ziół, korzeni, jałowca,
+        arcydzięgla, cynamonu i imbiru.<br>
+        **:blue[Smak]**: gładki i przyjemny z akcentami cytrusów, pieprzu, jałowca, ziół, korzeni, przypraw.<br>
+        **:blue[Finisz]**: długi i przyjemny z nutami przypraw i cytrusów.''', unsafe_allow_html=True)
+
+        dram = st.expander("**Drambuie** _(Likier, Szkocja)_")
+        dram.caption('''Nazwa Drambuie pochodzi od szkocko gaelickiego zwrotu _"an dram buidheach"_, oznaczającego napój, 
+        który zadowala i została zastrzeżona w 1892''')
+        dram.write('''Jego bazę stanowi single malt whisky (15-17 letnia), miód i zioła ze szkockich wrzosowisk. Smak i
+        zapach whisky słodowej i miodu w połączeniu z aromatem ziół.''')
+        dram.image('AlcoholImages/drambuie.jpg')
+
+        glen = st.expander("**Glenlivet** _(Whisky, Szkocja, Single malt, Speyside)_")
+        glen.caption('''Faktem jest, że to jedna z najstarszych destylarni w Szkocji. W 1824 roku właściciel destylarni
+        jako pierwszy zdobył licencję na legalną produkcję whisky. Gorzelnia leży w dolinie rzeki Livet,
+        w Speyside, królestwie delikatnych whisky, a jej flagowy produkt to Glenlivet 12yo.''')
+        glen.subheader("Glenlivet 12")
+        glen.write('''Starzona jest w beczkach po burbonie i finiszowana w beczkach wykonanych z francuskiego dębu. W 2015
+        roku, z powodu braku zapasów magazynowych, został wycofany z rynku europejskiego (ciągle był
+        dostępny w Stanach) i zastąpiony wersją Founder’s Reserve. Powrót jesienią 2018 roku.''')
+        glen.image("AlcoholImages/glenlivet/glenlivet12.jpg")
+        glen.write(''' **:blue[Aromat]**: łagodny, owocowy, jabłka, brzoskwinie, śliwki, wanilia, miód i dąb.<br>
+         **:blue[Smak]**: przyjemnie zbalansowany, owocowy, jabłka, brzoskwinie, suszone śliwki, krem waniliowy,
+        ślady rodzynek i orzechów włoskich oraz delikatne nuty dębu.<br>
+         **:blue[Finisz]**: długi, owocowy, słodka mieszanka suszonych owoców, orzechy laskowe i dąb.''', unsafe_allow_html=True)
+
+        glen.subheader("Glenlivet Founder’s Reserve")
+        glen.write('''Destylaty wykorzystywane w tej edycji pochodziły z beczek ponownego napełnienia oraz
+        świeżych beczek po burbonie. Została ona wypuszczona ze względu na braki magazynowe 12yo.
+        Butelkowana jest bez oznaczenia wiekowego.''')
+        glen.image("AlcoholImages/glenlivet/glenlivet_founders_reserve.jpg")
+        glen.write('''**:blue[Aromat]**: świeży, lekko orzechowy, zielone jabłka, pomarańcze, wanilia, miód, dębowe wióry, ślady
+        wiórków kokosowych i anyżku.<br>
+        **:blue[Smak]**: łagodny i słodki, pieczone jabłka i śliwki, wanilia, toffi, bułka maślana, mleczna czekolada,
+        szczypta cynamonu i białego pieprzu.<br>
+        **:blue[Finisz]**: niezbyt długi, łagodny, początkowo owocowy, wkrótce przechodzący w wytrawny,
+        dębowo-korzenny.''', unsafe_allow_html=True)
+
+        glen.subheader("Glenlivet 15")
+        glen.write('''12-latka zawierała whisky starzoną w beczkach po burbonie i finiszowaną w beczkach
+        wykonanych z francuskiego dębu, to w przypadku 15 jedynie część (ok. 35%) destylatów finiszuje
+        we wspomnianych beczkach. Odmiana dębu limousin pochodzi z okręgu Dordogne i jest
+        powszechnie wykorzystywana do maturacji koniaków.''')
+        glen.image("AlcoholImages/glenlivet/glenlivet15.png")
+        glen.write(''' **:blue[Aromat]**: bogaty, kremowy, wanilia, karmel, zielone winogrona, jabłka, grapefruity, ślady pieprzu i
+        cynamonu, żywicy sosnowej i cedrowej deszczułki.<br>
+         **:blue[Smak]**: łagodny, owocowy, jabłka, gruszki, wanilia, crème brûlée, orzechy laskowe, szczypta gałki
+        muszkatołowej i nuty dębowe w tle.<br>
+         **:blue[Finisz]**: długi, dębowo-korzenny z wyczuwalnymi nutami orzechowymi.''', unsafe_allow_html=True)
+
+        glen.subheader("Glenlivet 18")
+        glen.write('''Około 155 destylatów pochodzi ze świeżych beczek po sherry Oloroso, pozostałe z beczek po
+        burbonie oraz beczek wielokrotnego napełnienia. 18 to perfekcyjny glenlivet w którym tony
+        owocowe pozostają w cudownej harmonii z korzennymi tonami i goryczką dębu.''')
+        glen.image("AlcoholImages/glenlivet/glenlivet18.jpg")
+        glen.write('''**:blue[Aromat]**: bogaty i złożony z delikatną nutą sherry, kwiat jabłoni, wanilia, toffi, wiśnie, suszone
+        śliwki, skórka pomarańczowa, gorzka czekolada, dąb i ślad cynamonu.<br>
+        **:blue[Smak]**: znakomicie zbalansowany, pomarańcze, pieczone jabłka, crème brûlée,, toffi, migdały,
+        cynamon, gałka muszkatołowa, dąb ślady sherry i ziół.<br>
+        **:blue[Finisz]**: niezwykle długi, cudowna harmonia słodyczy, dębu i tonów korzennych.''', unsafe_allow_html=True)
+
+        glen.subheader("Glenlivet 21")
+        glen.write('''Whisky pochodzi z kilku rodzaju beczek, od beczek po burbonie pierwszego i ponownego
+        napełnienia po różne typy beczek po sherry (butt, hogshead czy puncheon), również pierwszego i
+        ponownego napełnienia. Produkowana ona jest w małych partiach.''')
+        glen.image("AlcoholImages/glenlivet/glenlivet21.jpg")
+        glen.write('''**:blue[Aromat]**: bogaty, silne tony sherry, mleczna czekolada, prażone migdały, rodzynki, suszone śliwki,
+        kawa.<br>
+        **:blue[Smak]**: złożony i znakomicie zbalansowany, pieczone jabłka i śliwki, ciemne winogrona, truskawki,
+        migdały prażone w miodzie, cynamon, dąb i bardzo ulotna nuta dymu.<br>
+        **:blue[Finisz]**: długi i bogaty, pełna harmonia wszystkich elementów smakowych.''', unsafe_allow_html=True)
+
+        glen.subheader("Glenlivet 25")
+        glen.write('''Wykorzystując jedne z najrzadszych whisky, z których wszystkie były leżakowane przez co
+        najmniej 25 lat, jest to whisky produkowana seryjnie, finiszowana beczkami po sherry. Zespół
+        ekspertów indywidualnie wybiera każdą beczkę i monitoruje proces finiszowania whisky, aby
+        upewnić się, że drewno nasączone Oloroso dodaje subtelnych tonów sherry.''')
+        glen.image("AlcoholImages/glenlivet/glenlivet25.jpg")
+        glen.write('''**:blue[Aromat]**: słodkie rodzynki sułtańskie, ciemna czekolada, ziołowe przyprawy, owoce, tytoń i beczka
+        dębowa.<br>
+        **:blue[Smak]**: aksamitny i łagodny, suszone owoce, orzechy, toffi, crème brulee, korzenne przyprawy.<br>
+        **:blue[Finisz]**: długi, z kumulacją owocowych motywów pokreślonych korzennymi przyprawami.''', unsafe_allow_html=True)
+
+
+
+
 
 
 
