@@ -5,8 +5,6 @@ st.set_page_config(page_title="Bar Koszyki", page_icon=Image.open("logo.png"))
 
 def main():
     st.title("Bar koszyki - manual")
-
-
     submenu = st.sidebar.selectbox("Menu", ["Manual Koktajli", "Manual Alkoholi", "Piwo", "Wino"])
     if submenu == "Manual Koktajli":
         st.header("Manual Koktajli")
@@ -1025,14 +1023,14 @@ def main():
         szwedzkiej historii, stanowiąc nowoczesne wydanie tradycyjnego szwedzkiego sznapsa.''')
         absolut.image('AlcoholImages/absolut/absolut-extrakt.png')
 
-        amaretto = st.expander("**Amaretto** _(Likier, Migdały, Włochy)_")
+        amaretto = st.expander("**Amaretto** _(Likier, Włochy)_")
         amaretto.write('''Ciemnobrązowy włoski likier o gorzkim smaku i zapachu migdałów.
         Kompozycja zawiera winogrona, migdały orzechy (lub nasion moreli), wanilia, przyprawy i zioła.
         Tradycyjny obszar produkcji - miasto Saronno, położony w prowincji Lombardii. Nazwa
         „Amaretto” pochodzi od włoskiego słowa „Amaro”, co tłumaczy się jako „lekko gorzki”.''')
         amaretto.image('AlcoholImages/amaretto.jpg')
 
-        averna = st.expander("**Amaro Averna** _(Likier, Amaro, Włochy)_")
+        averna = st.expander("**Amaro Averna** _(Likier, Włochy)_")
         averna.caption('''Averna to włoski likier z rodziny bitterów (gorzkawy, ziołowy likier) pochodzący z Caltanissetty na
         Sycylii. Nazwa trunku pochodzi od Salvatore Averna, który w 1868 roku zaczął wytwarzać likier o
         właściwościach terapeutycznych i tonizujących. Jego receptura pochodzi od mnichów z Zakonu
@@ -1044,7 +1042,7 @@ def main():
         subtelną goryczką. Jest kwaśniejsza od Amaro Lucano.''')
         averna.image('AlcoholImages/averna.jpg')
 
-        lucano = st.expander("**Amaro Lucano** _(Likier, Amaro, Włochy)_")
+        lucano = st.expander("**Amaro Lucano** _(Likier, Włochy)_")
         lucano.caption('''tworzony jest według starej tajnej receptury, przekazywanej z pokolenia
         na pokolenie. Receptura likieru Amaro Lucano po dzisiejszy dzień pozostaje tajemnicą rodziny
         Vena. Dzięki umiejętnemu mieszaniu ponad 30 rodzajów ziół między innymi aloesu ferox, korzenia
@@ -1055,6 +1053,13 @@ def main():
         produkcji likieru uczestniczy woda, cukier, czysty alkohol i karmel. Kolor mahoniowy. <br>
         **:blue[Smak]**: Średnia słodycz z ziołową goryczką i nutami cynamonu, lukrecji i karmelu.''', unsafe_allow_html=True)
         lucano.image('AlcoholImages/lucano.jpg')
+
+        monte = st.expander("**Amaro Montenegro** _(Likier, Włochy)_")
+        monte.caption('''Wyprodukowany po raz pierwszy w 1885 roku w Bolonii.''')
+        monte.write('''Składa się z najrzadszych i najcenniejszych ziół, czemu zawdzięcza swój wyjątkowy smak. W nosie 
+        wyczuwalna skórka pomarańczy, suszona kolendra, wiśnie i świeży ogórek. W smaku początkowo słodki, 
+        lecz szybko zmienia się w lekką goryczkę z nutą cytrusów.''')
+        monte.image('AlcoholImages/amaromontenegro.png')
 
         ardbeg = st.expander("**Ardbeg 10** _(Whisky, Szkocja, Single malt, Islay)_")
         ardbeg.caption('''Ardbeg znajduje się na południowym wybrzeżu Islay. Destylarnia powstała w 1815 chociaż alkohol
@@ -1419,6 +1424,14 @@ def main():
         zapach whisky słodowej i miodu w połączeniu z aromatem ziół.''')
         dram.image('AlcoholImages/drambuie.jpg')
 
+        fernet = st.expander("**Fernet Branca** _(Likier, Włochy)_")
+        fernet.caption('''Likier którego sekretna receptura sięga 1846 roku. Bazuje on na wyciągu z unikalnej mieszanki 
+        wyselekcjonowanych kwiatów oraz rzadkich, wyjątkowych aromatycznych ziół. Beczki z ekstraktem są starannie i 
+        długo starzone w zabytkowych piwnicach Branca.''')
+        fernet.write('''Fernet Branca to likier sporządzony z 27 różnych ziół oraz przypraw takich jak: szafran, mirra, 
+        liście koki, aloes, kardamon i kora chininowa, pochodzących z czterech kontynentów.''')
+        fernet.image('AlcoholImages/fernetbranca.jpg')
+
         glen = st.expander("**Glenlivet** _(Whisky, Szkocja, Single malt, Speyside)_")
         glen.caption('''Faktem jest, że to jedna z najstarszych destylarni w Szkocji. W 1824 roku właściciel destylarni
         jako pierwszy zdobył licencję na legalną produkcję whisky. Gorzelnia leży w dolinie rzeki Livet,
@@ -1490,10 +1503,718 @@ def main():
         **:blue[Smak]**: aksamitny i łagodny, suszone owoce, orzechy, toffi, crème brulee, korzenne przyprawy.<br>
         **:blue[Finisz]**: długi, z kumulacją owocowych motywów pokreślonych korzennymi przyprawami.''', unsafe_allow_html=True)
 
+        glenfid = st.expander("**Glenfiddich** _(Whisky, Szkocja, Single malt, Speyside)_")
+        glenfid.caption('''Glenfiddich w języku gaelickim oznacza Dolina Jeleni, stąd głowa jelenia w logotypie tej marki
+        whisky. Glenfiddich to najbardziej popularna whisky single malt na świecie. Swoją silną pozycję
+        zawdzięcza wytrwałości Williama Granta i wielu pokoleń jego rodziny, która od 1887 roku
+        prowadzi destylarnię w małym szkockim miasteczku regionu Speyside. Glenfiddich powstaje
+        z najlepszego jęczmienia i krystalicznie czystej wody uzyskiwanej z podziemnego źródła Robbie
+        Dhu. Niezrównany smak i aromat Glenfiddich to rezultat leżakowania w beczkach z najlepszego
+        drewna z różnych części świata: hiszpańskich beczkach po sherry, beczkach po bourbonie z USA
+        oraz po karaibskim rumie. Whisky Glenfiddich uzyskała od 2000 roku najwięcej nagród na
+        najbardziej prestiżowych konkursach the International Wine & Spirit Competition oraz the
+        International Spirits Challenge spośród wszystkich szkockich whisky single malt na świecie.''')
+        glenfid.subheader("Glenfiddich 12")
+        glenfid.write('''Zanim Glenfiddich trafi do butelki, starzony jest w jednej z dwóch rodzajów beczek:
+        amerykańskiej beczce po bourbonie lub beczkach po sherry z Jerez de la Frontera w Hiszpanii.
+        Źródłem wody używanej do produkcji tej whisky, od samego początku, jest źródło znajdujące się
+        w sąsiedztwie destylarni, Robbie Dhu. Osobą odpowiadającą za jakość alkoholu jest szanowany
+        w świecie whisky Brian Kinsman.''')
+        glenfid.image("AlcoholImages/glenfiddich/glenfiddich12.jpg")
+        glenfid.write(''' **:blue[Zapach]**: zbożowy, sporo tu suchej skoszonej trawy, świeżego drewna, wanilii, miodu
+        wielokwiatowego, gałki muszkatołowej, suszonych owoców, cytrusów. Alkohol delikatnie drażni
+        nos, choć moc whisky to 40% alk.<br>
+         **:blue[Smak]**: przyjemny, whisky jest dość wodnista, czuć owoce: świeże jabłka, przyprawy (pieprz,
+        gałka muszkatołowa), szuszone owoce; słodycz i dębina.<br>
+         **:blue[Finisz]**: przyjemnie utrzymuje się na języku przez dłuższą chwilę; ciemna, gorzka czekolada, budyń
+        czekoladowy, pieprzność, owocowość, alkohol.
+        W whisky dominuje kilka głównych nurtów smakowo-zapachowych: owocowy, cytrusowy,
+        trawiasty i roślinny. To w nich warto doszukiwać się bardziej złożonych zapachów, które i w nosie i
+        na języku, są do siebie zbliżone. Whisky jest prosta w odbiorze, przyjemna i idealnie nadaje się
+        tak do kieliszka degustacyjnego czy szklanki z kością lodu.''', unsafe_allow_html=True)
 
+        glenfid.subheader("Glenfiddich 15YO Unique Solera Reserve")
+        glenfid.write('''Whisky leżakowana przez 15 lat w różnych dębowych beczkach: świeżych, po bourbonie i po
+        sherry, żeby na koniec połączyć się w unikalnej, ręcznie robionej i nigdy nie opróżnianej bardziej,
+        niż do połowy, kadzi solera..''')
+        glenfid.image("AlcoholImages/glenfiddich/uniquesolera.jpg")
+        glenfid.write('''**:blue[Zapach]**: Dojrzały i bardzo miękki, z lekkim aromatem dżemu sliwkowego i pieczone jabłka.<br>
+        **:blue[Smak]**: Miękki i jedwabisty z aromatami duszonych ciemnych owoców, kokosa , schnącej trawy.<br>
+        **:blue[Finisz]**: Bogaty i pełny.''', unsafe_allow_html=True)
 
+        glenfid.subheader("Glenfiddich 15YO Our Solera Fifteen")
+        glenfid.write('''Kolejne wydanie 15-letniej whisky od marki Glenfiddich ukazało się latem 2019 roku, stając się
+        młodszą siostrą poprzedniczek - Solera Reserve (dostępnej także jako Unique Solera Reserve)
+        oraz Solera Vat.
+        Wyjątkowy smak zawdzięcza ona technikom uzdolnionego Mistrza Słodowania, a pikantne,
+        rozgrzewające nuty to zasługa stosowanej metody Solera (polegającej kiedyś na mieszaniu
+        rocznikowych win, wykorzystując do tego kompozycję selektywnie wybieranych beczek lub tzw.
+        kadzi solera).
+        Glenfiddich 15 Our Solera Fifteen dojrzewa w trzech rodzajach dębowych beczek - po sherry,
+        bourbonie oraz w dziewiczym dębie, które mają nasycić jej smak nutami owoców, przypraw oraz
+        miodu. Kolejnym etapem jest mariaż destylatów z wyjątkową, ręcznie wykonaną kadzią Solera z
+        sosny Oregon, którą każdorazowo wypełnia się przynajmniej w połowie, aby nadać trunkowi
+        odpowiednią harmonię i stworzyć złożoną, ale jednocześnie zrównoważoną whisky.''')
+        glenfid.image('AlcoholImages/glenfiddich/glenfiddich-15yo.jpg')
+        glenfid.write('''**:blue[Zapach]**: intrygująco złożony. Słodkie nuty miodu, wrzosów oraz wanilii łączą się z lekką
+        wytrawnością dojrzałych, czerwonych owoców.<br>
+        **:blue[Smak]**: jedwabiście gładka tekstura, odsłaniająca niuanse dębowego sherry, marcepanu,
+        cynamonu oraz imbiru. Pełna i niezwykle satysfakcjonująca na podniebieniu.<br>
+        **:blue[Finisz]**: długi, pozostawiający wrażenia suszonych owoców, goździków oraz słodkich nut wanilii''', unsafe_allow_html=True)
 
+        havana = st.expander("**Havana** _(Rum, Kuba)_")
+        havana.caption('''Starzenie na kubie jak i w innych ciepłych krajach jest dosyć uciążliwe ze względu na warunki
+        klimatyczne. Duża wilgotność i temperatura sprawia że angels' share nie stanowi 3% jak w
+        przypadku whisky tylko 7% a nawet do 10%.''')
+        havana.subheader("Havana 3")
+        havana.write('''Niezwykły charakter Havana Club 3 Años to rezultat naturalnego dojrzewania w dębowych
+        beczkach (między innymi po Jamesonie) przez przynajmniej trzy lata. W miarę powolnego
+        starzenia w tropikalnym klimacie Kuby rum ten zyskuje słomkowy kolor i charakterystyczne nuty
+        dębu, połączone z orzeźwiającym aromatem owoców i subtelnym śladem melasy z dorodnej
+        kubańskiej trzciny cukrowej. Najmłodsza kropla rumu Havana Club 3 Años ma trzy lata. Po dwóch
+        latach powstały w procesie produkcji mocny alkohol aguardiente zostaje poddany filtracji przez
+        węgiel drzewny w celu usunięcia zanieczyszczeń, po czym wraca do beczki.''')
+        havana.image("AlcoholImages/havana/havana3.jpg")
 
+        havana.subheader("Havana Especial")
+        havana.write('''Rum Havana Club Añejo Especial wyróżnia nasza metoda podwójnego starzenia. Nasz rum
+        dojrzewa przez wiele lat w beczkach po amerykańskim burbonie, po czym zostaje przelany do
+        beczek po irlandzkiej whiskey, gdzie przechodzi ponownie proces starzenia. Dzięki temu Havana
+        Club Añejo Especial uzyskuje swój delikatny, harmonijny smak z subtelną słodyczą wanilii.''')
+        havana.image("AlcoholImages/havana/havanaespecial.jpg")
+
+        havana.subheader("Havana 7")
+        havana.write('''Havana Club Anejo 7 Anos to zdecydowanie jeden z najlepszych zawodników świetnej, kubańskiej 
+        reprezentacji. Esencjonalny i złożony a zarazem łagodny w smaku jest wzorcem bogatej tradycji produkcji rumu 
+        na Kubie. Szlachetności dodaje mu całkowicie naturalny, siedmioletni proces leżakowania w dębowych beczkach.''')
+        havana.image('AlcoholImages/havana/havana7.jpg')
+        havana.write('''**:blue[Zapach]**: wanilia, kakao, suszone owoce, plaster miodu, toffi;<br>
+        **:blue[Smak]**: toffi, owoce, cedrowe pudełko z cygarami, guava i bananowe liście;<br>
+        **:blue[Finisz]**: kremowo-owocowy, złożony i długi.''', unsafe_allow_html=True)
+
+        havana.subheader("Havana Maestros")
+        havana.write('''W celu stworzenia "Selección de Maestros", wybiera się najlepsze starzone rumy, aby z
+        wybitnych cech każdego z nich stworzyć rum najwyższej jakości. Wyselekcjonowane rumy tworzą
+        bazę, następnie są ponownie nalewane w beczki z młodego dębowego drewna, po to by nadać
+        trunkowi silny, dębowy aromat.
+        W ostatnim etapie starzenia rumu, zbiera się wszystkie wcześniej przygotowane rumy, aby wybrać
+        tylko te, które stworzą finałową kompozycję. Mieszanka zostaje zabutelkowana, sprawia to, że
+        rum posiada wyższą zawartość alkoholu, w tym przypadku jest to 45%.''')
+        havana.image('AlcoholImages/havana/havanaseleccion.jpg')
+
+        havana.subheader("Havana Unión")
+        havana.write('''Połączenie dwóch najpopularniejszych i flagowych tradycyjnych produktów Kuby - Rumu Havana
+        Club i cygar Cohiba.
+        Wynik współpracy Maestro Ronero Asbel Morales’a, odpowiedzialnego za stworzenie unikatowej
+        receptury rumu oraz Fernando Fernandez Milian’a , Master Habano sommelier.
+        Starannie dobrane i naturalnie starzone rumy wchodzące w skład tej mieszanki, zostały specjalnie
+        wybrane przez Maestro Ronero, aby idealnie dopełnić smak cygar Cohiba. Havana Club Unión
+        charakteryzuje się aromatem słodkiej wanilii i czekolady oraz smakiem suszonych owoców.''')
+        havana.image('AlcoholImages/havana/havanaunion.png')
+
+        hendricks = st.expander("**Hendrick's** _(Gin, Szkocja)_")
+        hendricks.caption('''Na rynku ukazał się w 2001 produkowany przez znaną w świecie whisky rodzinną firmę William
+        Grant & Sons. Destylowany jest w gorzelni Girvan, w charakterystycznych i unikatowych alembikach typu Carter-
+        Head.''')
+        hendricks.subheader("Hendrick’s")
+        hendricks.write('''Gin komponowany jest z krwawnika pospolitego, jałowca, kwiatu bzu, korzenia arcydzięgla,
+        skórki pomarańczowej, kolendry, rumianku, pieprzu kubeba, korzenia irysa, cytryny i kminku.
+        Dodatkowo Hendrick’s infuzowany jest zielonym ogórkiem oraz bułgarską różą.''')
+        hendricks.image("AlcoholImages/hendricks/hendricks.jpg")
+        hendricks.write('''**:blue[Aromat]**: bogaty i pełny z nutami cytrusów, róży ogórka, jałowca, kwiatów i przypraw <br>
+        **:blue[Smak]**: głęboki z akcentami kolendry, skórek cytrusowych, kwiatów, przypraw i jałowca<br>
+        **:blue[Finisz]**: trwały z posmakiem kwiatów, cytrusów i jałowca''', unsafe_allow_html=True)
+
+        hendricks.subheader("Hendrick’s Neptunia")
+        hendricks.write('''Nowa limitowana edycja ginu Hendrick’s w serii Ms. Lesley Gracie’s Cabinet of Curiosities. Są tu
+        klasyczne dla stylu Hendrick’s botaniki, czyli przede wszystkim: jałowiec, zielony ogórek i płatki
+        róży, skórki pomarańczy, ale też rośliny występujące na nabrzeżu Girvan, w tym także wodorosty.
+        Zapach tego ginu ma wyraźnie morski charakter – są wodorosty, omułki, ostrygi i solanka. Do
+        tego uderzenie cytryny oraz nuty słodkie, kwiatowe – fiołki, wanilia. Stosunkowo mało czuć
+        jałowiec, bardziej jakieś wrzosy, tuje... W smaku także czuć omułki, jest też dużo jałowca,
+        czarnego pieprzu. Smak jest wyrazisty, ostry, do tego dochodzą intensywnie cytrusy. Dużo
+        jałowca w finiszu, sól, rześkość (zapewne dał ją zielony ogórek), imbir, pieprz czarny, kardamon, a
+        może bardziej aframon. Finisz jest długi i bardzo elegancki.''')
+        hendricks.image("AlcoholImages/hendricks/hendrick-s-neptunia.jpg")
+
+        hendricks.subheader("Hendrick’s Orbium")
+        hendricks.write('''Edycja ORBIUM to nowa interpretacja dżinu Hendricka autorstwa Master Distiller Lesley Gracie.
+        W przeciwieństwie do oryginalnego dżinu Hendricks, do tej edycji dodano trzy dodatkowe rośliny
+        botaniczne: chininę, piołun i niebieski kwiat lotosu.''')
+        hendricks.image("AlcoholImages/hendricks/hendricksorbium.jpg")
+        hendricks.write('''**:blue[Zapach]**: Przejrzysty, złożony, zaskakująco świeży.<br>
+        **:blue[Smak]**: Głęboki, złożony, kwiatowy, gorzki, niezwykle esencjonalny.<br>
+        **:blue[Finisz]**: Długotrwałe.''', unsafe_allow_html=True)
+
+        jameson = st.expander("**Jameson** _(Whisky, Irlandzka)_")
+        jameson.caption('''''')
+        jameson.subheader("Jameson")
+        jameson.write('''Powolna potrójna destylacja w miedzianych alembikach. Komponowana jest z destylatów, które
+        leżakowały co najmniej 4 lata w beczkach po burbonie oraz w beczkach po sherry. ''')
+        jameson.image("AlcoholImages/jameson/jameson.jpeg")
+        jameson.write('''**:blue[Aromat]**: pełny i gładki z nutami kwiatów, marmolady, polewy czekoladowej, miodu, wanilii, sherry,
+        ściętej trawy i wiśni<br>
+        **:blue[Smak]**: głęboki i bogaty z akcentami jabłka, gruszki, moreli, wiśni, wanilii, śmietany, miodu,
+        wrzosu, cytrusów i karmelu.<br>
+        **:blue[Finisz]**: średnio długi z posmakiem przypraw zimowych i miodu.''', unsafe_allow_html=True)
+
+        jameson.subheader("Jameson Black Barrel")
+        jameson.write('''Limitowana edycja dojrzewająca częściowo w podwójne wypalanych z amerykańskiego dębu, a
+        częściowo w beczkach po sherry typu oloroso.''')
+        jameson.image("AlcoholImages/jameson/jamesonblack.jpg")
+        jameson.write('''**:blue[Aromat]**: bogaty i złożony. Na tyle wyrazistych akcentów zbożowych, nutki owoców tropikalnych,
+        nektaryn, kokosa.<br>
+        **:blue[Smak]**: Ciężki, pełny, kremowy. Bogaty, oleisty keks , a w nim mnóstwo akcentów daktyli,
+        orzechów i kandyzowanych skórek pomarańczy i cytryny. Nutki cynamonu, brzoskwiń i
+        nieznaczne przyprawy korzenne.<br>
+        **:blue[Finisz]**: Długi, owocowy, wygasający powoli, z akcentami korzennymi i kwiatowymi.''', unsafe_allow_html=True)
+
+        jameson.subheader("Jameson Caskmates Stout")
+        jameson.write('''Wynik eksperymentu w ramach którego zostały wypożyczone beczki browarowi Franciscan Wells
+        by dojrzewał w nich irlandzki stout, a następnie zostały one przywiezione z powrotem do
+        destylarni i tam napełniono już dojrzałą whiskey na 3 miesiące(tzw. cask finish)''')
+        jameson.image("AlcoholImages/jameson/jamesonstout.jpg")
+        jameson.write('''**:blue[Aromat]**: połączenie tradycyjnych akcentów Jameson, które nie zostały przykryte, a jedynie
+        uzupełnione akcentami stoutu - jest tu więcej korzenności, akcentów dębowych, a także
+        czekolady.<br>
+        **:blue[Smak]**: Bogaty, pełny. Akcent owoców, wanilii, czekolady. Dodatkowo pojawiają się nutki
+        chmielowe i nieco goryczki.<br>
+        **:blue[Finisz]**: Średnio długi, z przeplatającymi się nutkami korzennymi i czekoladowymi.''', unsafe_allow_html=True)
+
+        jameson.subheader('Jameson Crested')
+        jameson.write('''Whiskey Crested została stworzona w 1963 roku. Jest on pełniejszą, bogatszą wersją
+        podstawowej whiskey Jameson. W ok. 60% składa się z destylatu jęczmiennego i jest
+        leżakowana w beczkach po sherry przez 7 – 8 lat.''')
+        jameson.image("AlcoholImages/jameson/jamesoncrested.jpg")
+        jameson.write('''**:blue[Aromat]**: bogaty, miód, toffi, prażone orzeszki, dżem pomarańczowy, kantalupa, kandyzowany
+        imbir, goździki i pięknie wplecione nuty sherry.<br>
+        **:blue[Smak]**: przyjemnie zbalansowany, subtelne nuty sherry, skórka cytrynowa i pomarańczowa, miód,
+        karmel, mleczna czekolada, ślady pieprzu i imbiru.<br>
+        **:blue[Finisz]**: średnio długi, rozgrzewający, z nutami sherry, karmelu i czekolady.''', unsafe_allow_html=True)
+
+        jim = st.expander("**Jim Beam** _(Bourbon)_")
+        jim.caption('''''')
+        jim.subheader("Jim Beam White")
+        jim.write('''Charakteryzuje się tym że oprócz kukurydzy (70%) zawiera sporą ilość żyta (16%) a pozostałe
+        14% to jęczmień. Destylaty leżakują 4 lata w nowych wypalanych beczkach z białego
+        amerykańskiego dębu.''')
+        jim.image('AlcoholImages/jimbeam/jimbeam.jpg')
+        jim.write('''**:blue[Aromat]**: bardzo słodki z nutami wanilii, siana, świeżej kukurydzy, karmelu, palonego dębu
+        przypraw.<br>
+        **:blue[Smak]**: pełny i głęboki z nutami wanilii, palonego dębu, pieprzu, przypraw korzennych, miodu i
+        siana.<br>
+        **:blue[Finisz]**: średnio długi z nutami dębu, żywicy i słodyczy.''', unsafe_allow_html=True)
+
+        jim.subheader("Jim Beam Black Extra Aged")
+        jim.write('''Stworzona w 1978 roku whiskey należy do bourbonów premium . Leżakuje zdecydowanie dłużej w 
+        beczkach z białego dębu amerykańskiego niż oryginalny Jim Beam White . Zmienia to całkowicie nuty smakowe i 
+        zapachowe, które zaczynają się półsłodkimi akcentami, przechodząc w gładkie wykończenie dębem i karmelem.''')
+        jim.image("AlcoholImages/jimbeam/jimbeamextraaged.jpg")
+        jim.write('''**:blue[Aromat]**: dość słodki z nutą dymną, krem waniliowy, karmel, płatki kukurydzane, goździki, ślad
+        anyżku i nadpalonego dębu.<br>
+        **:blue[Smak]**: wanilia, karmel, trochę miodu, prażona kukurydza, odrobina cynamonu i goździków i
+        nadpalony dąb.<br>
+        **:blue[Finisz]**: dość długi i rozgrzewający, z nutami zwęglonej dębiny, karmelu, wanilii i odrobiną pieprzu.''', unsafe_allow_html=True)
+
+        jim.subheader("Jim Beam Double Oak")
+        jim.write('''W wypadku whiskey Jim Beam Double Oak, destylat w wieku 4 lat (czyli Jim Beam White) jest
+        przelewany do drugiej beczki, na czas którego producent nie ujawnia. Otwartym pozostaje
+        pytanie czy druga beczka jest nowa i nowowypalona czy tylko nowowypalona.''')
+        jim.image("AlcoholImages/jimbeam/jimbeamdoubleoak.jpg")
+        jim.write('''**:blue[Aromat]**: bardzo słodki z nutami wanilii, siana, świeżej kukurydzy, karmelu, palonego dębu i
+        przypraw.<br>
+        **:blue[Smak]**: pełny i głęboki z nutami wanilii, palonego dębu, pieprzu, przypraw korzennych, miodu i
+        siana.<br>
+        **:blue[Finisz]**: średnio długi z nutami dębu, żywicy i słodyczy.''', unsafe_allow_html=True)
+
+        jim.subheader("Jim Beam Rye")
+        jim.write('''W skład zacieru JBR wchodzi 51% żyta. Whisky leżakuje przez 4 lata w nowych dębowych
+        beczkach. Destylaty żytnie są znacznie bardziej pieprzne i wytrawne więc spodziewam się, że
+        będzie to łatwe do zauważenia już na samym początku.''')
+        jim.image("AlcoholImages/jimbeam/jimbeamrye.jpg")
+        jim.write(''' **:blue[Aromat]**: słodki i pikantny, karmel, mleczne krówki, kakao w proszku, goździki, cynamon, imbir,
+        ślad lukrecji i mięty.<br>
+         **:blue[Smak]**: łagodny i dość słodki, karmel, wanilia, prażona kukurydza, szarlotka poprószona
+        cynamonem, goździki i delikatne nuty orzechowe i dębowe.<br>
+         **:blue[Finisz]**: niezbyt długi, z nutami wanilii, syropu kukurydzianego i odrobiną korzennych przypraw.''', unsafe_allow_html=True)
+
+        kahlua = st.expander("**Kahlúa** _(Likier, Meksyk)_")
+        kahlua.write('''Ceniony kawowy likier wprost z Meksyku. Kahlua została stworzona w 1936 roku w sercu tego
+        kraju. Kahlua jest produkowana z ziaren kawy Arabica rosnących u podnóży gór Meksyku.
+        Esencja z kawy jest łączona następnie z importowanym rumem i słodką wanilią.''')
+        kahlua.image("AlcoholImages/kahlua.jpg")
+
+        lillet = st.expander("**Lillet** _(Aperitiv, Francja)_")
+        lillet.subheader("Lillet Blanc")
+        lillet.write('''Lillet Blanc to likier o wspaniałej, błyszczącej złotej barwie. Liczne kwiatowe aromaty przeplatają
+        się tu z nutami kandyzowanych pomarańczy, miodu, żywicy sosnowej i egzotycznych owoców. W
+        ustach wyczuwalna jest paleta owoców egzotycznych i miodu, wraz z długim finiszem. Głównym
+        szczepem w Lillet Blanc jest Semillon, dający temu likierowi pełną, soczystą strukturę.''')
+        lillet.image("AlcoholImages/lillet/lilletblanc.jpg")
+        lillet.subheader("Lillet Rosé")
+        lillet.write('''Jest to mieszanka win (85%) i likierów, produkowanych z różnych odmian pomarańczy. Dojrzewa
+        w beczkach, które znajdują się w piwnicy gorzelni w Podensac. W nosie lekkie aromaty jagód,
+        kwiatu pomarańczy i grapefruita. Smak świeży, żywy i owocowy, zrównoważony, lekko kwaśny.''')
+        lillet.image("AlcoholImages/lillet/lilletrose.jpg")
+
+        luxardo = st.expander("**Luxardo** _(Likier, Włochy)_")
+        luxardo.subheader("Luxardo Bitter")
+        luxardo.write('''Klasyczny włoski likier o smaku słodkich i gorzki pomarańczy, rabarbaru oraz aromatycznych
+        przypraw takich jak majeranek czy tymianek.''')
+        luxardo.image("AlcoholImages/luxardo/luxardobitter.jpg")
+
+        luxardo.subheader("Luxardo Maraschino")
+        luxardo.write('''Likier ten destylowany jest z wyjątkowej odmiany wiśni Marascha, która została stworzona dzięki
+        firmie luxardo. Macerowane są w jesionowych kadziach przez 3 lata. Barwa tego trunku jest
+        przezroczysta a aromat zniewala owocową słodyczą wiśni. Smak aksamitnie gładki o miło
+        zaokrąglonej końcówce.''')
+        luxardo.image("AlcoholImages/luxardo/luxardomaraschino.jpg")
+
+        malfy = st.expander("**Malfy** _(Gin, Włochy)_")
+        malfy.caption('''Malfy destylowany jest w Totino Distilati leżącej u podnóża najwyższego szczytu Piemontu, Monte
+        Viso. Destylarnia pracuje od 1906r. I obecnie należy do rodziny Vergnano. Wszystkie produkty
+        firmy zostały oznakowane symbolem GQDI (Gin di Qualità Distillato), który jest włoskim symbolem
+        jakości oraz autentyczności.''')
+        malfy.subheader("Malfy")
+        malfy.write('''Podstawowymi składnikami Malfy orginale są lokalny jałowiec, korą
+        cynamonowa, kolendrą, korzenie arcydzięgla i lukrecji oraz skórka cytrynowa, pomarańczowa i
+        grejpfrutowa, a bazowym alkoholem spirytus pszeniczny. Po destylacji gin poddawany jest filtracji
+        na zimno i rozcieńczony lokalną górską wodą do 41% aby.
+        Na pierwszy plan wybija się jałowiec i pomimo swej intensywności ni tłumi nut ziołowych
+        przeplecionych cytrusem, w szczególności pomarańczą i cytryną.''')
+        malfy.image("AlcoholImages/malfy/malfy-originale-gin.jpg")
+
+        malfy.subheader("Malfy Rosa Pink Grapefruit")
+        malfy.write('''Tak jak Malfy orginale zawiera w sobie lokalny jałowiec, korę cynamonową, kolendrę, korzenie
+        arcydzięgla i lukrecji oraz skórkę cytrynową, pomarańczową i grejpfrutową, a bazowym alkoholem
+        spirytus pszeniczny. Wszystkie składniki wraz ze skórkami Sycylijskich różowych grejpfrutów
+        poddane są 36 godzinnej maceracji następnie destylowane metodą próżniową. Całość dopełnia
+        niewielka ilość destylatu rabarbarowego.
+        Silna woń grejpfrutów łączy się z subtelną nutką rabarbaru, w smaku z kolei lekką cytrusową
+        słodycz równoważą jałowiec, kolendrą oraz goryczka arcydzięgla.''')
+        malfy.image("AlcoholImages/malfy/MALFY-ROSA.jpg")
+
+        malfy.subheader("Malfy Con Arancia Blood Orange")
+        malfy.write('''Zawiera w sobie lokalny jałowiec, korę cynamonową, kolendrę, korzenie arcydzięgla i lukrecji oraz
+        skórkę cytrynową, pomarańczową i grejpfrutową, a bazowym alkoholem spirytus pszeniczny.
+        Wszystkie składniki wraz z Sycylijskimi czerwonymi pomarańczami poddane są 36 godzinnej
+        maceracji następnie destylowane metodą próżniową.
+        Na podniebieniu oferuje ujmujące nuty grejpfruta, cytryny, jałowca, skórki cytrusów, czerwonej
+        pomarańczy oraz pieprznych przypraw.''')
+        malfy.image("AlcoholImages/malfy/malfyarancia.jpeg")
+
+        malfy.subheader("Malfy Con Limone")
+        malfy.write('''Włoski gin destylowany z jałowcem oraz dojrzewającymi w słońcu Sycylii cytrynami. Recepturę
+        trunku uzupełniają także kolendra, kasja oraz arcydzięgiel. Dwa ze składników zostają utajnione
+        przez gorzelnię, a destylacja odbywa się w stalowych alembikach próżniowych.''')
+        malfy.image("AlcoholImages/malfy/malfylimone.jpg")
+
+        makers = st.expander("**Maker's Mark** _(Bourbon)_")
+        makers.subheader("Maker's Mark")
+        makers.write('''Formuła zawiera 70% kukurydzy, 16% ozimej pszenicy i 14% jęczmiennego słodu. Jak każdy
+        burbon jest starzony co najmniej 2 lata w nowych wypalanych beczkach z białego dębu.''')
+        makers.image("AlcoholImages/makers/MAKERS-MARK-BOURBON-0,7L.jpg")
+        makers.write('''**:blue[Aromat]**: miód , wanilia, sucha skórka pomarańczowa, suszone daktyle, rodzynki, mleczna
+        czekolada, cynamon, gałka muszkatołowa i dąb.<br>
+        **:blue[Smak]**: słodki, wanilia, mleczne krówki, miód, kakao w proszku, brzoskwinie, rodzynki, prażone
+        orzeszki, nuty tytoniu i dębu.<br>
+        **:blue[Finisz]**: długi, z nutami karmelu, wanilii, skórki pomarańczowej i dębu.''', unsafe_allow_html=True)
+
+        makers.subheader("Maker's 46")
+        makers.write('''2005r. rozpoczął serię eksperymentów, z których próba nr 46 okazała się udaną. Po zakończeniu
+        podstawowej maturacji standardowy Maker’s Mark opuszcza beczkę, w której zostaje
+        zamontowanych 10 wyprażonych klepek z francuskiego dębu. Destylat wraca do tak
+        zmodyfikowanej beczki na 10 do 12 tygodni. W tym czasie beczka spoczywa w najchłodniejszym
+        miejscu magazynu leżakowego. Francuski dąb potęguje nut karmelu i wanilii oraz dodaje whisky
+        lekkiej pikanterii.''')
+        makers.image("AlcoholImages/makers/maker-s-mark-no-46-700ml.jpg")
+        makers.write('''**:blue[Aromat]**: dość kompleksowy, ekstrakt wanilii, karmel, syrop klonowy, drożdżówki cynamonowe,
+        kandyzowana skórka pomarańczowa, pieczone jabłka i dąb.<br>
+        **:blue[Smak]**: sporo karmelu i kremu waniliowego, płatki śniadaniowe z miodem, szarlotka poproszona
+        cynamonem, szczypta gali muszkatołowej i dość silne nuty dębowe.<br>
+        **:blue[Finisz]**: dość długi, z nutami karmelu, wanilii, słodkich przypraw, dębu i w mniejszym stopniu
+        tytoniu.''', unsafe_allow_html=True)
+
+        martell = st.expander("**Martell** _(Cognac)_")
+        martell.subheader("Martell VS Fine")
+        martell.write('''Jest to wydestylowany w pojedynczej destylarni z gron pochodzących z okręgów uprawy Grande i
+        Petite Champagne, Les Borderies i Fins Bois i starzony przez co najmniej 2 lata e beczkach z
+        francuskiego dębu z Tronçais.''')
+        martell.image("AlcoholImages/martell/martellvs.jpg")
+        martell.write('''**:blue[Aromat]**: owocowy i delikatnie floralny, wanilia, karmel, bukiet polnych kwiatów, pigwa, odrobina
+        suchych ziół, siana i dębu.<br>
+        **:blue[Smak]**: przyjemnie zbalansowany, rodzynki, suszone śliwki i wiśnie, karmel, marcepan, nuty
+        cynamonu i kakao w proszku.<br>
+        **:blue[Finisz]**: średnio długi, z nutami suszonych owoców, karmelu, prażonych migdałów, kroplą likieru
+        fiołkowego i dębu.''', unsafe_allow_html=True)
+
+        martell.subheader("Martell Blue Swift")
+        martell.write('''Pierwszy koniak V.S.O.P finiszowany w beczkach po burbonie mniej niż sześć miesięcy. Nazwa
+        trunku odnosi się do jerzyka, ptaka który może lecieć nieprzerwanie przez kilka dni pokonując
+        Atlantyk.''')
+        martell.image("AlcoholImages/martell/martellblueswift.jpg")
+        martell.write(''' **:blue[Aromat]**: śliwki, rodzynki, brzoskwinie, crème brulèe, miodowe orzech, cynamon i dąb.<br>
+         **:blue[Smak]**: bogaty, owocowy, czereśnie, śliwki, figi, rodzynki, wanilia, karmel, cynamon, nuty
+        kandyzowanego imbiru i dębu.<br>
+         **:blue[Finisz]**: dość długi, z nutami wanilii, karmelu, syropu klonowego, rodzynek, suszonych śliwek i
+        jabłek, cynamonu i dębu.''', unsafe_allow_html=True)
+
+        martell.subheader("Martell V.S.O.P")
+        martell.write('''Starzony przez co najmniej 4 lata e beczkach z francuskiego dębu z Tronçais.''')
+        martell.image("AlcoholImages/martell/martellvsop.jpg")
+        martell.write(''' **:blue[Aromat]**: Owocowy, pełny. Akcenty limonki, pigwy, śliwek i lukrecji. Nieco dębiny i orzechów
+        lakowych.<br>
+         **:blue[Smak]**: Miękki, gładki i złożony. Bogactwo akcentów owocowych, w tym również kandyzowanych
+        owoców. Odrobina korzeni i orzechów.<br>
+         **:blue[Finisz]**: Długi, z akcentami owoców i korzeni''', unsafe_allow_html=True)
+
+        martell.subheader("Martell X.O.")
+        martell.write('''Kupaż eaux-du-vie starzonych od 10 do 35 lat wydestylowanych w gron pochodzących z okręków
+        uprawy Grande Champagne i Les Borderies.''')
+        martell.image("AlcoholImages/martell/martellxo.jpg")
+        martell.write('''**:blue[Aromat]**: przyjemnie pikantny, czarny i czerwony pieprz, świąteczny piernik, orzech włoskie,
+        suszone figi, pieczone jabłka, nuty drewna sandałowego i wosku.<br>
+        **:blue[Smak]**: bardzo bogaty, suszone figi, wiśnie i śliwki, rodzynki, nugat orzechowy, waniliia, gałka
+        muszkatołowa i kojąca goryczka dębu.<br>
+        **:blue[Finisz]**: długi, pikantny z subtelną nutą floralną, cynamon, rodzynki, figi, czerwone owoce i dąb.''', unsafe_allow_html=True)
+
+        martell.subheader("Martell Cordon Bleu")
+        martell.write('''Stworzony w 1912r. Skomponowany z ponad stu różnych destylatów pochodzących z regionów
+        Petite Champagne, Grande Champagne, Fins Bois i Borderies, po kupażowaniu leżakuje w
+        beczkach z dębu francuskiego.''')
+        martell.image("AlcoholImages/martell/cognac-martell-cordon-bleu.jpg")
+        martell.write('''**:blue[Aromat]**: Śliwki i jabłka, kawa, prażone migdały, cynamon, kwiaty pomarańczy, miód i wosk
+        pszczeli.<br>
+        **:blue[Smak]**: krągły i łagodny. Akcenty owoców, migdałów, miodu, cynamonu.<br>
+        **:blue[Finisz]**: długi, z akcentami owoców i przypraw.''', unsafe_allow_html=True)
+
+        martell.subheader("Martell Cohiba")
+        martell.write('''Wspólny projekt Martella i Habanos Cigars. Do jego stworzenia wykorzystano eaux-de-vie z
+        okręgu Grande Champagne starzone od 40 do 50 lat. Oczywiście najlepiej smakuje z odpowiednio
+        długo starzonym cygarem.''')
+        martell.image("AlcoholImages/martell/martellcohiba.jpg")
+        martell.write('''**:blue[Aromat]**: miękki lecz kompleksowy, orzechy laskowe, miód, wanilia, prażone ziarna kawy, suszone
+        morele, leśne jagody, nuty tytoniu i suchych kwiatów.<br>
+        **:blue[Smak]**: znakomicie zbalansowany, mieszanka suszonych owoców, prażone migdały i orzechy,
+        cynamon, nuty anyżku i lukrecji i pięknie wplecione nuty dębu.<br>
+        **:blue[Finisz]**: bardzo długi i elegancki, suszone owoce, prażone orzechy, dąb odrobina cynamonu.''', unsafe_allow_html=True)
+
+        martini = st.expander("**Martini** _(Aperitivo/Wermut, Włochy)_")
+        martini.subheader("Martini Riserva")
+        martini.write('''Kolekcja Martini Vermouth di Torino składa się z Martini Riserva Speciale Rubino i Martini Riserva
+        Speciale Ambrato. Obydwa zostały stworzone w hołdzie dla tradycyjnych metod stosowanych
+        przez pierwszych mistrzowskich zielarzy Martini.
+        Martini Reserva Speciale Rubino jest wykonane przy wykorzystaniu win Langhe DOC Nebbiolo i
+        zmieszane ze stężonym ekstraktem roślinnym: wyciągiem z włoskiego świętego ostu i
+        czerwonego drzewa sandałowego. Leżakuje w dębowej beczce ponad dwa miesiące. Jego nazwa
+        jest jednocześnie określeniem koloru - "rubino" to włoski odpowiednik „ruby".
+        Martini Riserva Speciale Ambrato jest produkowane przy użyciu wina Moscato d'Asti DOCG, by
+        stworzyć lekko gorzki smak. Nazwa pochodzi od koloru - ambrato to po włosku bursztyn.''')
+        martini.image("AlcoholImages/martini/riserva.jpeg")
+
+        martini.subheader("Martini Bitter")
+        martini.write('''Do przygotowania purpurowego, wytrawnego Martini Riserva Speciale Bitter wykorzystuje się 20
+        ziół oraz przyprawy korzenne. W tym trzy niezwykle rzadkie i unikalne: szafran, korę krocienia oraz
+        angosturę.W skład Martini Bitter wchodzi bylica pochodząca z lokalnych upraw we włoskiej
+        Pancalieri. To ona nadaje gorzko-ziołowy charakter trunku.''')
+        martini.image("AlcoholImages/martini/bitter.png")
+
+        martini.subheader("Martini Fiero")
+        martini.write('''Naturalny ekstrakt z czerwonej pomarańczy nadaje mu wyjątkowy, wyraźnie dominujący posmak.''')
+        martini.image("AlcoholImages/martini/fiero.png")
+
+        metaxa = st.expander("**Metaxa** _(Spirit drink, Grecja)_")
+        metaxa.caption('''**Co oznaczają gwiazdki na Metaxie?**<br>
+        Za tajemniczymi gwiazdkami, które można znaleźć na etykiecie, kryje się wewnętrzna
+        segmentacja i stopniowanie produktu, zatem nie należy dosłownie przypisywać wieku destylatów
+        do ilości gwiazdek. Jednakże im większa liczba gwiazdek na butelce, tym mamy do czynienia z
+        dłużej leżakowanym produktem. Jest to wprowadzone z powodu tego, że nie wszystkie produkty
+        Metaxy są oznaczone gwiazdkami! Najbardziej szlachetne i najstarsze destylaty trafiają do takich
+        wariantów jak Grande Fine w pięknej, porcelanowej butelce czy Private Reserve produkowana
+        tylko raz w roku w bardzo małych partiach. Wyróżnić warto również Metaxę Angel`s Treasure z
+        długo dojrzewających destylatów czy dwie wersje o nazwie AEN, które powstały, by uczcić 120. i
+        130. rocznicę powstania firmy.''', unsafe_allow_html=True)
+        metaxa.write('''Metaxa jest jedynym w swoim rodzaju trunkiem alkoholowym. Nie można go sklasyfikować jako
+        Brandy. Definicja tej kategorii mówi o alkoholu dwukrotnie destylowanym z wina lub innego soku
+        owocowego poddanego fermentacji. Choć faktycznie pierwszym etapem stworzenia Metaxy jest
+        powstanie destylatu z wina, to jednak późniejsze etapy produkcji czynią ten trunek wyjątkowym.
+        Nad całością czuwa Constantinos Raptis, który jest piątym pokoleniem mistrzów destylacji i
+        blendowania. Pierwszym etapem jest powstanie wina, które tworzy się tylko z trzech odmian
+        winorośli: Savatiano, Sultanina i Black Corinth. Następnie poddaje się je destylacji i leżakowaniu
+        w piwnicach obecnego domu Metaxy, który znajduje się w Kiffisii w północnej części Aten. W tym
+        czasie Constantinos dobiera wina typu Muscat z wyspy Samos, która słynie z jej najlepszych
+        odmian. Następnie łączy je wraz z wyselekcjonowanymi destylatami winnymi, które wspólnie
+        znów leżakują w beczkach wykonanych z francuskiego dębu Limousin. Ostatnim etapem
+        zwieńczającym proces produkcji jest dodanie specjalnej mieszanki ziół i roślin
+        śródziemnomorskich wśród, których warto wyróżnić płatki róż. To wszystko wpływa na
+        wyjątkowość Metaxy.''')
+        metaxa.image('AlcoholImages/metaxa.jpg')
+
+        midori = st.expander("**Midori** _(Likier, Japonia)_")
+        midori.write('''Midori (jap. "zielony") to legendarny likier melonowy. Produkowany jest od 1978 roku przez firmę
+        Suntory w Japonii. Firma Suntory znana jest również z produkcji doskonałych whisky Single Malt.
+        Likier Midori wytwarzany jest wyłącznie z naturalnych składników, spośród których głównym jest
+        dojrzały, soczysty i słodki melon.''')
+        midori.image("AlcoholImages/Midori.jpg")
+
+        mosho = st.expander("**Monkey Shoulder** _(Whisky, Szkocja, Blended malt)_")
+        mosho.subheader("Monkey Shoulder")
+        mosho.write('''Oryginalną formuła wymienia trzy single malty pochodzące z gorzelni należących do spółki
+        (Glenfiddich, Balvenie i Kininvie) starzone w beczkach po burbonie. Nazwa Monkey Shoulder
+        nawiązuje do urazu barku często nękającego pracowników słodowni, przeżuwających drewnianymi
+        łopatami tony jęczmienia.''')
+        mosho.image("AlcoholImages/monkeyshoulder/monkey-shoulder-blended-malt.jpg")
+        mosho.write('''**:blue[Aromat]**: słodowo-owocowy, jabłka, gruszki, ananasy, mleczne krówki, karmel, wanilia, miód i ślad
+        dębowych wiórów. <br>
+        **:blue[Smak]**: łagodny, słodkie płatki śniadaniowe, jabłka, gruszki, banany, skórka cytrynowa, miód,
+        wanilia, nugat orzechowy, ślad lukrecji i dębu. <br>
+        **:blue[Finisz]**: średnio długi, z nutami nugatu orzechowego, letnich owoców, skórki pomarańczowej,
+        wanilii i dębu.''', unsafe_allow_html=True)
+
+        mosho.subheader("Monkey Shoulder Smokey")
+        mosho.write('''Dymna odsłona popularnej Blended Malt Monkey Shoulder wzbogacona dodatkiem whisky
+        torfowej – najprawdopodobniej pochodzącej z uruchomionej w 2007 roku gorzelni Ailsa
+        Bay. Smokey Monkey posiada zdecydowanie dymny, smolisty aromat, zbalansowany łagodnymi
+        nutami miodu, toffi, wanilii, jabłek, brzoskwiń oraz cytrusów. W smaku jest dość łagodna i
+        owocowa, z lekką dymnością, kremową słodyczą oraz akcentami orzechów i przypraw.''')
+        mosho.image("AlcoholImages/monkeyshoulder/Monkey-Shoulder-Smokey-Monkey-Batch-9.jpg")
+
+        monkey = st.expander("**Monkey 47** _(Gin, Niemcy)_")
+        monkey.write('''Niemiecki gin destylowany w gorzelni Christopha Kellera, zlokalizowanej w Schwarzwaldzie.
+        Nazwa nawiązuje do małpki o imieniu Max którą to zasponsorował Montgomery Collins by
+        odbudować zniszczone zoo. Liczba 47 nawiązuje do ilości ziół, roślin i owoców używanych do
+        produkcji oraz mocy trunku i pijany był zazwyczaj o 4:47. Wiodącymi składnikami ginu są: jałowiec,
+        lawenda, piżmian, aframon madagaskarski, pysznogłówka szkarłatna, szyszki świerkowe,
+        prawoślaz lekarski kolendra.''')
+        monkey.image('AlcoholImages/monkey47.jpg')
+        monkey.write('''**:blue[Aromat]**: pełny z bogactwem ziół, owoców cytrusowych, kwiatów, jałowca i przypraw.<br>
+        **:blue[Smak]**: bogaty i głęboki z akcentami owoców leśnych, cytrusów, kwiatów, jałowca, przypraw i
+        korzeni.<br>
+        **:blue[Finisz]**: długi i intensywny z bogactwem przypraw, ziół i cytrusów.''', unsafe_allow_html=True)
+
+        olmeca = st.expander("**Olmeca** _(Tequila)_")
+        olmeca.subheader("Olmeca Altos Blanco")
+        olmeca.write('''Olmeca Altos Plata Blanco produkowana w 100% z niebieskiej agawy. Jest tequilą, która przyciąga
+        swoją autentycznością: niezwykle łagodna, o wyjątkowym charakterze, powstaje w sercu Meksyku,
+        czyli w regionie Los Altos. Jej wyjątkowo subtelny smak to efekt tradycyjnych metod produkcji oraz
+        podwójnej destylacji.''')
+        olmeca.image("AlcoholImages/olmeca/TEQUILA-OLMECA-BLANCO-CLASICO-0,7L.jpg")
+        olmeca.write('''Olmeca Altos Plato do dokonała tequilla o niepowtarzalnym, ziołowym aromacie gotowanej
+        agawy z subtelnymi nutami owoców cytrusowych, zwłaszcza cytryny. Słodki smak doskonale
+        zrównoważony limonkowym akcentem. Finisz długi, dobrze zbalansowany.''')
+
+        olmeca.subheader("Olmeca Altos Reposado")
+        olmeca.write('''Olmeca Altos Reposado Gold charakteruzuje się niezwykle bogatym aromatem obfitującym w
+        świeże, cytrusowe nuty pomarańczy i grapefruitów z delikatnie słodkim akcentem wanilii i
+        wyczuwalną nutą drzewną. W smaku początkowa słodycz powoli ustępuje delikatnej nucie tanin i
+        ponownie cytrusów z posmakiem gotowanej agawy. Finisz długi, bardzo dobrze zbalansowany.''')
+        olmeca.image("AlcoholImages/olmeca/olmecareposado.jpg")
+
+        colombo = st.expander("**Orange Colombo** _(Aperitivo, Francja)_")
+        colombo.write('''Aperitif, z wyczuwalnymi aromatami kandyzowanej pomarańczy i miodu. Ten likier to kompozycja
+        gorzkich i słodkich pomarańczy, kory chinowca, cukru trzcinowego i różowego wina, leżakowana w
+        dębowych beczkach przez 6 tygodni.''')
+        colombo.image('AlcoholImages/orangecolombo.jpg')
+
+        ostoya = st.expander("**Ostoya** _(Wódka, Polska, Pszenica)_")
+        ostoya.write('''Wóda z Bieszczad destylowana ze słodu pszenicznego, delikatna i słodka w smaku.''')
+        ostoya.image("AlcoholImages/ostoya.jpg")
+
+        oxley = st.expander("**Oxley** _(Gin, Anglia, London dry)_")
+        oxley.write('''Jeden z pierwszych ginów wyprodukowanych przy użyciu próżniowej destylacji (destylacja pod
+        zmniejszonym ciśnieniem). Po trwającej 15 godzin maceracji 14 składników botanicznych -
+        jałowiec, cytryny, grapefruity, pomarańcze, tawuła, wanilia, anyż, korzenie irysa i lukrecji, ziarna
+        raju, kakao, cynamon, gałka muszkatołowa i kolendra - destylowane jest w kolumnie próżniowej w
+        temp. Sięgającej -5°C. Destylacja w podobnych warunkach gwarantuje pełną ekstrakcję
+        substancji smakowych i aromatycznych nie eksponując składników botanicznych na wysoką
+        temp. a także wyklucza powstawanie przedgonów i niedogonów.''')
+        oxley.image("AlcoholImages/oxley.jpg")
+        oxley.write('''Oxley to niezwykle elegancki gin o klasycznym profilu - jałowiec, cytrusy i tony floralne pięknie
+        współpracujące z odsuniętymi nieco na drugi plan korzennymi przyprawami, balansowanymi do
+        pewnego stopnia słodyczą wanilii.''')
+
+        patron = st.expander("**Patron** _(Tequila)_")
+        patron.subheader("Patron Silver")
+        patron.write('''Roca Patron Silver to fenomenalna tequila rzemieślnicza wyłącznie z niebieskiej agawy: zarówno
+        alkohol, jak i przedmioty i urządzenia wykorzystywane do jego wyrobu, produkowane są ręcznie, z
+        zachowaniem dawnych metod i zasad recyklingu, a destylacja przebiega w bardzo ograniczonych
+        partiach. Zgodnie z historycznym zwyczajem piñas (rdzenie agawy) gotowane są przez 79 godzin
+        w małych, ceglanych piecach, a wcześniej miażdżone dwutonowym kołem tahona. Dzięki temu
+        tequilę tę wyróżnia śmiały i zdecydowany smak, bogaty w słodkie aromaty cytrusowe.''')
+        patron.image("AlcoholImages/patron/patronsilver.jpg")
+        patron.write('''**:blue[Zapach]**: świeże owoce cytrusowe, zwłaszcza limonka. <br>
+        **:blue[Smak]**: ziemisty i słodki z akcentami białego pieprzu, dyni, agawy i kandyzowanych cytrusów. <br>
+        **:blue[Finisz]**: harmonijny z nutami białego i zielonego pieprzu.''', unsafe_allow_html=True)
+
+        patron.subheader("Patron Anejo")
+        patron.write('''Mieszanina tequili leżakowana przez minimum 12 miesięcy w niewielkich dębowych beczkach z
+        dębu białego.''')
+        patron.image("AlcoholImages/patron/patronanejo.jpg")
+        patron.write(''' **:blue[Zapach]**: pieczona agawa, karmel<br>
+         **:blue[Smak]**: agawa, karmel, odrobina przypraw korzennych, pieprz<br>
+         **:blue[Finisz]**: średnio długi, karmelowe pieprzowy''', unsafe_allow_html=True)
+
+        patron.subheader("Patron Reposado")
+        patron.write('''Przed zabutelkowaniem alkohol spędził w dębowych beczkach od 3 do 6 miesięcy. Dzięki temu
+        tequilę Roca Patron Reposado wyróżnia wyrazisty lecz harmonijny smak z przyjemnym,
+        waniliowo-cytrusowym aromatem.''')
+        patron.image("AlcoholImages/patron/patronreposado.jpg")
+        patron.write('''**:blue[Zapach]**: wanilia, dębina, dojrzałe owoce cytrusowe.<br>
+        **:blue[Smak]**: słodki z akcentami imbiru, karmelu i umami.<br>
+        **:blue[Finisz]**: bardzo długi z nutami pikantnymi i taninowymi.''', unsafe_allow_html=True)
+
+        passoa = st.expander("**Passoa** _(Likier, Francja)_")
+        passoa.write('''Znakomity francuski likier o smaku owoców egzotycznych, produkowany z soku owoców
+        marakui. Jest to świeży, egzotyczny i aromatyczny likier o niskiej zawartości alkoholu, uzyskany z
+        mieszanki kwiatów i owoców tropikalnych.''')
+        passoa.image("AlcoholImages/Passoa.jpg")
+
+        peper = st.expander("**Pepperciocco** _(Likier, Włochy)_")
+        peper.write('''Słodki, czekoladowy likier z nutami ostrej papryczki, o ciemno bursztynowej brawie.''')
+        peper.image("AlcoholImages/pepperciocco.jpg")
+
+        pyrat = st.expander("**Pyrat XO Reserve** _(Rum/Spirit drink, Karaiby)_")
+        pyrat.write('''Mieszanina rumów karaibskich, dojrzewanych w dębowych beczkach po amerykańskim burbonie
+        i beczkach z dębu francuskiego typu Limousin przez okres nawet 16 lat.
+        Tradycyjny rum na bazie melasy z trzciny cukrowej.''')
+        pyrat.image('AlcoholImages/pyrat.jpg')
+        pyrat.write('''**:blue[Aromat]**: karmel, miód, cytrusy, melasa.<br>
+        **:blue[Smak]**: skórka pomarańczy,, wanilia, karmel, miód, przyprawy.<br>
+        **:blue[Finisz]**: długi, korzenny.''', unsafe_allow_html=True)
+
+        ricard = st.expander("**Ricard Pastis** _(Aperitivo, Francja)_")
+        ricard.write('''Ricard Pastis de Marseille to wyjątkowy trunek pochodzący prosto z Francji. Posiada ładny,
+        bursztynowy kolor. Aromat wyróżnia się nutami trawy, anyżu, a także lukrecji. W smaku wyczuć
+        można z kolei akcenty anyżu, kopru włoskiego i ziół, jak również delikatnej lukrecji, mięty i cytryny.
+        Wszystko to wygasa do długiego, trwającego finiszu z lukrecją i ziołami.''')
+        ricard.image("AlcoholImages/ricard.jpg")
+
+        sambuca = st.expander("**Sambuca** _(Likier, Włochy)_")
+        sambuca.write('''Bezbarwny pochodzący z Włoch likier anyżkowo-owocowo-ziołowy, zawierający zazwyczaj 38 do
+        40% alkoholu. Jest produkowany na bazie kwiatów czarnego bzu (wł. Sambuco), anyżu
+        gwiaździstego, kopru włoskiego, lukrecji oraz soków.''')
+        sambuca.image("AlcoholImages/sambuca-bianco.jpg")
+
+        santa = st.expander("**Santa Teresa 1796** _(Rum, Karaiby)_")
+        santa.write('''Ron Santa Teresa jest jednym z pierwszych producentów rumu na Karaibach.
+        Santa Teresa 1796 Ron Antiguo de Solera to rum produkowany metodą "solera" oraz
+        dojrzewający ponad 15 lat w beczkach z francuskiego dębu Limousin.''')
+        santa.image('AlcoholImages/santateresa.jpg')
+        santa.write('''**:blue[Zapach]**: Słodki aromat owoców, miodu i czekolady.<br>
+        **:blue[Smak]**: Delikatny i bogaty, z nutami tytoniu, skóry, nut dymu oraz dębu.<br>
+        **:blue[Finisz]**: Nuty dębiny, lekko wytrawny.''', unsafe_allow_html=True)
+
+        scapa = st.expander("**Scapa** _(Whisky, Szkocja, Single malt, Highland)_")
+        scapa.subheader("Scapa Glansa")
+        scapa.write('''Do pierwszej destylacji używa się alembiku typu lomond. Zestawiono ją z destylatów starzonych
+        w beczkach po burbonie i finiszowana w beczkach, w których wcześniej dojrzewała whisky
+        dymno-torfowa. „Glansa” w wolnym tłumaczeniu oznacza „niebo przed burzą”.''')
+        scapa.image("AlcoholImages/scapa/scapaglansa.jpg")
+        scapa.write(''' **:blue[Aromat]**: łagodny, owocowy i delikatnie dymny, brzoskwinie, ananasy, wanilia, miód, płatki
+        śniadaniowe i nieco siana.<br>
+         **:blue[Smak]**: jabłka i brzoskwinie, kandyzowana skórka pomarańczowa, wanilia, miód, karmel, i
+        delikatne nuty dymne w tle.<br>
+         **:blue[Finisz]**: średnio długi, z nutami zadymionej wanilii i miodu.''', unsafe_allow_html=True)
+
+        scapa.subheader("Scapa Skiren")
+        scapa.write('''Scapa to obok Loch Lomond jedyna szkocka destylarnia ciągle używająca alembiku typu lomond,
+        w którym kontakt oparów z miedzią kontrolowany jest poprzez system perforowanych płytek.
+        Skiren to młoda whisky typu small batch, starzona wyłącznie w beczkach po burbonie pierwszego
+        napełnienia i butelkowana bez określenia wieku. Jej nazwa pochodzi z języka staronordyskiego i
+        oznacza „bezkresny lazur nieba”.''')
+        scapa.image("AlcoholImages/scapa/scapa-skiren.jpg")
+        scapa.write('''**:blue[Aromat]**: słodki, wanilia, miód, wata cukrowa, szarlotka, skórka cytrynowa, nuta anyżku i odległy
+        ślad morskiej bryzy.<br>
+        **:blue[Smak]**: łagodny i słodki, zielone jabłka, płatki śniadaniowe ze szczyptą cynamonu, walilia, toffi i
+        orzeszki prażone w miodzie.<br>
+        **:blue[Finisz]**: niezbyt długi, jabłka, brązowy cukier i delikatne nuty orzechowe.''', unsafe_allow_html=True)
+
+        small = st.expander("**Small Batch Bourbon Collection** _(Jim Beam)_")
+        small.caption('''''')
+        small.subheader("Baker's")
+        small.write('''Trzy z pośród czterech whiskey, które wchodzą w skład tej kolekcji, w tym Baker’s, bazują na tym
+        samym rodzaju słodu , jednak każda z nich ma nieco inne cechy i inny profil smakowy.
+        Baker’s zawiera 53,5% alkoholu i ma siedem lat. Dojrzewanie kończy się w momencie, gdy trunek
+        nabierze charakteru beczki, w której leżakuje.''')
+        small.image("AlcoholImages/smallbatchbourbon/bakers.jpg")
+        small.write('''**:blue[Aromat]**: susz owocowy, cynamon, goździki, pieprz, kakao w proszku, wanilia, karmel, zwęglony
+        dąb i trochę skóry.<br>
+        **:blue[Smak]**: słodko-pikantny, crème brulée, toffi, wanilia, prażone migdały, cynamon, goździki, nuty
+        tytoniu, skóry i nadwęglonej dębiny.<br>
+        **:blue[Finisz]**: długi i pełny, z nutami karmelu, kakao, wanilii, dżemu z gorzkich pomarańczy i
+        nadwęglonego dębu.''', unsafe_allow_html=True)
+        small.caption("Patronem bourbonu jest Baker Beam - były menedżer Jim Beam Distillery w Clermont.")
+
+        small.subheader("Basil Hayden's")
+        small.write('''Jej historia sięga 1796 roku, kiedy Master Distiller Basil Hayden złamał zasady produkcji bourbona
+        i do zacieru oprócz kukurydzy dosypał sporą ilość żyta. Whiskey do dzisiaj produkowana jest w
+        tradycyjny sposób i posiada najbardziej "żytni" aromat z wszystkich bourbonów. Jest starzona w nowych beczkach 
+        przez co najmniej 8 lat.''')
+        small.image("AlcoholImages/smallbatchbourbon/basil-hayden-s.jpg")
+        small.write('''**:blue[Aromat]**: wyważony i lekko pikantny z nutami mięty pieprzowej, herbaty, miodu, imbiru, dębu, żyta
+        i grejpfruta.<br>
+        **:blue[Smak]**: bogaty z nutami czarnego pieprzu, miodu, skórki z pomarańczy, mięty, siana, palonego
+        dębu, imbiru i żyta.<br>
+        **:blue[Finisz]**: wytrawny z nutami wanilii, chili i dębu.''', unsafe_allow_html=True)
+        small.caption("Bourbon nosi imię jednego z wczesnych destylatorów Kentucky.")
+
+        small.subheader("Booker's")
+        small.write('''Bourbon niefiltrowany, butelkowany prosto z beczki. Whiskey destylowana jest w Gorzelni Jima
+        Beama w Clermont w stanie Kentucky. Komponowana jest z destylatów starzonych około 7 lat, w
+        nowych dębowych beczkach, w centralnych miejscach magazynu, gdzie warunki do leżakowania
+        są najlepsze. Booker's to najmocniejszy bourbon z kolekcji.''')
+        small.image("AlcoholImages/smallbatchbourbon/bookers.jpg")
+        small.write('''**:blue[Aromat]**: intensywny z nutami dębu, węgla drzewnego, wanilii, lekki aromat kawy tytoniu, karmelu,
+        suszonej śliwki, cynamonu i imbiru.<br>
+        **:blue[Smak]**: mocny i zdecydowany z nutami wanilii, karmelu, palonego dębu, tytoniu, drzewa
+        cedrowego, cygara, śliwki i pomarańczy, kawy<br>
+        **:blue[Finisz]**: długi i intensywny z nutami pikantnych przypraw, tytoniu i węgla drzewnego''', unsafe_allow_html=True)
+        small.caption("Pierwszy bourbon w naturalnej formie. Stworzony przez Fredericka Bookera Noe w 1988 roku")
+
+        germain = st.expander("**St. Germain** _(Likier, Francja)_")
+        germain.write('''Francuski likier owocowy o intensywnym aromacie kwiatów bzu, zbieranych późną wiosną we
+        francuskich Alpach.''')
+        germain.image('AlcoholImages/stgermain.jpg')
+        germain.write('''Likier mieni się złotymi i zielonymi refleksami; nos pełen jest początkowo słodkich owoców- liczi,
+        mango, marakui, kolejne wyczuwalne akcenty to limonka, cytryny, pomarańcze i mięta pieprzowa,
+        w finale odsłania się główny składnik likieru- kwiat czarnego bzu i owoce leśne (jagoda,
+        poziomka). <br>
+        W smaku kremowy, gładki i mocno owocowy, zdominowany przez świeże akcenty liczi,
+        brzoskwini, gruszki i cytrusów takich jak soczyste pomarańcze i grapefruity. Przyjemny i długi
+        finisz zaskakuje nutami kwiatowymi, smakiem kokosa, orzecha laskowego i marakui.''', unsafe_allow_html=True)
+
+        strega = st.expander("**Strega** _(Likier, Włochy)_")
+        strega.write('''Włoski likier ziołowo-korzenny, produkowany od 1860 roku, zawierający 40 proc. alkoholu.
+        Według legendy jego receptura została stworzona przez czarownice z Benevento. Strega ma
+        żółtawo-zieloną barwę i dość intensywny korzenny zapach szafranu, cynamonu i lukrecji. Do
+        podstawowych składników likieru należą: piołun, owoc jałowca i mirra. Zalicza się go do
+        najlepszych i najdroższych włoskich likierów.''')
+        strega.image("AlcoholImages/strega.jpg")
+
+        tan = st.expander("**Tanqueray no.10** _(Gin, Szkocja)_")
+        tan.write('''Posiada unikalne cechy, które odróżniają go od innych. Pierwsza to dodatek świeżych owoców –
+        różowego grejpfruta z Florydy i limonek z Meksyku w miejsce powszechnie stosowanych
+        suszonych skórek cytrusowych. Druga to dodatek rumianku, dzięki któremu Tanqueray No. Ten
+        Gin zyskuje smak łagodny i zrównoważony. Skład ginu zawiera osiem ingrediencji: jałowiec,
+        korzeń arcydzięgla, nasiona kolendry, korzeń lukrecji, świeżego grejpfruta, świeżą limonkę, świeżą
+        pomarańczę oraz rumianek. Składniki przed destylacją są macerowane w spirytusie zbożowym.
+        Nazwa tej edycji nawiązuje do małego alembika o numerze 10 o pojemności 500L, w którym
+        próbowano wielu receptur.''')
+        tan.image("AlcoholImages/tanqueray.jpg")
+        tan.write('''**:blue[Aromat]**: świeży z nutami grejpfruta, limonki, kolendry, jałowca i kwiatów.<br>
+        **:blue[Smak]**: intensywny z akcentami jałowca, kolendry, pomarańczy, limonki i ziół.<br>
+        **:blue[Finisz]**: średnio długi z przewagą owoców cytrusowych i jałowca.''', unsafe_allow_html=True)
+
+        wyborowa = st.expander("**Wyborowa Exquisite** _(Wódka, Polska, Żyto)_")
+        wyborowa.write('''Wyborowa Exquisite ma oddzielną linię produkcyjną i jest wyrabiana z jednej tylko odmiany żyta z
+        jednego tylko pola, które znajduje się w Turwi pod Poznaniem.''')
+        wyborowa.image("AlcoholImages/wyborowa-exquisite.jpg")
+
+        zucca = st.expander("**Zucca Rabarbaro** _(Likier, Włochy)_")
+        zucca.write('''Włoski likier o kolorze głębokiego i intensywnego hebanu, produkowany z rabarbaru z dodatkiem
+        ziół, nasion kardamonu i innych.
+        Ujawnia wyraźne aromaty rabarbaru i propolisu, wraz z gronem aromatycznych i leczniczych ziół.''')
+        zucca.image("AlcoholImages/Zucca-Rabarbaro-0,7.jpg")
 
 
         st.caption(":grey[Materiały: Adrian Kot, Edycja: Aleksander Dziedzic]")
