@@ -9,7 +9,7 @@ def main():
     if submenu == "Manual Koktajli":
         st.header("Manual Koktajli")
 
-        amaretto_sour = st.expander("Amaretto sour")
+        amaretto_sour = st.expander("**Amaretto sour** _(Amaretto, Whisky, Sour)_")
         amaretto_sour.write("""40ml Amaretto</br>
         20ml Balantinnes</br>
         30ml sok z limonki</br>
@@ -20,7 +20,14 @@ def main():
         amaretto_sour.write('''Metoda: reverse shake</br>
         :green[Szkło]: Coupe glass''', unsafe_allow_html=True)
 
-        americano = st.expander("Americano")
+        americano = st.expander("**Americano** _(Bitter, Vermouth, Wytrawny)_")
+        americano.caption('''Americano wywodzi się od koktajlu noszącego nazwę – Milano-Torino, który stworzony został 
+        przez Gaspare Campariniego około 1860 roku w Caffe Campari. W latach 20. i 30. XX wieku, w czasach trwającej w 
+        USA prohibicji, koktajl ten zyskał szczególną popularność wśród odwiedzających Włochy turystów z Ameryki. 
+        Ze względu jednak na zbyt wysoką intensywność gorzkiego smaku, drink ten zaczęto rozcieńczać gazowaną wodą 
+        mineralną, a z czasem także nazywać “Americano”. <br>
+        Ciekawostką jest fakt, że Americano był pierwszym drinkiem, jaki zamówił James Bond w premierowej powieści Iana 
+        Fleminga „Casino Royale”.''', unsafe_allow_html=True)
         americano.write('''30 ml Martini Bitter<br>
         30 ml Martini Riserva Rubino<br>
         Top up soda<br>''', unsafe_allow_html=True)
@@ -30,7 +37,7 @@ def main():
         :green[Szkło]: highball<br>
         :violet[Garnish]: Pół plasterka pomarańczy, zest z cytryny<br>''', unsafe_allow_html=True)
 
-        aviation = st.expander("Aviation")
+        aviation = st.expander("**Aviation** _(Gin, Wiśnia + Fiołek, Słodko-kwaśny)_")
         aviation.write('''40ml Beefeater<br>
         20ml Sour<br>
         15ml :red[Luxardo Maraschino]/Lazaroni Maraschino<br>
@@ -42,7 +49,7 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Wisienka maraschino na szpadce<br>''', unsafe_allow_html=True)
 
-        Bees_Knees = st.expander("Bees Knees")
+        Bees_Knees = st.expander("**Bees Knees** _(Gin, Słodko-kwaśny)_")
         Bees_Knees.write('''60ml Beefeater<br>
         20ml sok z cytryny<br>
         20ml sok pomarańczowy<br>
@@ -52,14 +59,14 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: zest z pomarańczy<br>''', unsafe_allow_html=True)
 
-        Bellini = st.expander("Bellini")
+        Bellini = st.expander("**Bellini** _(Prosseco, Brzoskwinia, Słodko-wytrawny)_")
         Bellini.write('''100ml prosecco<br>
         40ml :red[puree brzoskwiniowe]/liker brzoskwiniowy<br>''', unsafe_allow_html=True)
         Bellini.image("CocktailImages/bellini.jpg")
         Bellini.write('''Metoda: build<br>
         :green[Szkło]: flute glass<br>''', unsafe_allow_html=True)
 
-        Bijou = st.expander("Bijou")
+        Bijou = st.expander("**Bijou** _(Gin, Ziołowe, Wytrawne)_")
         Bijou.write('''40ml :red[Tanqueray Ten]<br>
         20ml :red[Chartreause Green]<br>
         30ml Martini Rubino<br>
@@ -68,7 +75,29 @@ def main():
         Bijou.write('''Metoda: Stir<br>
         :green[Szkło]: Coupe glass<br>''', unsafe_allow_html=True)
 
-        Boulevardier = st.expander("Boulevardier")
+        bm = st.expander("**Bloody Mary** _(Wódka, Pomidor, Słodko-pikantny)_")
+        bm.caption('''Krwawa Mary to koktajl, który najprawdopodobniej powstał w drugiej lub trzeciej dekadzie XX wieku. 
+        Jego samozwańczym autorem jest francuski barman Fernand Petiot.<br>
+        Petiot swoją karierę rozpoczynał w znanym paryskim barze New York Bar, by następnie objąć stanowisko kierownika 
+        King Cole Bar w hotelu St. Regis, znajdującym się w Nowym Jorku. Jak sam twierdzi, to właśnie tam, w 1934 roku, 
+        miał udoskonalić dotychczasową recepturę na Bloody Mary, poprzez dodatnie do niej serii dodatków, takich jak 
+        pieprz, sos Worcestershire, sól, czy sok z cytryny. <br>
+        Sama nazwa, ze względu na kolor drinka kojarzonego z kolorem krwi, najprawdopodobniej nawiązuje do przydomku 
+        brytyjskiej królowej Marii I Tudor, która właśnie w ten sposób była nazywana.''', unsafe_allow_html=True)
+        bm.write('''40ml Ostoya<br>
+        20ml Sok z cytryny<br>
+        1 puszka/butelka Soku pomidorowego<br>
+        2d Sól<br>
+        3d Pieprz<br>
+        4-8d Sos Tabasco<br>
+        4d Sos Worcestershire<br>''', unsafe_allow_html=True)
+        bm.image("CocktailImages/bloodymary.jpg")
+        bm.write('''Metoda: Throwing
+        :green[Szkło]: Mały pokal
+        :violet[Garnish]: Łodyga selera''', unsafe_allow_html=True)
+
+
+        Boulevardier = st.expander("**Boulevardier** _(Whisky, Bitter+Wermut, Wytrawny)_")
         Boulevardier.write('''20ml Jim Beam Rye<br>
         20ml Martini Bitter<br>
         20ml Martini Rubino<br>''', unsafe_allow_html=True)
@@ -77,7 +106,7 @@ def main():
         :green[Szkło]: Old fashioned<br>
         :violet[Garnish]: Zest z pomarańczy<br>''', unsafe_allow_html=True)
 
-        Bramble = st.expander("Bramble")
+        Bramble = st.expander("**Bramble** _(Gin, Porzeczka, Słodki)_")
         Bramble.write('''40ml Beefeater<br>
         25ml sok z cytryny<br>
         15ml syrop cukrowy<br>
@@ -88,7 +117,7 @@ def main():
         :blue[Lód]: Kruszonka<br>
         :violet[Garnish]: Top mięty, świeże owoce<br>''', unsafe_allow_html=True)
 
-        Brandy_Alexander = st.expander("Brandy Alexander")
+        Brandy_Alexander = st.expander("**Brandy Alexander** _(Cognac, Kakao, Deserowe)_")
         Brandy_Alexander.write('''30 ml Martel VS<br>
         20 ml Crème de Cacao<br>
         30 ml Half&Half<br>
@@ -98,7 +127,7 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Tarta gałka muszkatołowa<br>''', unsafe_allow_html=True)
 
-        Breakfast_Martini = st.expander("Breakfast Martini")
+        Breakfast_Martini = st.expander("**Breakfast Martini** _(Gin, Pomarańcza, Słodko-kwaśne)_")
         Breakfast_Martini.write('''50 ml Beefeater<br>
         20 ml Cointreau<br>
         20 ml soku z cytryny<br>
@@ -108,7 +137,7 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z pomarańczy<br>''', unsafe_allow_html=True)
 
-        Brooklyn = st.expander("Brooklyn")
+        Brooklyn = st.expander("**Brooklyn** _(Whisky, Wermut, Wytrawne)_")
         Brooklyn.write('''40 ml Rye Whisky<br>
         20 ml Dry Vermouth<br>
         5 ml :red[Luxardo Marashino]/Lazaroni Maraschino<br>
@@ -119,7 +148,7 @@ def main():
         :green[Szkło] : Coupe glass<br>
         :violet[Garnish]: Zest z pomarańczy, wisienka maraschino<br>''', unsafe_allow_html=True)
 
-        Caipirinha = st.expander("Caipirinha")
+        Caipirinha = st.expander("**Caipirinha** _(Cachaca, Słodko-kwaśne)_")
         Caipirinha.write('''40 ml Cachaca<br>
         3 łyżeczki barmańskie cukru trzcinowego<br>
         4 cząstki limonki<br>''', unsafe_allow_html=True)
@@ -130,7 +159,7 @@ def main():
         :blue[Lód]: Kruszonka <br>
         :violet[Garnish]: Cząstka limonki, pokruszony lód<br>''', unsafe_allow_html=True)
 
-        Champagne_Cocktail = st.expander("Champagne Cocktail")
+        Champagne_Cocktail = st.expander("**Champagne Cocktail** _(Szampan, Cognac, Słodko-wytrawne)_")
         Champagne_Cocktail.write('''100 ml Mumm Brut<br>
         10 ml Martell VS<br>
         2 dash Angostura<br>
@@ -142,7 +171,7 @@ def main():
         :blue[Lód]: -<br>
         :violet[Garnish]: Zest z pomarańczy i wisienka maraschino<br>''', unsafe_allow_html=True)
 
-        Clover_Club = st.expander("Clover Club")
+        Clover_Club = st.expander("**Clover Club** _(Gin, Malina, Słodko-wytrawne)_")
         Clover_Club.write('''40ml Beefeater<br>
         15ml Martini Extra Dry<br>
         25ml soku z cytryny<br>
@@ -153,7 +182,7 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: :red[Maliny na szpadce], cukier puder<br>''', unsafe_allow_html=True)
 
-        Cointreau_Teese = st.expander("Cointreau Teese")
+        Cointreau_Teese = st.expander("**Cointreau Teese** _(Pomarańcza + Jabłko + Fiołek, Słodko-kwaśne)_")
         Cointreau_Teese.write('''40ml cointreau<br>
         40ml sok jabłkowy<br>
         15ml Creme de violette<br>
@@ -163,7 +192,7 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: :red[Fiołek]/Zest z pomarańczy''', unsafe_allow_html=True)
 
-        Corpse_reviver_1 = st.expander("Corpse Reviver no.1")
+        Corpse_reviver_1 = st.expander("**Corpse Reviver no.1** _(Cognac, Wermut, Wytrawne)_")
         Corpse_reviver_1.write('''40ml Cognac<br>
         20 ml :red[Calvados]<br>
         20 ml Martini Rubino<br>''', unsafe_allow_html=True)
@@ -172,7 +201,7 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z pomarańczy<br>''', unsafe_allow_html=True)
 
-        Corpse_Reviver_2 = st.expander("Corpse Reviver no.2")
+        Corpse_Reviver_2 = st.expander("**Corpse Reviver no.2** _(Gin, Pomarańcza + Białe wino, Kwaśno-wytrawne)_")
         Corpse_Reviver_2.write('''20ml Beefeater<br>
         20ml Cointreau<br>
         20ml Lillet Blanc<br>
@@ -183,7 +212,7 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z cytryny, aromatyzacja absyntem<br>''', unsafe_allow_html=True)
 
-        Cosmopolitan = st.expander("Cosmopolitan")
+        Cosmopolitan = st.expander("**Cosmopolitan** _(Wódka, Żurawina, Słodko-kwasne)_")
         Cosmopolitan.write('''40 ml Absolut Lime<br>
         20 ml Cointreau<br>
         20 ml sok z limonki<br>
@@ -193,7 +222,7 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Zest z pomarańczy<br>''', unsafe_allow_html=True)
 
-        Cynar_Szprycer_1 = st.expander("Cynar Szprycer No.1")
+        Cynar_Szprycer_1 = st.expander("**Cynar Szprycer No.1**")
         Cynar_Szprycer_1.write('''40 ml Cynar<br>
         10 ml Strega<br>
         140 ml Woda Gazowana<br>
@@ -204,7 +233,7 @@ def main():
         :green[Szkło]: Copa<br>
         :violet[Garnish]: 2 plasterki imbiru + pokruszona laska cynamonu<br>''', unsafe_allow_html=True)
 
-        Cynar_Szprycer_2 = st.expander("Cynar Szprycer No.2")
+        Cynar_Szprycer_2 = st.expander("**Cynar Szprycer No.2**")
         Cynar_Szprycer_2.write('''40 ml Cynar<br>
         40 ml syrop :red[rabarbar] / jabłkowy<br>
         20 ml sour<br>
@@ -215,7 +244,7 @@ def main():
         :green[Szkło] : Highball<br>
         :violet[Garnish] : Pół plasterka pomarańczy<br>''', unsafe_allow_html=True)
 
-        Daiquiri = st.expander("Daiquiri")
+        Daiquiri = st.expander("**Daiquiri** _(Rum, Limonka, Słodko-kwaśne)_")
         Daiquiri.write('''40 ml Havana 3yo/Dictator 12yo<br>
         25 ml sok z limonki<br>
         15 ml syrop cukrowy<br>
@@ -225,7 +254,7 @@ def main():
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Suszka z limonki + aromatyzacja zestem z limonki<br>''', unsafe_allow_html=True)
 
-        Dark_N_Stormy = st.expander("Dark n'Stormy")
+        Dark_N_Stormy = st.expander("**Dark n'Stormy** _(Rum, Imbir, Słodko-pikantne)_")
         Dark_N_Stormy.write('''40ml Havana Especial<br>
         1x Puszka Ginger Beer<br>
         2x Wedge limonka<br>
@@ -235,7 +264,7 @@ def main():
         :green[Szkło]: Highball<br>
         :violet[Garnish]: Wciśnięte wedge, rum ma tworzyć warstwę z angosturą<br>''', unsafe_allow_html=True)
 
-        Dirty_Martini = st.expander("Dirty Martini")
+        Dirty_Martini = st.expander("**Dirty Martini** _(Gin, Wermut, Wytrawne)_")
         Dirty_Martini.write('''60 ml Beefeater<br>
         10 ml Martini extra dry<br>
         10 ml (2 łyżeczki) Zalewa z oliwek<br>''', unsafe_allow_html=True)
@@ -457,6 +486,17 @@ def main():
         Margarita.write('''Metoda: Shake + fine strain<br>
         :green[Szkło]: Coupe glass<br>
         :violet[Garnish]: Crusta z soli na połowie kieliszka''', unsafe_allow_html=True)
+
+        martinez = st.expander("Martinez")
+        martinez.write('''40 ml Beefeater<br>
+        30 ml Martini rubino<br>
+        5 ml Likieru maraschino<br>
+        5 ml Cointreau<br>
+        2d angostura''', unsafe_allow_html=True)
+        martinez.image("CocktailImages/martinez.jpg")
+        martinez.write('''Metoda: Stir<br>
+        :green[Szkło]: Coupe glass<br>
+        :violet[Garnish]: Wisienka maraschino''', unsafe_allow_html=True)
 
         Martini_Negroni = st.expander("Martini Negroni")
         Martini_Negroni.write('''20 ml Beefeater<br>
@@ -1366,6 +1406,26 @@ def main():
         pieprzu i subtelna goryczka dębu.<br>
         **:blue[Finisz]**: średnio długi, z nutami wanilii, dębu i cytrusów.''', unsafe_allow_html=True)
 
+        deveron = st.expander("**Deveron** _(Whisky, Szkocja, Single malt, Highland)_")
+        deveron.caption('''The Deveron powstaje w destylarnii o nazwie Macduff. Zbudowano ją w 1960 roku w czasie 
+        powojennego boomu na whisky. Oryginalnymi właścicielami była grupa maklerów pochodząca z Glasgow. Autorem 
+        projektu gorzelni był szeroko znany i ceniony w branży whisky architekt William Delme-Evans. Potem, w 1972 roku 
+        w posiadanie interesu wszedł natomiast William Lawson. Ponieważ destylarnia stopniowo rozwijała się, właściciel 
+        zwiększył liczbę aparatów destylacyjnych na jej wyposażeniu do pięciu w 1990 roku. Do tego czasu wypuszczono 
+        kilka wersji single maltów, wszystkie pod nazwą Glen Deveron. Najwcześniej wydane z nich miały pięć lub osiem 
+        lat. Z kolei, w 1995 roku, biznes przeszedł  pod skrzydła spółki Bacardi. W ostatnich latach whisky ta była 
+        bardzo popularna w Rosji. W 2015 roku marka powróciła z nową nazwą i etykietą.''')
+        deveron.write('''The Deveron 12 yo to bardzo ciekawy single malt pochodzący prosto ze znanego, szkockiego 
+        regionu Highlands. Twórcy zabutelkowali go w mocy 40% ABV. Przedstawia świetnie komponującą się, przyjemną 
+        mieszankę owoców, karmelu, a także wanilii i delikatnego akcentu pikanterii. Co ciekawe, marka była znana 
+        wcześniej jako Glen Deveron, ale w 2015 roku zmieniła swoją nazwę, jak i etykietę. Dodatkowo, może pochwalić 
+        się zdobyciem srebra w znanym konkursie International Spirits Challenge w 2019 roku oraz złota w International 
+        Wine & Spirit Competition w roku 2019.''')
+        deveron.image('AlcoholImages/DEVERON-12-YO-0.7L.jpg')
+        deveron.write('''**:blue[Zapach]**: jabłka w toffi, brązowy cukier, nieco przypraw korzennych i imbiru. <br>
+        **:blue[Smak]**: oleista i bardzo uładzona, przywodzi na myśl ciasteczka maślane, wosk, miód, szarlotkę i słodowane zboże. <br>
+        **:blue[Finisz]**: nieco dębiny i wanilii, gładkie taniny i odrobina pikantnych przypraw korzennych.''', unsafe_allow_html=True)
+
         dictator = st.expander("**Dictator/Colombian** _(Rum/Gin, Kolumbia)_")
         dictator.caption('''Markę stworzył Severo Arango y Ferro, który pojawił się w mieście Cartagena de Indias w obecnej
         Kolumbii. Severo nie był osobą zbyt lubianą, bo jego zadaniem na ziemiach kolonialnych Hiszpanii
@@ -1416,6 +1476,13 @@ def main():
         arcydzięgla, cynamonu i imbiru.<br>
         **:blue[Smak]**: gładki i przyjemny z akcentami cytrusów, pieprzu, jałowca, ziół, korzeni, przypraw.<br>
         **:blue[Finisz]**: długi i przyjemny z nutami przypraw i cytrusów.''', unsafe_allow_html=True)
+
+        dictator.subheader("Colombian Treasure")
+        dictator.write('''Jedyny w swoim rodzaju gin z destylatu trzciny cukrowej z domieszką ziół, przypraw, korzeni i 
+        cytrusów. Starzony przez 35 tygodni w beczkach po rumie Dictador, dzięki czemu zyskuje unikatowy charakter, 
+        kolor i wyrazisty smak. Barwa Pełna, wyrazista, bursztynu z refleksami złota. Wyróżnia go aromat mandarynki i 
+        cytryny, świeże botaniczne nuty mięty i pieprzu oraz subtelne słodkie niuanse pochodzące z drewna i jagód.''')
+        dictator.image("AlcoholImages/dictator/colombian_treasure.jpg")
 
         dram = st.expander("**Drambuie** _(Likier, Szkocja)_")
         dram.caption('''Nazwa Drambuie pochodzi od szkocko gaelickiego zwrotu _"an dram buidheach"_, oznaczającego napój, 
@@ -1743,6 +1810,15 @@ def main():
         kraju. Kahlua jest produkowana z ziaren kawy Arabica rosnących u podnóży gór Meksyku.
         Esencja z kawy jest łączona następnie z importowanym rumem i słodką wanilią.''')
         kahlua.image("AlcoholImages/kahlua.jpg")
+
+        kinobi = st.expander("**Ki No Bi** _(Gin, Japonia, Kyoto dry)_")
+        kinobi.caption('''"Ki No Bi" oznacza "piękno pór roku" i jest odniesieniem do składników, 
+        które zostały użyte do skomponowania tego trunku''')
+        kinobi.write('''Jedyny w swoim rodzaju gin. Powstaje w destylarni rzemieślniczej z typowo japońskich roślin, 
+        takich jak yuzu, cyprysik japoński, bambus, gyokuro, pachnotka, kinome i sanshō. Wyróżnia się nie tylko 
+        kompozycją, ale i techniką wyrobu, która pochodzi sprzed ery przemysłowej. Świeże nuty yuzu, ciepłe niuanse jałowca, pikantny 
+        imbir i aromat sanshō łączą się w harmonijny i egzotyczny bukiet, który choć raz w życiu warto poczuć i spróbować.''')
+        kinobi.image("AlcoholImages/kinobi.jpg")
 
         lillet = st.expander("**Lillet** _(Aperitiv, Francja)_")
         lillet.subheader("Lillet Blanc")
