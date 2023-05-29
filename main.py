@@ -11,12 +11,12 @@ def main():
     if submenu == "Manual Koktajli":
         st.header("Manual Koktajli")
 
-        df = pd.read_csv("ExternalFIles/koktajle.csv", sep=";", encoding = "Windows-1250")
+        df = pd.read_csv("koktajle.csv", sep=";", encoding ="Windows-1250")
         for index, row in df.iterrows():
             expand = row["nazwa"].replace(" ","")
             expand = st.expander(f"**{row['nazwa']}** _({row['tagi']})_")
             expand.write((row["receptura"]).replace(",", "<br>"), unsafe_allow_html=True)
-            expand.image("Cocktailimages/" + row["zdjecie"])
+            #expand.image("CocktailImages/" + row["zdjecie"])
             expand.write(f"Metoda: {row['Metoda']}")
             if row['Lód'] == "0":
                 pass
@@ -1411,13 +1411,13 @@ def main():
                   sprawia, że piwo pszeniczne nabiera lekko kwaskowatego smaku i doskonale gasi 
                   pragnienie. Słód pszeniczny stanowi ponad 50% całkowitego zasypu. <br> <br>
                   Alkohol: 5.2%''', unsafe_allow_html=True)
-        marcowe = st.subheader("Bierhalle Marcowe (podwójnie słodowany lager)")
+        st.subheader("Bierhalle Marcowe (podwójnie słodowany lager)")
         st.write('''Piwo marcowe, zwane również Oktoberfestbier, dawniej warzone było 
                   tylko sezonowo. Dzisiaj, dzięki nowoczesnym systemom chłodzenia można produkować 
                   je okrągły rok. Piwo jest pełne smaków pochodzących z mieszaniny słodów 
                   jęczmiennych i aromatycznego chmielu. <br> <br>
                   Alkohol: 5.2%''', unsafe_allow_html=True)
-        pilsner = st.subheader("Pilsner Urquell")
+        st.subheader("Pilsner Urquell")
         st.write('''Prekursor piw typu lager. Tworzony metodą równoległego warzenia. 
                   Swoją wyjątkowość zawdzięcza wielu innowacjom w produkcji piwa, niezmiennym 
                   od ponad 175 lat sposobem produkcji, oraz stosowaniu rzadko już spotykanej 
