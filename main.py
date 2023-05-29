@@ -11,7 +11,7 @@ def main():
     if submenu == "Manual Koktajli":
         st.header("Manual Koktajli")
 
-        df = pd.read_csv("koktajle.csv", sep=";", encoding ="Windows-1250")
+        df = pd.read_csv("ExternalFIles/koktajle.csv", sep=";", encoding ="Windows-1250")
         for index, row in df.iterrows():
             expand = st.expander(f"**{row['nazwa']}** _({row['tagi']})_")
             expand.write((row["receptura"]).replace(",", "<br>"), unsafe_allow_html=True)
@@ -1539,7 +1539,7 @@ def main():
                   pochodzącym z długotrwałego procesu fermentacji i leżakowania.''')
     elif submenu == "Wino":
         st.header(":red[Czerwone wina]")
-        df1 = pd.read_csv("czerwone_wina.csv")
+        df1 = pd.read_csv("ExternalFIles/czerwone_wina.csv")
         st.table(df1)
 
         carmenere = st.expander("Aresti Carmenere Reserva")
@@ -1600,7 +1600,7 @@ def main():
         ''', unsafe_allow_html=True)
 
         st.header("Białe wina")
-        df2 = pd.read_csv("biale_wina.csv")
+        df2 = pd.read_csv("ExternalFIles/biale_wina.csv")
         st.table(df2)
 
         chardonnay = st.expander('Aresti Chardonnay')
