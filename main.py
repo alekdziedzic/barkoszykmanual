@@ -13,10 +13,9 @@ def main():
 
         df = pd.read_csv("koktajle.csv", sep=";", encoding ="Windows-1250")
         for index, row in df.iterrows():
-            expand = row["nazwa"].replace(" ","")
             expand = st.expander(f"**{row['nazwa']}** _({row['tagi']})_")
             expand.write((row["receptura"]).replace(",", "<br>"), unsafe_allow_html=True)
-            #expand.image("CocktailImages/" + row["zdjecie"])
+            expand.image("CocktailImages/" + row["zdjecie"])
             expand.write(f"Metoda: {row['Metoda']}")
             if row['Lód'] == "0":
                 pass
