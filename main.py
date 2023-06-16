@@ -11,9 +11,15 @@ def main():
     if submenu == "Manual Koktajli":
         st.header("Manual Koktajli")
 
+        #funkcja wyszukiwania
+        #szukaj = st.text_input("Wyszukaj koktajl", max_chars=25, key="szukaj",
+                               #help=f"(Wpisz np. 'Negroni', lub 'Gin')", placeholder="pornhub martini")
+
+
         df = pd.read_csv("ExternalFIles/koktajle.csv", sep=";", encoding ="Windows-1250")
         for index, row in df.iterrows():
-            expand = st.expander(f"**{row['nazwa']}** _({row['tagi']})_")
+            name = f"**{row['nazwa']}** _({row['tagi']})_"
+            expand = st.expander(name)
             expand.write((row["receptura"]).replace(",", "<br>"), unsafe_allow_html=True)
             expand.image("CocktailImages/" + row["zdjecie"])
             expand.write(f"Metoda: {row['Metoda']}")
@@ -32,6 +38,10 @@ def main():
         st.caption(":grey[Materiały: Adrian Kot, Edycja: Aleksander Dziedzic]")
     elif submenu == "Manual Alkoholi":
         st.header("Manual Alkoholi")
+
+        df = pd.read_csv("ExternalFIles/alkohole.csv", sep=";", encoding ="Windows-1250")
+
+        #st.header("POTĘŻNY ROZDZIELNIK")
 
         aberlour = st.expander("**Aberlour** _(Whisky, Szkocja, Single malt, Speyside)_")
         aberlour.caption('''Nazwa „Aberlour” wywodzi się z języka gaelickiego i oznacza „ujście szczebiocącego strumienia”.
@@ -1553,6 +1563,7 @@ def main():
         <br> <br>
         Nos to czerwone owoce, także jeżyny, akcenty czekolady i wanilii.<br> <br>
         :blue[Sugestie kulinarne]: łagodne sosy, pieczenie, kaczki, dania z grilla.''', unsafe_allow_html=True)
+        carmenere.image("Wineimages/czerwone/carmenere.jpg")
 
         monte = st.expander("Gran Sasso Montepulciano D’Abruzzo")
         monte.write('''
@@ -1566,6 +1577,7 @@ def main():
         W ustach soczyste, zmysłowe, o miękkich garbnikach i stonowanej kwasowości.<br> <br>
         :blue[Sugestie kulinarne]: wędliny, mięsa z grilla, dojrzewające sery. 
         ''', unsafe_allow_html=True)
+        monte.image("Wineimages/czerwone/monte.jpg")
 
         malbec = st.expander("Elsa Bianchi Malbec San Rafael Mendoza")
         malbec.write('''
@@ -1580,6 +1592,7 @@ def main():
         dobrze zbalansowane wino, które może być idealnym partnerem przy stole.<br> <br>
         :blue[Sugestie kulinarne]: Grillowane mięso
         ''', unsafe_allow_html=True)
+        malbec.image("Wineimages/czerwone/malbec.jpg")
 
         primitivo = st.expander("Primitivo Botoromagno")
         primitivo.write('''
@@ -1598,6 +1611,7 @@ def main():
         porzeczek, śliwek, czarnego pieprzu i czekolady. <br> <br>
         :blue[Sugestie kulinarne]: wędliny, sery, jagnięcina z grilla i dziczyzna.
         ''', unsafe_allow_html=True)
+        primitivo.image("Wineimages/czerwone/primitivo.png")
 
         st.header("Białe wina")
         df2 = pd.read_csv("ExternalFIles/biale_wina.csv")
@@ -1608,12 +1622,14 @@ def main():
          aromat dojrzałych owoców ananasa, gruszek, cytrusów i bananów. W ustach wino bogate, cieliste, 
          miękkie i aksamitne z posmakiem wanilii i nutą kawy. 90 punktów w Wine Advocate Roberta Parkera. <br> <br>
         :blue[Sugestie kulinarne]: Drób, zwłaszcza kurczak i indyk''', unsafe_allow_html=True)
+        chardonnay.image("Wineimages/białe/chardonnay.jpg")
 
         sauvignon = st.expander('Moulin de Gassac Sauvignon')
         sauvignon.write('''Wino białe, bardzo owocowe i rześkie z czystym aromatem agrestu i towarzyszącą mu nutą 
         cytrusów i brzoskwiń. W ustach świeże, owocowe, eleganckie.<br> <br>
         :blue[Sugestie kulinarne]: Sałatki, ryby i desery
         ''', unsafe_allow_html=True)
+        sauvignon.image("Wineimages/białe/sauvignon.jpg")
 
         trebbiano = st.expander("Gran Sasso Trebbiano d'Abruzzo")
         trebbiano.write('''Lekkie, orzeźwiające wino o aromatach żółtych owoców (brzoskwinia i nieszpułka, głóg), z 
@@ -1622,12 +1638,102 @@ def main():
         lekkimi potrawami.<br> <br>
         :blue[Sugestie kulinarne]: Aperitif, lekkie dania z ryb, sałatki, owoce morza.
         ''', unsafe_allow_html=True)
+        trebbiano.image("Wineimages/białe/trebbiano.jpg")
 
         riesling = st.expander('Klaus Meyer Riesling')
         riesling.write('''Żywy, wytrawny Riesling. Cytrusy, ananas i jabłka, podkreślone delikatną nutą siana i akcentem
          krzemienia. W ustach napięte, delikatnie słonawe z wyrazista owocowością i orzeźwiając kwasowością.<br> <br>
          :blue[Sugestie kulinarne]: Idealne wino do pełnych, obfitych dań.
          ''', unsafe_allow_html=True)
+        riesling.image("Wineimages/białe/riesling.jpg")
+
+        st.header("Wina musujące")
+        st.subheader("Prosecco")
+        st.caption("Z definicji białe wino musujące produkowane w północno-wschodnich Włoszech.")
+        mpro =  st.expander("Martini Prosecco")
+        mpro.write('''Wino o delikatnym jasno słomkowym kolorze. Delikatny aromat ujawnia nuty kwitnącego sadu oraz 
+        subtelne niuanse zielonych jabłek i gruszek. Orzeźwiający smak podkreśla cytrusowe i kwiatowe nuty z 
+        eleganckimi ziołowymi niuansami. Posmak jest żywy i lekki.Polecany jako aperitif, do lekkich dań z ryb i 
+        owoców morza, sałatek warzywnych oraz odtłuszczonych miękkich i twardych serów. Aby w pełni cieszyć się 
+        wyjątkowym świeżym i lekkim smakiem tego wspaniałego wina, zalecasię schłodzenie do 6-8 °''')
+        mpro.image("Wineimages/prosecco/martiniprosecco.jpg")
+        mpro.caption("Źródło: alkoholeswiata24.pl")
+
+        belstar = st.expander("Belstar")
+        belstar.write('''Prosecco Belstar Brut należy do wielce zasłużonej dla regionu rodziny Bisol z Valdobbiadene. 
+        Pierwsza udokumentowana wzmianka o działalności winiarskiej rodziny pochodzi z 1542 roku. Obecnie 
+        posiadłościami o łącznej powierzchni upraw 177 h zarządza przedstawiciel 21 pokolenia Desiderio Bisol. W smaku 
+        subtelne kwiatowo-owocowe aromaty. Wino produkowane jest metodą Charmata''')
+        belstar.image('Wineimages/prosecco/belstar.jpg')
+        belstar.caption("Źródło: wina.pl")
+
+        st.subheader("Szampan")
+        st.caption('''Szampan swoją nazwę zawdzięcza Szampanii - regionowi w północno-wschodniej Francji w którym jest
+                   tworzony. "Bąbelki" nie są efektem nasycania napoju dwutlenkiem węgla, a jego wytworzeniem 
+                   przy pomocy naturalnego procesu dojrzewania w butelce (metoda szampańska). Spośród innych win wyróżnia
+                   się wieloma oryginalnymi cechami: <br> <br>
+                   	:white_medium_square: Zbiór winogron jest ręczny (winogrona muszą być w idealnym stanie) <br> <br>
+                   	:white_medium_square: To wino musujące utrzymywane pod ciśnieniem w butelce, zamkniętej 
+                   	korkiem w kształcie grzyba (w przeciwieństwie do korków cylindrycznych), przytrzymywanym kapslem 
+                   	i kagańcem z drutu. <br> <br>
+                   	:white_medium_square: Marka (nieobowiązkowa) jest podstawowym elementem identyfikacji szampanów 
+                   	(najbardziej poszukiwane są wina markowe)<br> <br>
+                   	:white_medium_square: Jest to jedyne francuskie wino różowe, które może być wytwarzane przez 
+                   	łączenie wina czerwonego (z Szampanii) z winem białym; różowy szampan uzyskuje się również 
+                   	pozwalając skórce czarnych winogron zabarwić sok po wyciśnięciu.<br> <br>
+                   	Do produkcji dopuszczane jest wiele odmian winorości z rodziny _pinot_. 3 najczęściej 
+                   	wykorzystywane to: <br> <br>
+                   	:white_medium_square: Chardonnay<br> 
+                   	:white_medium_square: Pinot noir<br> 
+                   	:white_medium_square: Pinot meunier''', unsafe_allow_html=True)
+        mummcr = st.expander("Mumm cordon rouge brut")
+        mummcr.caption('''Styl Domu Mumm charakteryzują subtelnie wyważone wina o świeżym i intensywnym smaku. Owoce 
+        używane do produkcji szampana G.H.Mumm to najwyższej klasy winogrona szczepów białych Chardonnay oraz 
+        czerwonych: Pinot Noir i Pinot Meunier, zbierane podczas wrześniowych corocznych żniw – co ważne – bez użycia 
+        maszyn – tylko tradycyjnie ręcznie przez blisko tysiąc specjalnie do tego celu zatrudnionych osób.''')
+        mummcr.write('''Kompozycja win z 77 winnic regionu Szampanii, z wykorzystaniem dużej proporcji win klasy 
+        reserve i aż do 5 różnych roczników tworzących doskonałej jakości świeży, bogaty i kompleksowy szampan. 
+        Świetnie komponuje się z daniami z owoców morza, grillowaną rybą i pieczonym mięsem. ''')
+        mummcr.image("Wineimages/szampan/mummcr.jpg")
+        mummcr.caption("Źródło: propaganda24h.pl")
+
+        mummice = st.expander("Mumm ice extra")
+        mummice.write('''Ten szampan ma przygotowaną formułę  gotową do zrównoważenia wszystkich kontrastów szampana w 
+        kontakcie z lodem. Jego optymalna temperatura dla przyjemności wynosi około 6ºC. Nie tylko jest najlepszym 
+        sprzymierzeńcem do serwowania z lodem, ale również doskonale komponuje się ze świeżymi składnikami, takimi jak 
+        bazylia czy grejpfrut. Mumm Ice Xtra jest pełen kontrastów i egzotycznych aromatów, ponieważ wina rezerwowe, 
+        które go tworzą, dojrzewają w beczkach z amerykańskiego dębu, które nadają mu waniliowego charakteru oraz 
+        lekkich i subtelnych nut drzewnych. Ponadto charakter winogron Pinot Noir pozostaje w jego absolutnej 
+        jędrności. Szampan jest pozyskiwany innowacyjną metodą leżakowania w beczkach po rumie.''')
+        mummice.image("Wineimages/szampan/mummice.jpg")
+        mummice.caption("Źródło: alkoholeswiata24.pl")
+
+        cuvee = st.expander("Cuvee R. Lalou")
+        cuvee.write('''Cuvee R. Lalou to wyjątkowy, rocznikowy szampan, będący wyrazem uznania dla wielkiego 
+        wizjonera, Rene Lalou, który stał na czele Domu Szampańskiego G.H. Mumm od lat 30. XX wieku.<br> <br>
+         Jego filozofia produkcji szampana opierała się na terroir, czyli miejscu pochodzenia winogron. Owoce używane 
+         do produkcji Cuvee R. Lalou pochodzą tylko z najlepszych części winnic G.H. Mumm. Szampan Cuvee R. Lalou był 
+         produkowany do 1985, jednak w 2007 roku Mistrz Piwnicy Didier Mariotti postanowił wskrzesić wielką legendę, 
+         komponując wyjątkowe cuvee z roczników 1999 i 2002.''', unsafe_allow_html=True)
+        cuvee.image("Wineimages/szampan/cuvee.jpg")
+        cuvee.caption("Źródło: smaczajama.pl")
+
+        perrier = st.expander("Perrier-Jouët")
+        perrier.caption("Perrier-Jouët to obok Dom Pérignon najsłynniejszy szampan. Firmę założył w 1811 roku Pierre "
+                        "Nicolas Marie Perrier. Nazwa szampana pochodzi od nazwiska panieńskiego żony Pierre’a. Od 1811 "
+                        "roku szampan Perrier-Jouët stał się ulubionym trunkiem arystokracji i szlachty na całym "
+                        "świecie. W 1902 roku mistrz form szklanych i czołowa postać stylu Art Nouveau - Émile Gallé "
+                        "- stworzył niezwykły projekt butelki szampana Perrier-Jouët Belle Epoque. Florystyczny wzór "
+                        "anemonów jest rozpoznawalny na całym świecie. O jakości szampanów Perrier-Jouët świadczy też "
+                        "fakt, że te legendarne trunki do dzisiaj dostarczane są na dwory królewskie - między "
+                        "innymi na dwór Monako.")
+        perrier.write('''Stylowy, rocznikowy i wytrawny szampan o aromacie białych kwiatów i wyczuwalnej subtelnej 
+        owocowo-imbirowej nucie. Komponuje się z owocami morza, doskonale uzupełniając lekko słony smak langusty, 
+        pasuje do wykwintnych białych wędlin.
+        Podawać w temperaturze 10-12 °C.<br>
+        Szczepy: 50% chardonnay, 45% pinot noir, 5% pinot meunier''', unsafe_allow_html=True)
+        perrier.image("Wineimages/szampan/perrier.jpg")
+        perrier.caption("Źródło: smaczajama.pl, hurtowniaalkoholi.pl")
 
         
 if __name__ == '__main__':
