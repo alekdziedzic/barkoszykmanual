@@ -11,7 +11,6 @@ def main():
     if submenu == "Manual Koktajli":
         st.header("Manual Koktajli")
 
-        #funkcja wyszukiwania
         #szukaj = st.text_input("Wyszukaj koktajl", max_chars=25, key="szukaj",
                                #help=f"(Wpisz np. 'Negroni', lub 'Gin')", placeholder="pornhub martini")
 
