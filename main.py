@@ -602,6 +602,16 @@ def main():
         zapach whisky słodowej i miodu w połączeniu z aromatem ziół.''')
         dram.image('AlcoholImages/drambuie.jpg')
 
+        fata = st.expander("**Fata Verde** _(Absynt, Włochy)_")
+        fata.caption('''Absynt ze względu na zieloną barwę i właściwości psychoaktywne absynt zdobył przydomek Zielonej 
+        Wróżki. Przez dłuższy czas jego produkcja była zakazana w wielu krajach. Dopiero na początku lat 90. ubiegłego 
+        wieku wznowiono jego wytwarzanie przy maksymalnym poziomie tujonu (związek terpenowy piołunu) do 10 mg/l. 
+        Absynt podajemy z mocno schłodzoną wodą w proporcji 1:3, a nawet 1:5. Dla złagodzenia goryczy dodajemy 
+        łyżeczkę cukru.''')
+        fata.write('''Włoski absynt produkowany w Lombardii przez firmę Lazzaroni. W smaku dominują nuty ziołowe 
+        takie jak piołun, a także anyż i kolendra.''')
+        fata.image("AlcoholImages/fataverde.jpg")
+
         fernet = st.expander("**Fernet Branca** _(Likier, Włochy)_")
         fernet.caption('''Likier którego sekretna receptura sięga 1846 roku. Bazuje on na wyciągu z unikalnej mieszanki 
         wyselekcjonowanych kwiatów oraz rzadkich, wyjątkowych aromatycznych ziół. Beczki z ekstraktem są starannie i 
@@ -739,6 +749,29 @@ def main():
         **:blue[Smak]**: jedwabiście gładka tekstura, odsłaniająca niuanse dębowego sherry, marcepanu,
         cynamonu oraz imbiru. Pełna i niezwykle satysfakcjonująca na podniebieniu.<br>
         **:blue[Finisz]**: długi, pozostawiający wrażenia suszonych owoców, goździków oraz słodkich nut wanilii''', unsafe_allow_html=True)
+
+        genepi = st.expander("**Grand Tetras Genepi Bigallet** _(Aperitif, Francja)_")
+        genepi.write('''Głównym składnikiem likieru są gałązki Genepi, które rosną wysoko w Alpach. Początkowo
+         robiony jest z nich napar, który jest poddawany destylacji. Rośliny Genepi są jedynymi aromatycznymi 
+         składnikami tego produktu, dlatego jego smak może się nieznacznie różnić, w zależności od sezonu i warunków
+          klimatycznych na których działania były wystawione rośliny. Intensywność ziołowych smaków i aromatów, nuty 
+          cytryny, pieprzu i anyżu. Doskonały digestiff, podawać schłodzone lub na lodzie.''')
+        genepi.image("AlcoholImages/genepi.jpg")
+
+        glengla = st.expander("**Glenglassaugh Evolution** _(Whisky, Szkocja, Single malt, Highland)_")
+        glengla.caption('''Glenglassaugh to jedyna nadmorska destylarnia położona na granicy regionów Highland i 
+        Speyside, co wpływa na charakter smaku i aromatu wytwarzanej tam whisky. Whisky dojrzewa w nadbrzeżnych 
+        magazynach, gdzie wystawiona na działanie morskiego powietrza nabiera intrygujących, wytrawnych nut smakowych. 
+        To whisky słodowa o cechach typowych dla regionu Highland, a jednocześnie o uwodzicielskim nadmorskim wdzięku.''')
+        glengla.write('''Whisky leżakowana w dębowych beczkach po Tennessee Whiskey. Wyczuwalne aromaty ananasa, 
+        toffi, duszonych gruszek i kokosa. Smak bardzo łagodny i zaskakujący – nuty wanilii i owoców tropikalnych''')
+        glengla.image("AlcoholImages/glenglassaugh.jpg")
+
+        grey = st.expander("**Grey Goose** _(Wódka, Francja)_")
+        grey.write('''Francuska wódka mająca swoje korzenie w rejonie Cognac. Dzięki wykorzystaniu najlepszej gatunkowo 
+        francuskiej pszenicy, pięciokrotnej destylacji oraz artezyjskej wody z Masywu Centralnego uzyskano głęboki, 
+        subtelny smak i delikatny aromat. Luksusowa i ceniona na całym świecie marka silnie związana z amerykańskim środowiskiem hip hopu.''')
+        grey.image("AlcoholImages/greygoose.jpg")
 
         havana = st.expander("**Havana** _(Rum, Kuba)_")
         havana.caption('''Starzenie na kubie jak i w innych ciepłych krajach jest dosyć uciążliwe ze względu na warunki
