@@ -15,7 +15,7 @@ def main():
                                #help=f"(Wpisz np. 'Negroni', lub 'Gin')", placeholder="pornhub martini")
 
 
-        df = pd.read_csv("ExternalFIles/koktajle.csv", sep=";", encoding ="cp437")
+        df = pd.read_csv("ExternalFIles/koktajle.csv", sep=";", encoding ="Windows-1250")
         for index, row in df.iterrows():
             name = f"**{row['nazwa']}** _({row['tagi']})_"
             expand = st.expander(name)
