@@ -19,6 +19,10 @@ def main():
         for index, row in df.iterrows():
             name = f"**{row['nazwa']}** _({row['tagi']})_"
             expand = st.expander(name)
+            if row["historia"] == "0":
+                pass
+            else:
+                expand.caption(row["historia"])
             expand.write((row["receptura"]).replace(",", "<br>"), unsafe_allow_html=True)
             expand.image("CocktailImages/" + row["zdjecie"])
             expand.write(f"Metoda: {row['Metoda']}")
@@ -193,7 +197,7 @@ def main():
         averna.image('AlcoholImages/averna.jpg')
 
         lucano = st.expander("**Amaro Lucano** _(Likier, Włochy)_")
-        lucano.caption('''tworzony jest według starej tajnej receptury, przekazywanej z pokolenia
+        lucano.caption('''Tworzony jest według starej tajnej receptury, przekazywanej z pokolenia
         na pokolenie. Receptura likieru Amaro Lucano po dzisiejszy dzień pozostaje tajemnicą rodziny
         Vena. Dzięki umiejętnemu mieszaniu ponad 30 rodzajów ziół między innymi aloesu ferox, korzenia
         arcydzięgla, gorzkiej pomarańczy, bzu czarnego, goryczki, krwawnika piżma, szałwii, piołunu.
